@@ -1,0 +1,1001 @@
+ID,Severity,City,County,State,Temperature(F),Wind_Chill(F),Humidity(%),Pressure(in),Wind_Speed(mph),Weather_Condition
+0,3,Dayton,Montgomery,OH,36.9,,91.0,29.68,,Light Rain
+1,2,Reynoldsburg,Franklin,OH,37.9,,100.0,29.65,,Light Rain
+2,2,Williamsburg,Clermont,OH,36.0,33.3,100.0,29.67,3.5,Overcast
+3,3,Dayton,Montgomery,OH,35.1,31.0,96.0,29.64,4.6,Mostly Cloudy
+4,2,Dayton,Montgomery,OH,36.0,33.3,89.0,29.65,3.5,Mostly Cloudy
+5,3,Westerville,Franklin,OH,37.9,35.5,97.0,29.63,3.5,Light Rain
+6,2,Dayton,Montgomery,OH,34.0,31.0,100.0,29.66,3.5,Overcast
+7,3,Dayton,Montgomery,OH,34.0,31.0,100.0,29.66,3.5,Overcast
+8,2,Dayton,Montgomery,OH,33.3,,99.0,29.67,1.2,Mostly Cloudy
+9,3,Westerville,Franklin,OH,37.4,33.8,100.0,29.62,4.6,Light Rain
+10,3,Columbus,Franklin,OH,35.6,30.7,93.0,29.64,5.8,Rain
+11,3,Reynoldsburg,Franklin,OH,37.4,33.8,100.0,29.62,4.6,Light Rain
+12,2,Dayton,Montgomery,OH,33.8,,100.0,29.63,2.3,Overcast
+13,2,Dayton,Montgomery,OH,36.0,31.1,89.0,29.65,5.8,Mostly Cloudy
+14,2,Columbus,Franklin,OH,37.4,33.8,100.0,29.62,4.6,Light Rain
+15,2,Dayton,Montgomery,OH,33.8,,100.0,29.63,2.3,Overcast
+16,2,Dayton,Montgomery,OH,35.6,,99.0,29.65,2.3,Mostly Cloudy
+17,2,Dayton,Montgomery,OH,36.0,31.1,89.0,29.65,5.8,Mostly Cloudy
+18,2,Dayton,Montgomery,OH,37.4,32.1,93.0,29.63,6.9,Overcast
+19,2,Dayton,Montgomery,OH,36.0,30.3,89.0,29.65,6.9,Mostly Cloudy
+20,2,Columbus,Franklin,OH,33.8,29.6,100.0,29.62,4.6,Light Snow
+21,2,Dayton,Montgomery,OH,36.0,30.3,89.0,29.65,6.9,Mostly Cloudy
+22,2,Miamisburg,Montgomery,OH,35.1,28.6,89.0,29.65,8.1,Overcast
+23,3,Columbus,Franklin,OH,37.0,32.4,96.0,29.63,5.8,Overcast
+24,2,Dayton,Montgomery,OH,37.9,30.9,76.0,29.62,10.4,Overcast
+25,2,Johnstown,Licking,OH,37.9,34.4,100.0,29.6,4.6,Light Snow
+26,2,Dayton,Montgomery,OH,36.0,29.0,86.0,29.63,9.2,Light Snow
+27,2,Dayton,Montgomery,OH,39.9,32.9,70.0,29.61,11.5,Mostly Cloudy
+28,2,Dayton,Montgomery,OH,39.9,34.5,65.0,29.61,8.1,Mostly Cloudy
+29,2,Dayton,Montgomery,OH,39.2,35.9,75.0,29.62,4.6,Mostly Cloudy
+30,2,Dublin,Franklin,OH,37.0,31.6,89.0,29.61,6.9,Overcast
+31,2,Dayton,Montgomery,OH,34.2,31.2,97.0,29.66,3.5,Light Rain
+32,3,Columbus,Franklin,OH,33.8,28.6,100.0,29.62,5.8,Overcast
+33,3,Columbus,Franklin,OH,34.0,,100.0,29.65,,Overcast
+34,2,Columbus,Franklin,OH,33.1,26.1,92.0,29.63,8.1,Light Snow
+35,2,Columbus,Franklin,OH,33.1,25.5,92.0,29.63,9.2,Overcast
+36,2,Dayton,Montgomery,OH,23.0,11.7,93.0,29.65,11.5,Light Snow
+37,2,Canal Winchester,Fairfield,OH,23.0,11.7,93.0,29.63,11.5,Light Snow
+38,2,Dayton,Montgomery,OH,22.8,11.5,89.0,29.69,11.5,Light Snow
+39,3,Columbus,Franklin,OH,26.6,18.2,86.0,29.62,8.1,Light Snow
+40,2,Lebanon,Warren,OH,21.0,10.6,85.0,29.67,9.2,Light Snow
+41,2,Dayton,Montgomery,OH,23.0,12.4,86.0,29.71,10.4,Light Snow
+42,2,Sabina,Clinton,OH,19.9,6.7,89.0,29.75,13.8,Light Snow
+43,3,Columbus,Franklin,OH,25.0,15.5,88.0,29.65,9.2,Light Snow
+44,3,Dayton,Montgomery,OH,23.0,10.1,88.0,29.66,15.0,Light Snow
+45,3,Columbus,Franklin,OH,25.0,15.5,88.0,29.65,9.2,Light Snow
+46,2,Columbus,Franklin,OH,26.1,15.0,84.0,29.63,12.7,Light Snow
+47,3,Columbus,Franklin,OH,24.8,16.1,86.0,29.64,8.1,Light Snow
+48,2,Dayton,Montgomery,OH,23.0,11.7,86.0,29.68,11.5,Light Snow
+49,3,Dayton,Montgomery,OH,23.0,11.7,86.0,29.68,11.5,Light Snow
+50,2,Dayton,Montgomery,OH,21.9,9.8,92.0,29.71,12.7,Light Snow
+51,2,Dayton,Montgomery,OH,21.9,9.8,92.0,29.71,12.7,Light Snow
+52,3,Dayton,Montgomery,OH,21.9,9.8,92.0,29.71,12.7,Light Snow
+53,3,Columbus,Franklin,OH,21.2,8.3,93.0,29.66,13.8,Light Snow
+54,3,Dayton,Montgomery,OH,21.0,10.6,85.0,29.69,9.2,Light Snow
+55,2,Goshen,Clermont,OH,21.0,10.6,93.0,29.73,9.2,Light Snow
+56,2,Dayton,Montgomery,OH,21.9,9.8,92.0,29.68,12.7,Light Snow
+57,2,Dayton,Montgomery,OH,22.5,12.4,90.0,29.73,9.2,Light Snow
+58,2,Dayton,Montgomery,OH,22.5,12.4,90.0,29.73,9.2,Light Snow
+59,2,Dayton,Montgomery,OH,22.5,12.4,90.0,29.73,9.2,Light Snow
+60,3,Columbus,Franklin,OH,24.8,16.1,86.0,29.65,8.1,Light Snow
+61,2,Dayton,Montgomery,OH,21.2,8.9,93.0,29.69,12.7,Light Snow
+62,2,Waynesville,Warren,OH,21.0,10.6,81.0,29.7,9.2,Light Snow
+63,2,Springboro,Warren,OH,21.0,10.6,81.0,29.7,9.2,Light Snow
+64,2,Carroll,Fairfield,OH,21.9,10.4,85.0,29.7,11.5,Light Snow
+65,3,Miamisburg,Montgomery,OH,21.0,10.6,81.0,29.7,9.2,Light Snow
+66,3,Oregonia,Warren,OH,21.0,10.6,81.0,29.7,9.2,Light Snow
+67,3,Independence,Cuyahoga,OH,32.0,22.5,82.0,29.58,12.7,Overcast
+68,3,Maple Heights,Cuyahoga,OH,32.0,22.5,82.0,29.58,12.7,Overcast
+69,3,Grove City,Franklin,OH,21.2,9.5,93.0,29.69,11.5,Overcast
+70,2,Findlay,Hancock,OH,27.0,13.5,81.0,29.64,19.6,Light Snow
+71,2,Goshen,Clermont,OH,16.2,4.7,81.0,29.95,9.2,Light Snow
+72,3,Columbus,Franklin,OH,15.8,2.7,73.0,29.87,11.5,Light Snow
+73,2,Columbus,Franklin,OH,15.8,2.7,73.0,29.87,11.5,Light Snow
+74,2,Fairborn,Greene,OH,15.4,1.0,82.0,29.95,13.8,Light Snow
+75,3,Piqua,Miami,OH,14.0,-1.4,93.0,29.89,15.0,Light Snow
+76,3,Columbus,Franklin,OH,15.1,4.2,77.0,29.92,8.1,Light Snow
+77,2,New Richmond,Clermont,OH,15.8,6.1,88.0,29.96,6.9,Light Snow
+78,2,Columbus,Franklin,OH,16.0,1.7,81.0,29.91,13.8,Light Snow
+79,2,Batavia,Clermont,OH,15.8,2.7,84.0,29.97,11.5,Light Snow
+80,2,Reynoldsburg,Franklin,OH,16.0,4.4,77.0,29.93,9.2,Light Snow
+81,3,Galena,Delaware,OH,17.6,5.0,79.0,29.87,11.5,Haze
+82,3,Columbus,Franklin,OH,15.8,3.4,79.0,29.91,10.4,Light Snow
+83,3,Columbus,Franklin,OH,17.1,3.0,77.0,29.96,13.8,Light Snow
+84,3,Barberton,Summit,OH,19.9,8.6,81.0,29.89,10.4,Light Snow
+85,3,Akron,Summit,OH,19.9,7.3,78.0,29.87,12.7,Light Snow
+86,3,Mansfield,Richland,OH,16.0,2.9,77.0,29.97,11.5,Overcast
+87,3,Cleveland,Cuyahoga,OH,14.0,0.5,56.0,30.14,11.5,Light Snow
+88,3,Akron,Summit,OH,14.0,1.2,74.0,30.03,10.4,Light Snow
+89,2,Dayton,Montgomery,OH,7.0,-5.7,87.0,30.22,8.1,Scattered Clouds
+90,2,Bethel,Clermont,OH,15.4,,70.0,30.18,,Overcast
+91,3,Cleveland,Cuyahoga,OH,17.1,-0.3,59.0,30.12,21.9,Overcast
+92,2,Columbus,Franklin,OH,6.1,-6.8,83.0,30.22,8.1,Partly Cloudy
+93,2,Canal Winchester,Franklin,OH,5.0,-2.1,81.0,30.2,3.5,Clear
+94,3,Akron,Summit,OH,12.0,0.5,80.0,30.08,8.1,Light Snow
+95,2,Pataskala,Licking,OH,7.0,,77.0,30.24,,Overcast
+96,3,Cleveland,Cuyahoga,OH,15.1,-1.6,51.0,30.18,18.4,Mostly Cloudy
+97,2,Dayton,Montgomery,OH,9.0,,77.0,30.26,,Clear
+98,2,Dayton,Montgomery,OH,7.5,-1.1,87.0,30.28,4.6,Scattered Clouds
+99,2,Dayton,Montgomery,OH,7.5,-1.1,87.0,30.28,4.6,Scattered Clouds
+100,2,Columbus,Franklin,OH,12.0,2.7,70.0,30.27,5.8,Overcast
+101,2,Columbus,Franklin,OH,12.0,1.5,77.0,30.26,6.9,Overcast
+102,3,Maple Heights,Cuyahoga,OH,18.0,-0.2,54.0,30.16,25.3,Overcast
+103,2,Dayton,Montgomery,OH,12.0,,73.0,30.28,,Clear
+104,2,Dayton,Montgomery,OH,10.9,0.2,77.0,30.29,6.9,Mostly Cloudy
+105,2,Dayton,Montgomery,OH,13.6,7.7,74.0,30.32,3.5,Overcast
+106,3,Columbus,Franklin,OH,10.4,2.2,78.0,30.25,4.6,Overcast
+107,2,Dayton,Montgomery,OH,13.6,7.7,74.0,30.32,3.5,Overcast
+108,2,Dayton,Montgomery,OH,18.0,6.1,68.0,30.32,10.4,Mostly Cloudy
+109,2,Dayton,Montgomery,OH,18.0,8.7,54.0,30.31,6.9,Clear
+110,2,Dayton,Montgomery,OH,18.5,7.5,62.0,30.32,9.2,Mostly Cloudy
+111,2,Dayton,Montgomery,OH,19.9,9.3,65.0,30.32,9.2,Mostly Cloudy
+112,2,Dayton,Montgomery,OH,19.9,9.3,65.0,30.32,9.2,Mostly Cloudy
+113,2,Dayton,Montgomery,OH,21.6,13.0,49.0,30.3,6.9,Mostly Cloudy
+114,2,Dayton,Montgomery,OH,21.6,13.0,49.0,30.3,6.9,Mostly Cloudy
+115,2,Dayton,Montgomery,OH,21.0,14.6,57.0,30.32,4.6,Mostly Cloudy
+116,2,Dayton,Montgomery,OH,21.0,11.4,57.0,30.33,8.1,Mostly Cloudy
+117,3,Dayton,Montgomery,OH,21.0,11.4,57.0,30.33,8.1,Mostly Cloudy
+118,2,Dayton,Montgomery,OH,21.0,11.4,51.0,30.34,8.1,Mostly Cloudy
+119,3,Columbus,Franklin,OH,19.0,,57.0,30.34,,Light Snow
+120,3,Columbus,Franklin,OH,17.1,11.7,62.0,30.35,3.5,Mostly Cloudy
+121,3,Dayton,Montgomery,OH,17.1,,68.0,30.35,,Scattered Clouds
+122,2,Dayton,Montgomery,OH,26.6,14.3,59.0,30.04,16.1,Light Snow
+123,2,Dayton,Montgomery,OH,25.5,12.9,66.0,30.11,16.1,Light Snow
+124,3,Columbus,Franklin,OH,23.0,11.1,80.0,30.03,12.7,Light Snow
+125,3,Columbus,Franklin,OH,19.0,1.6,71.0,30.14,24.2,Light Snow
+126,3,Columbus,Franklin,OH,19.0,1.6,71.0,30.14,24.2,Light Snow
+127,3,Columbus,Franklin,OH,19.9,3.2,62.0,30.13,23.0,Scattered Clouds
+128,3,Columbus,Franklin,OH,16.0,1.7,68.0,30.25,13.8,Mostly Cloudy
+129,3,Columbus,Franklin,OH,10.0,-4.5,44.0,30.54,11.5,Partly Cloudy
+130,3,Seville,Medina,OH,8.1,-8.4,61.0,30.48,13.8,Scattered Clouds
+131,2,Bellville,Richland,OH,7.0,-8.3,58.0,30.49,11.5,Clear
+132,3,Troy,Miami,OH,10.9,-1.8,51.0,30.57,9.2,Scattered Clouds
+133,3,Columbus,Franklin,OH,12.9,-3.4,43.0,30.53,16.1,Mostly Cloudy
+134,3,Columbus,Franklin,OH,12.9,-3.4,43.0,30.53,16.1,Mostly Cloudy
+135,3,Columbus,Franklin,OH,10.0,0.4,70.0,30.52,5.8,Scattered Clouds
+136,3,Columbus,Franklin,OH,12.9,-0.2,65.0,30.5,10.4,Scattered Clouds
+137,3,Columbus,Franklin,OH,12.9,-0.2,65.0,30.5,10.4,Scattered Clouds
+138,3,Columbus,Franklin,OH,15.8,3.4,79.0,30.24,10.4,Snow
+139,3,Columbus,Franklin,OH,17.6,,86.0,30.23,,Light Snow
+140,2,Wilmington,Clinton,OH,23.0,13.9,96.0,30.09,8.1,Overcast
+141,2,Miamisburg,Montgomery,OH,23.0,13.9,92.0,29.97,8.1,Overcast
+142,3,Columbus,Franklin,OH,21.9,14.5,89.0,30.06,5.8,Light Freezing Drizzle
+143,3,Columbus,Franklin,OH,22.8,13.6,96.0,30.02,8.1,Light Snow
+144,2,Columbus,Franklin,OH,23.0,15.8,86.0,30.03,5.8,Light Freezing Drizzle
+145,3,Dayton,Montgomery,OH,23.0,15.8,96.0,30.03,5.8,Light Freezing Drizzle
+146,2,Dayton,Montgomery,OH,24.1,17.0,98.0,30.04,5.8,Light Snow
+147,3,Grove City,Franklin,OH,24.8,17.9,100.0,30.01,5.8,Light Snow
+148,3,Dayton,Montgomery,OH,24.8,,100.0,30.04,2.3,Light Freezing Drizzle
+149,2,Dayton,Montgomery,OH,24.1,18.2,96.0,30.02,4.6,Light Freezing Drizzle
+150,2,Cleveland,Cuyahoga,OH,21.0,9.3,85.0,30.1,11.5,Light Snow
+151,3,Dayton,Montgomery,OH,24.1,18.2,96.0,30.02,4.6,Light Freezing Drizzle
+152,3,Dayton,Montgomery,OH,26.1,17.6,92.0,30.01,8.1,Overcast
+153,2,Columbus,Franklin,OH,24.1,17.0,91.0,30.06,5.8,Light Freezing Drizzle
+154,2,Dayton,Montgomery,OH,25.0,17.1,96.0,29.99,6.9,Overcast
+155,2,Westerville,Franklin,OH,24.1,17.0,91.0,30.06,5.8,Light Freezing Drizzle
+156,2,Akron,Summit,OH,23.0,15.8,85.0,30.03,5.8,Overcast
+157,2,Columbus,Franklin,OH,26.1,19.4,88.0,30.06,5.8,Light Freezing Drizzle
+158,2,Dayton,Montgomery,OH,27.0,23.0,98.0,30.04,3.5,Light Freezing Drizzle
+159,2,Dayton,Montgomery,OH,32.0,26.4,100.0,29.99,5.8,Overcast
+160,2,Pataskala,Licking,OH,32.0,24.8,85.0,29.99,8.1,Overcast
+161,2,Dayton,Montgomery,OH,32.0,26.4,100.0,29.98,5.8,Overcast
+162,2,Columbus,Franklin,OH,30.9,23.5,89.0,29.99,8.1,Mostly Cloudy
+163,1,North Olmsted,Cuyahoga,OH,33.1,27.7,82.0,29.95,5.8,Overcast
+164,2,Groveport,Franklin,OH,33.6,30.6,94.0,29.86,3.5,Light Drizzle
+165,3,Orient,Franklin,OH,32.9,,100.0,29.86,,Overcast
+166,2,Tiro,Crawford,OH,32.0,26.4,100.0,29.88,5.8,Fog
+167,3,Columbus,Franklin,OH,32.0,24.8,100.0,29.71,8.1,Light Snow
+168,3,Akron,Summit,OH,34.0,28.0,89.0,29.67,6.9,Light Snow
+169,3,Orient,Franklin,OH,32.2,25.8,100.0,29.7,6.9,Light Snow
+170,2,Canal Winchester,Franklin,OH,32.0,26.4,99.0,29.69,5.8,Light Snow
+171,3,Columbus,Franklin,OH,33.1,26.1,96.0,29.71,8.1,Overcast
+172,3,Dublin,Franklin,OH,33.1,26.1,96.0,29.71,8.1,Overcast
+173,2,Columbus,Franklin,OH,32.0,23.0,96.0,29.71,11.5,Overcast
+174,2,Columbus,Franklin,OH,32.0,23.6,92.0,29.71,10.4,Overcast
+175,2,Dayton,Montgomery,OH,30.9,22.2,96.0,29.78,10.4,Overcast
+176,3,Columbus,Franklin,OH,32.2,25.8,100.0,29.69,6.9,Overcast
+177,3,Strongsville,Cuyahoga,OH,32.0,24.8,92.0,29.73,8.1,Light Snow
+178,2,Beavercreek,Montgomery,OH,32.0,24.8,88.0,29.76,8.1,Overcast
+179,2,Groveport,Franklin,OH,32.0,24.8,99.0,29.7,8.1,Overcast
+180,3,Columbus,Franklin,OH,32.0,25.6,100.0,29.72,6.9,Overcast
+181,2,Circleville,Pickaway,OH,32.0,23.6,99.0,29.71,10.4,Overcast
+182,2,Grove City,Franklin,OH,32.0,25.6,100.0,29.72,6.9,Overcast
+183,2,Dayton,Montgomery,OH,30.0,21.1,100.0,29.75,10.4,Overcast
+184,3,Columbus,Franklin,OH,32.0,24.2,96.0,29.75,9.2,Overcast
+185,2,Mansfield,Richland,OH,30.0,21.1,100.0,29.73,10.4,Overcast
+186,3,Akron,Summit,OH,34.0,28.0,89.0,29.68,6.9,Light Snow
+187,3,Columbus,Franklin,OH,32.0,24.8,88.0,29.75,8.1,Overcast
+188,2,Columbus,Franklin,OH,32.0,24.2,96.0,29.75,9.2,Overcast
+189,2,Peebles,Adams,OH,30.9,22.8,100.0,29.76,9.2,Overcast
+190,3,Columbus,Franklin,OH,32.0,28.7,100.0,29.77,3.5,Overcast
+191,2,Dayton,Montgomery,OH,30.0,23.2,96.0,29.79,6.9,Overcast
+192,3,Columbus,Franklin,OH,32.0,24.8,88.0,29.78,8.1,Overcast
+193,2,Canal Winchester,Franklin,OH,32.0,26.4,97.0,29.76,5.8,Overcast
+194,2,Columbus,Franklin,OH,32.0,26.4,96.0,29.78,5.8,Overcast
+195,2,Columbus,Franklin,OH,33.1,24.9,92.0,29.77,10.4,Overcast
+196,2,Dayton,Greene,OH,31.1,25.4,88.0,29.86,5.8,Overcast
+197,2,Dayton,Montgomery,OH,30.9,22.8,76.0,29.81,9.2,Haze
+198,2,Dayton,Montgomery,OH,30.0,24.1,92.0,29.82,5.8,Light Snow
+199,2,Dayton,Montgomery,OH,31.1,25.4,88.0,29.86,5.8,Overcast
+200,2,Dayton,Montgomery,OH,31.1,25.4,88.0,29.86,5.8,Overcast
+201,3,Dublin,Franklin,OH,32.0,23.0,92.0,29.78,11.5,Overcast
+202,3,Hurricane,Putnam,WV,35.1,27.9,89.0,29.81,9.2,Overcast
+203,2,Dayton,Montgomery,OH,32.4,25.3,79.0,29.81,8.1,Overcast
+204,3,Columbus,Franklin,OH,32.0,24.2,75.0,29.82,9.2,Overcast
+205,2,Xenia,Greene,OH,30.4,26.9,90.0,30.08,3.5,Overcast
+206,2,Dayton,Montgomery,OH,30.0,23.2,88.0,30.07,6.9,Overcast
+207,2,Columbus,Franklin,OH,28.4,21.2,80.0,30.05,6.9,Overcast
+208,2,Bethel,Clermont,OH,30.9,27.5,91.0,30.07,3.5,Overcast
+209,2,Akron,Summit,OH,28.0,21.7,81.0,30.03,5.8,Overcast
+210,3,Elyria,Lorain,OH,28.0,20.8,85.0,30.03,6.9,Overcast
+211,3,Dayton,Montgomery,OH,30.0,24.1,82.0,30.07,5.8,Haze
+212,3,Akron,Summit,OH,28.0,21.7,81.0,30.03,5.8,Overcast
+213,2,Dayton,Montgomery,OH,30.0,22.4,92.0,30.14,8.1,Overcast
+214,3,Pickerington,Fairfield,OH,30.0,26.5,79.0,30.08,3.5,Overcast
+215,2,Dayton,Montgomery,OH,30.0,25.2,85.0,30.12,4.6,Overcast
+216,2,Bethel,Clermont,OH,31.1,24.5,92.0,30.11,6.9,Overcast
+217,2,Westerville,Franklin,OH,30.2,23.4,75.0,30.08,6.9,Haze
+218,3,Barberton,Summit,OH,28.0,22.8,81.0,30.06,4.6,Haze
+219,2,Dayton,Montgomery,OH,30.7,24.9,90.0,30.14,5.8,Overcast
+220,2,Dayton,Montgomery,OH,30.7,24.9,90.0,30.14,5.8,Overcast
+221,3,Barberton,Summit,OH,28.4,21.2,80.0,30.02,6.9,Haze
+222,2,Burbank,Wayne,OH,27.0,18.0,85.0,30.08,9.2,Overcast
+223,3,Independence,Cuyahoga,OH,30.0,21.1,82.0,30.05,10.4,Light Snow
+224,2,Dayton,Montgomery,OH,30.0,22.4,96.0,30.18,8.1,Overcast
+225,3,Dayton,Montgomery,OH,31.1,25.4,92.0,30.18,5.8,Overcast
+226,2,Dayton,Montgomery,OH,32.0,26.4,88.0,30.2,5.8,Overcast
+227,3,Zanesville,Muskingum,OH,33.1,27.7,72.0,30.16,5.8,Haze
+228,2,Dayton,Montgomery,OH,32.0,26.4,82.0,30.18,5.8,Haze
+229,2,North Baltimore,Wood,OH,33.1,23.9,82.0,30.14,12.7,Haze
+230,2,Miamisburg,Montgomery,OH,35.1,32.2,67.0,30.23,3.5,Overcast
+231,2,Dayton,Montgomery,OH,36.0,28.5,59.0,30.23,10.4,Mostly Cloudy
+232,2,Columbus,Franklin,OH,35.1,26.4,61.0,30.26,12.7,Overcast
+233,2,Columbus,Franklin,OH,31.1,27.7,69.0,30.39,3.5,Overcast
+234,2,Dayton,Montgomery,OH,27.0,,81.0,30.45,,Mostly Cloudy
+235,2,Cleveland,Cuyahoga,OH,19.0,11.1,71.0,30.52,5.8,Clear
+236,3,Pickerington,Fairfield,OH,28.0,21.7,78.0,30.48,5.8,Overcast
+237,3,Akron,Summit,OH,3.9,,91.0,30.49,,Clear
+238,3,Mount Sterling,Madison,OH,23.0,,86.0,30.48,,Mostly Cloudy
+239,3,Cleveland,Cuyahoga,OH,12.9,6.9,88.0,30.58,3.5,Clear
+240,3,Cleveland,Cuyahoga,OH,12.9,6.9,88.0,30.58,3.5,Clear
+241,3,Dayton,Montgomery,OH,26.1,,81.0,30.5,,Haze
+242,2,Dayton,Montgomery,OH,25.9,,86.0,30.5,,Mostly Cloudy
+243,3,Columbus,Franklin,OH,27.0,23.0,75.0,30.51,3.5,Scattered Clouds
+244,2,Miamisburg,Montgomery,OH,27.0,23.0,78.0,30.48,3.5,Haze
+245,2,Dayton,Montgomery,OH,25.9,,86.0,30.5,,Mostly Cloudy
+246,2,Dayton,Montgomery,OH,25.9,,86.0,30.5,,Mostly Cloudy
+247,3,Columbus,Franklin,OH,27.0,23.0,75.0,30.51,3.5,Scattered Clouds
+248,3,Cleveland,Cuyahoga,OH,16.0,6.3,81.0,30.62,6.9,Clear
+249,2,Dayton,Montgomery,OH,28.9,,75.0,30.5,,Haze
+250,2,Dayton,Montgomery,OH,30.9,27.5,79.0,30.51,3.5,Haze
+251,3,Cleveland,Cuyahoga,OH,16.0,6.3,81.0,30.62,6.9,Clear
+252,2,Columbus,Franklin,OH,27.0,19.5,85.0,30.53,6.9,Clear
+253,2,Dayton,Montgomery,OH,30.4,,82.0,30.52,,Mostly Cloudy
+254,3,Columbus,Franklin,OH,26.6,,80.0,30.5,,Clear
+255,2,Cleveland,Cuyahoga,OH,16.0,6.3,81.0,30.62,6.9,Clear
+256,3,Columbus,Franklin,OH,30.0,23.2,72.0,30.53,6.9,Mostly Cloudy
+257,3,Cleveland,Cuyahoga,OH,21.9,12.5,63.0,30.62,8.1,Clear
+258,3,Cleveland,Cuyahoga,OH,21.9,12.5,63.0,30.62,8.1,Clear
+259,3,Independence,Cuyahoga,OH,24.1,17.0,62.0,30.59,5.8,Clear
+260,2,Dayton,Montgomery,OH,30.4,,82.0,30.52,,Mostly Cloudy
+261,3,Mount Sterling,Madison,OH,32.0,26.4,75.0,30.51,5.8,Scattered Clouds
+262,3,Dayton,Montgomery,OH,39.0,33.4,60.0,30.53,8.1,Mostly Cloudy
+263,2,Beavercreek,Montgomery,OH,37.9,31.5,57.0,30.47,9.2,Clear
+264,2,Dayton,Montgomery,OH,39.9,33.4,53.0,30.45,10.4,Mostly Cloudy
+265,2,Dayton,Montgomery,OH,39.9,33.4,53.0,30.45,10.4,Mostly Cloudy
+266,2,Dayton,Montgomery,OH,39.9,33.4,53.0,30.45,10.4,Mostly Cloudy
+267,3,Tipp City,Miami,OH,37.9,28.2,60.0,30.41,18.4,Overcast
+268,2,Dayton,Montgomery,OH,37.9,28.9,55.0,30.41,16.1,Clear
+269,3,Columbus,Franklin,OH,35.1,29.3,57.0,30.47,6.9,Overcast
+270,2,Columbus,Franklin,OH,36.0,28.5,59.0,30.43,10.4,Clear
+271,2,Dayton,Montgomery,OH,39.9,30.8,63.0,30.13,18.4,Overcast
+272,2,Moraine,Montgomery,OH,39.9,32.9,60.0,30.12,11.5,Clear
+273,2,Columbus,Franklin,OH,35.4,28.4,68.0,30.18,9.2,Clear
+274,3,Columbus,Franklin,OH,34.9,27.1,70.0,30.16,10.4,Clear
+275,2,Columbus,Franklin,OH,35.4,29.7,68.0,30.15,6.9,Clear
+276,2,Batavia,Clermont,OH,43.5,37.1,57.0,30.11,12.7,Clear
+277,2,Dayton,Montgomery,OH,41.0,34.7,61.0,30.1,10.4,Clear
+278,2,Columbus,Franklin,OH,36.0,27.5,57.0,30.16,12.7,Mostly Cloudy
+279,2,Johnstown,Licking,OH,37.0,28.9,57.0,30.15,12.7,Overcast
+280,2,Dayton,Montgomery,OH,42.8,37.0,60.0,30.08,10.4,Mostly Cloudy
+281,2,Hilliard,Franklin,OH,37.0,29.3,62.0,30.12,11.5,Clear
+282,2,Hilliard,Franklin,OH,37.0,29.3,62.0,30.12,11.5,Clear
+283,3,Dayton,Greene,OH,42.8,37.0,60.0,30.08,10.4,Mostly Cloudy
+284,2,Bowling Green,Wood,OH,43.0,34.5,53.0,29.98,19.6,Clear
+285,3,Columbus,Franklin,OH,37.0,28.9,57.0,30.15,12.7,Overcast
+286,2,Dayton,Montgomery,OH,47.7,,52.0,30.06,17.3,Overcast
+287,2,Dayton,Montgomery,OH,48.0,,52.0,30.03,27.6,Overcast
+288,2,Dayton,Montgomery,OH,47.7,,52.0,30.06,17.3,Overcast
+289,2,Dayton,Montgomery,OH,49.6,,50.0,30.03,23.0,Overcast
+290,2,Dayton,Montgomery,OH,53.8,,45.0,29.97,25.3,Mostly Cloudy
+291,2,Dayton,Montgomery,OH,57.0,,44.0,29.91,27.6,Scattered Clouds
+292,2,Dayton,Montgomery,OH,57.0,,44.0,29.91,27.6,Scattered Clouds
+293,2,Dayton,Montgomery,OH,59.4,,37.0,29.93,29.9,Clear
+294,2,Dayton,Montgomery,OH,59.4,,37.0,29.93,29.9,Clear
+295,3,Galena,Delaware,OH,46.4,39.2,57.0,29.95,18.4,Clear
+296,2,Dublin,Franklin,OH,57.0,,47.0,29.81,21.9,Overcast
+297,2,Columbus,Franklin,OH,57.0,,47.0,29.81,21.9,Overcast
+298,2,Dayton,Montgomery,OH,65.1,,34.0,29.79,24.2,Clear
+299,2,Dayton,Montgomery,OH,65.1,,34.0,29.79,24.2,Clear
+300,3,Columbus,Franklin,OH,57.0,,49.0,29.82,15.0,Clear
+301,2,Dayton,Montgomery,OH,29.5,23.4,94.0,30.14,5.8,Clear
+302,2,Bowling Green,Wood,OH,28.0,21.7,85.0,30.21,5.8,Clear
+303,2,Reynoldsburg,Franklin,OH,30.9,27.5,82.0,30.16,3.5,Partly Cloudy
+304,2,Columbus,Franklin,OH,30.9,27.5,82.0,30.16,3.5,Partly Cloudy
+305,2,Canal Winchester,Franklin,OH,32.0,26.4,91.0,30.15,5.8,Overcast
+306,2,Dayton,Montgomery,OH,28.4,,93.0,30.17,2.3,Shallow Fog
+307,3,Pickerington,Fairfield,OH,33.1,26.9,85.0,30.17,6.9,Overcast
+308,2,Columbus,Franklin,OH,28.9,25.2,96.0,30.18,3.5,Clear
+309,2,Dayton,Montgomery,OH,27.9,24.0,97.0,30.18,3.5,Clear
+310,2,Dayton,Montgomery,OH,27.9,24.0,97.0,30.18,3.5,Clear
+311,2,Columbus,Franklin,OH,32.0,,82.0,30.17,,Partly Cloudy
+312,2,Goshen,Clermont,OH,32.5,28.1,94.0,30.14,4.6,Clear
+313,3,Columbus,Franklin,OH,28.9,25.2,96.0,30.18,3.5,Clear
+314,3,Westerville,Franklin,OH,35.1,30.1,76.0,30.17,5.8,Scattered Clouds
+315,2,Maineville,Warren,OH,36.0,33.3,79.0,30.17,3.5,Clear
+316,2,Dayton,Montgomery,OH,34.0,26.6,79.0,30.16,9.2,Clear
+317,2,Dayton,Montgomery,OH,33.1,26.9,89.0,30.18,6.9,Scattered Clouds
+318,2,Dayton,Montgomery,OH,36.0,29.6,82.0,30.18,8.1,Scattered Clouds
+319,2,Dayton,Montgomery,OH,37.0,32.4,77.0,30.18,5.8,Clear
+320,2,Dayton,Montgomery,OH,37.0,32.4,77.0,30.18,5.8,Clear
+321,2,Dayton,Montgomery,OH,36.0,29.6,82.0,30.18,8.1,Scattered Clouds
+322,2,Dayton,Montgomery,OH,41.0,34.3,62.0,30.17,11.5,Mostly Cloudy
+323,2,Dayton,Montgomery,OH,42.8,38.0,57.0,30.13,8.1,Scattered Clouds
+324,2,Dayton,Montgomery,OH,42.8,38.0,57.0,30.13,8.1,Scattered Clouds
+325,2,Dayton,Montgomery,OH,43.0,38.8,53.0,30.16,6.9,Mostly Cloudy
+326,2,Vermilion,Lorain,OH,41.0,34.3,62.0,30.18,11.5,Mostly Cloudy
+327,2,Dayton,Montgomery,OH,48.7,,47.0,30.1,6.9,Clear
+328,2,Dayton,Montgomery,OH,48.0,,50.0,30.06,5.8,Clear
+329,2,Dayton,Montgomery,OH,46.9,,52.0,30.09,9.2,Scattered Clouds
+330,2,Dayton,Montgomery,OH,47.5,,49.0,30.09,11.5,Clear
+331,3,Pickerington,Fairfield,OH,30.9,27.5,72.0,30.07,3.5,Mostly Cloudy
+332,2,Springboro,Warren,OH,30.0,21.1,69.0,30.02,10.4,Clear
+333,2,Milford,Clermont,OH,31.8,28.5,79.0,30.0,3.5,Clear
+334,2,Columbus,Franklin,OH,28.9,21.9,69.0,30.07,6.9,Clear
+335,2,Milford,Clermont,OH,32.0,26.4,79.0,29.98,5.8,Clear
+336,2,Dayton,Montgomery,OH,30.9,22.2,67.0,30.01,10.4,Clear
+337,2,Miamisburg,Montgomery,OH,30.9,22.2,67.0,30.01,10.4,Clear
+338,3,Columbus,Franklin,OH,33.8,27.0,65.0,30.01,8.1,Clear
+339,2,Dayton,Montgomery,OH,35.1,27.9,61.0,30.09,9.2,Partly Cloudy
+340,2,Dayton,Montgomery,OH,38.3,30.9,53.0,30.08,11.5,Clear
+341,2,Columbus,Franklin,OH,39.9,34.5,55.0,30.09,8.1,Clear
+342,2,Dayton,Montgomery,OH,39.0,30.6,55.0,30.08,15.0,Scattered Clouds
+343,2,Dayton,Montgomery,OH,48.4,,46.0,30.04,8.1,Clear
+344,2,Dayton,Montgomery,OH,54.0,,51.0,29.95,11.5,Clear
+345,3,Brookpark,Cuyahoga,OH,36.0,26.7,70.0,30.07,15.0,Mostly Cloudy
+346,3,Columbus,Franklin,OH,53.1,,52.0,29.92,8.1,Overcast
+347,3,Columbus,Franklin,OH,53.1,,52.0,29.92,8.1,Overcast
+348,3,Columbus,Franklin,OH,53.1,,52.0,29.92,8.1,Overcast
+349,3,Columbus,Franklin,OH,50.0,,64.0,29.88,8.1,Overcast
+350,3,Grove City,Franklin,OH,44.6,39.7,73.0,29.84,9.2,Scattered Clouds
+351,2,Moraine,Montgomery,OH,41.0,31.6,93.0,29.43,20.7,Light Rain
+352,2,Dayton,Montgomery,OH,42.1,33.9,89.0,29.4,17.3,Rain
+353,3,Dayton,Montgomery,OH,37.9,27.3,100.0,29.46,21.9,Heavy Rain
+354,3,Bowling Green,Wood,OH,33.1,23.0,85.0,29.72,15.0,Light Freezing Rain
+355,3,Fairborn,Greene,OH,39.2,29.8,100.0,29.45,18.4,Light Rain
+356,2,Miamisburg,Montgomery,OH,42.1,34.9,92.0,29.37,13.8,Rain
+357,2,Dayton,Montgomery,OH,40.6,34.8,99.0,29.4,9.2,Rain
+358,2,Columbus,Franklin,OH,42.8,38.0,87.0,29.47,8.1,Light Rain
+359,3,Cleveland,Cuyahoga,OH,33.8,23.9,100.0,29.66,15.0,Rain
+360,3,Dayton,Montgomery,OH,40.6,34.8,99.0,29.4,9.2,Rain
+361,2,Dayton,Greene,OH,40.6,34.8,99.0,29.4,9.2,Rain
+362,2,Barberton,Summit,OH,39.9,32.5,86.0,29.59,12.7,Rain
+363,2,Fraziers Bottom,Putnam,WV,49.0,45.0,100.0,28.62,10.0,Cloudy
+364,2,Dayton,Montgomery,OH,40.6,34.8,99.0,29.4,9.2,Rain
+365,2,Columbus,Franklin,OH,42.8,37.5,100.0,29.42,9.2,Light Rain
+366,2,Columbus,Franklin,OH,42.8,37.5,100.0,29.42,9.2,Light Rain
+367,2,Moraine,Montgomery,OH,44.1,36.8,89.0,29.32,16.1,Rain
+368,2,Barberton,Summit,OH,39.9,32.5,89.0,29.55,12.7,Rain
+369,3,Fairborn,Greene,OH,41.0,33.1,99.0,29.37,15.0,Rain
+370,3,Akron,Summit,OH,39.9,32.5,89.0,29.55,12.7,Rain
+371,3,Independence,Cuyahoga,OH,35.1,24.5,92.0,29.6,18.4,Rain
+372,3,Barberton,Summit,OH,39.9,32.5,89.0,29.55,12.7,Rain
+373,2,Dayton,Montgomery,OH,44.1,37.1,93.0,29.31,15.0,Heavy Rain
+374,1,Cambridge,Guernsey,OH,46.0,40.6,86.0,29.46,11.5,Light Rain
+375,2,Moraine,Montgomery,OH,44.1,37.1,93.0,29.31,15.0,Heavy Rain
+376,2,Dayton,Montgomery,OH,41.0,33.1,99.0,29.37,15.0,Rain
+377,2,Dayton,Montgomery,OH,39.0,30.6,96.0,29.33,15.0,Rain
+378,2,Dayton,Montgomery,OH,41.0,33.1,99.0,29.37,15.0,Rain
+379,2,Delaware,Delaware,OH,41.0,34.3,93.0,29.42,11.5,Drizzle
+380,2,Dayton,Montgomery,OH,45.0,37.9,90.0,29.29,16.1,Light Rain
+381,2,Carroll,Fairfield,OH,48.0,,89.0,29.37,9.2,Overcast
+382,3,Bowling Green,Wood,OH,35.1,25.9,89.0,29.45,13.8,Light Rain
+383,2,Dayton,Montgomery,OH,44.1,39.0,100.0,29.24,9.2,Overcast
+384,2,Dayton,Montgomery,OH,50.0,,100.0,29.22,9.2,Overcast
+385,3,Columbus,Franklin,OH,52.0,,80.0,29.17,18.4,Overcast
+386,2,Moscow,Clermont,OH,33.8,23.9,90.0,29.62,15.0,Overcast
+387,2,Columbus,Franklin,OH,30.2,20.2,93.0,29.51,12.7,Light Snow
+388,2,Oberlin,Lorain,OH,30.9,17.8,92.0,29.45,23.0,Snow
+389,2,Dayton,Montgomery,OH,33.4,24.3,90.0,29.65,12.7,Light Snow
+390,3,Columbus,Franklin,OH,32.0,21.6,88.0,29.56,15.0,Overcast
+391,2,Dayton,Montgomery,OH,33.1,21.9,89.0,29.69,18.4,Light Snow
+392,3,Grove City,Franklin,OH,33.8,24.3,87.0,29.64,13.8,Overcast
+393,2,Dayton,Montgomery,OH,33.1,24.4,85.0,29.73,11.5,Light Snow
+394,2,Miamisburg,Montgomery,OH,35.1,24.5,78.0,29.79,18.4,Light Snow
+395,2,Dayton,Montgomery,OH,33.1,21.2,89.0,29.89,20.7,Light Snow
+396,2,Dayton,Montgomery,OH,33.1,21.2,89.0,29.89,20.7,Light Snow
+397,2,Columbus,Franklin,OH,32.0,24.8,50.0,30.23,8.1,Overcast
+398,2,Dayton,Montgomery,OH,34.3,27.0,52.0,30.25,9.2,Overcast
+399,3,Columbus,Franklin,OH,32.0,24.2,51.0,30.21,9.2,Overcast
+400,3,Barberton,Summit,OH,28.9,19.2,67.0,30.21,11.5,Light Snow
+401,2,Dayton,Montgomery,OH,33.1,24.9,61.0,30.24,10.4,Overcast
+402,3,Westerville,Franklin,OH,42.1,37.7,55.0,30.04,6.9,Scattered Clouds
+403,2,Dayton,Montgomery,OH,63.1,,35.0,29.81,26.5,Clear
+404,2,Dayton,Montgomery,OH,62.8,,32.0,29.67,23.0,Clear
+405,2,Dayton,Montgomery,OH,41.0,33.1,82.0,29.83,15.0,Haze
+406,2,Dayton,Montgomery,OH,37.0,27.4,89.0,29.89,17.3,Overcast
+407,2,Maple Heights,Cuyahoga,OH,36.0,24.7,86.0,29.74,21.9,Overcast
+408,3,Miamisburg,Montgomery,OH,39.0,31.0,79.0,29.91,13.8,Overcast
+409,3,Columbus,Franklin,OH,37.9,29.6,70.0,29.9,13.8,Overcast
+410,2,Dayton,Montgomery,OH,37.9,30.0,86.0,29.95,12.7,Overcast
+411,2,Akron,Summit,OH,37.0,28.1,67.0,29.86,15.0,Overcast
+412,2,Dayton,Montgomery,OH,39.0,32.8,70.0,30.01,9.2,Haze
+413,2,Dayton,Montgomery,OH,39.2,32.0,75.0,29.98,11.5,Overcast
+414,2,Dayton,Greene,OH,39.2,30.8,75.0,30.0,15.0,Overcast
+415,2,Dayton,Montgomery,OH,42.1,33.6,70.0,30.04,18.4,Mostly Cloudy
+416,3,Columbus,Franklin,OH,44.6,37.2,66.0,30.01,17.3,Scattered Clouds
+417,2,Dayton,Montgomery,OH,54.1,,40.0,29.99,15.0,Clear
+418,2,Dayton,Montgomery,OH,53.1,,37.0,29.99,11.5,Clear
+419,2,Dayton,Montgomery,OH,52.5,,41.0,30.0,13.8,Clear
+420,2,Dayton,Montgomery,OH,50.0,,52.0,30.0,11.5,Scattered Clouds
+421,3,Columbus,Franklin,OH,48.9,,46.0,30.0,9.2,Scattered Clouds
+422,3,Piqua,Miami,OH,44.6,41.4,66.0,29.98,5.8,Scattered Clouds
+423,2,Dayton,Montgomery,OH,46.0,41.0,58.0,30.02,10.4,Partly Cloudy
+424,2,Dayton,Montgomery,OH,45.0,42.6,52.0,30.02,4.6,Clear
+425,2,Columbus,Franklin,OH,34.0,31.0,85.0,29.94,3.5,Clear
+426,2,Miamisburg,Montgomery,OH,37.9,32.1,68.0,29.92,8.1,Clear
+427,2,Dayton,Montgomery,OH,37.0,30.4,79.0,29.9,9.2,Mostly Cloudy
+428,2,Columbus,Franklin,OH,35.6,32.8,81.0,29.94,3.5,Clear
+429,2,Columbus,Franklin,OH,37.0,33.3,73.0,29.95,4.6,Mostly Cloudy
+430,3,Columbus,Franklin,OH,33.8,30.8,87.0,29.92,3.5,Clear
+431,2,Fairborn,Greene,OH,46.6,,61.0,29.82,6.9,Clear
+432,2,Batavia,Clermont,OH,54.1,,42.0,29.8,6.9,Mostly Cloudy
+433,2,Milford,Clermont,OH,54.3,,43.0,29.81,13.8,Overcast
+434,2,Sardinia,Brown,OH,53.6,,52.0,29.76,6.9,Overcast
+435,3,Piqua,Miami,OH,42.8,37.5,93.0,29.72,9.2,Rain
+436,2,Columbus,Franklin,OH,55.9,,39.0,29.72,8.1,Light Rain
+437,2,Miamisburg,Montgomery,OH,48.0,,71.0,29.72,8.1,Light Rain
+438,2,Westerville,Franklin,OH,48.0,,96.0,29.55,5.8,Light Rain
+439,2,Lewis Center,Delaware,OH,48.2,,93.0,29.51,9.2,
+440,3,Columbus,Franklin,OH,48.2,,93.0,29.52,8.1,Light Rain
+441,3,Columbus,Franklin,OH,48.2,,100.0,29.52,9.2,Overcast
+442,3,Columbus,Franklin,OH,50.0,,94.0,29.52,10.4,Light Rain
+443,2,Miamisburg,Montgomery,OH,39.0,28.0,82.0,29.69,25.3,Overcast
+444,2,Urbancrest,Franklin,OH,48.2,,87.0,29.56,15.0,Overcast
+445,3,Bowling Green,Wood,OH,28.9,19.2,54.0,30.16,11.5,Overcast
+446,2,Columbus,Franklin,OH,30.9,25.2,47.0,30.17,5.8,Scattered Clouds
+447,3,Columbus,Franklin,OH,30.9,21.7,47.0,30.18,11.5,Scattered Clouds
+448,2,Brecksville,Cuyahoga,OH,25.0,14.8,66.0,30.2,10.4,Mostly Cloudy
+449,2,Dayton,Montgomery,OH,29.8,23.9,48.0,30.2,5.8,Clear
+450,2,Dayton,Montgomery,OH,28.9,23.9,56.0,30.21,4.6,Partly Cloudy
+451,2,Dayton,Montgomery,OH,29.5,,53.0,30.2,,Partly Cloudy
+452,2,Columbus,Franklin,OH,25.0,19.3,66.0,30.19,4.6,Mostly Cloudy
+453,2,Frankfort,Ross,OH,25.2,20.9,79.0,30.17,3.5,Overcast
+454,3,Columbus,Franklin,OH,27.0,19.5,61.0,30.19,6.9,Overcast
+455,2,Dayton,Montgomery,OH,30.2,24.3,75.0,30.14,5.8,Light Snow
+456,2,Dayton,Montgomery,OH,30.2,24.3,75.0,30.14,5.8,Light Snow
+457,3,Columbus,Franklin,OH,26.6,20.0,80.0,30.16,5.8,Overcast
+458,3,Columbus,Franklin,OH,28.0,19.3,58.0,30.19,9.2,Overcast
+459,2,Blanchester,Clinton,OH,28.9,25.2,78.0,30.21,3.5,Light Snow
+460,2,Batavia,Clermont,OH,30.0,,99.0,30.13,,Light Snow
+461,2,Dayton,Montgomery,OH,30.6,24.7,79.0,30.16,5.8,Light Snow
+462,3,Columbus,Franklin,OH,30.2,24.3,69.0,30.13,5.8,Overcast
+463,3,Dayton,Montgomery,OH,30.0,22.4,92.0,30.1,8.1,Light Snow
+464,2,Dayton,Montgomery,OH,32.0,27.5,93.0,30.1,4.6,Light Snow
+465,2,Dayton,Montgomery,OH,34.0,26.0,79.0,30.11,10.4,Light Snow
+466,2,Dayton,Montgomery,OH,32.0,25.6,100.0,30.14,6.9,Light Snow
+467,2,Dayton,Montgomery,OH,33.1,26.1,96.0,30.07,8.1,Light Snow
+468,2,Dayton,Montgomery,OH,33.1,26.9,94.0,30.08,6.9,Light Snow
+469,2,Dayton,Montgomery,OH,33.1,26.9,89.0,30.02,6.9,Light Snow
+470,2,Pickerington,Fairfield,OH,33.1,26.1,82.0,30.06,8.1,Light Snow
+471,2,Columbus,Franklin,OH,30.2,25.4,100.0,30.05,4.6,Light Snow
+472,3,Dayton,Montgomery,OH,34.0,27.2,96.0,30.01,8.1,Light Snow
+473,2,Dayton,Montgomery,OH,33.1,26.9,96.0,30.0,6.9,Light Snow
+474,2,Dayton,Montgomery,OH,32.0,25.6,100.0,30.0,6.9,Light Snow
+475,3,Columbus,Franklin,OH,30.2,25.4,93.0,30.03,4.6,Light Snow
+476,3,Dayton,Montgomery,OH,32.0,26.4,100.0,30.05,5.8,Light Snow
+477,3,Columbus,Franklin,OH,32.0,25.6,92.0,30.02,6.9,Light Snow
+478,3,Columbus,Franklin,OH,32.0,25.6,92.0,30.02,6.9,Light Snow
+479,2,Columbus,Franklin,OH,31.6,28.3,100.0,30.04,3.5,Light Snow
+480,3,Grove City,Franklin,OH,31.6,28.3,100.0,30.04,3.5,Light Snow
+481,3,Akron,Summit,OH,27.0,,89.0,30.03,,Overcast
+482,3,Columbus,Franklin,OH,31.6,28.3,100.0,30.04,3.5,Light Snow
+483,3,Dayton,Montgomery,OH,30.9,21.2,96.0,30.1,12.7,Overcast
+484,3,Dayton,Montgomery,OH,32.9,25.9,99.0,30.1,8.1,Overcast
+485,2,Dayton,Montgomery,OH,30.9,21.2,96.0,30.08,12.7,Overcast
+486,2,Dayton,Montgomery,OH,30.9,21.2,96.0,30.08,12.7,Overcast
+487,3,Dayton,Montgomery,OH,32.0,24.2,100.0,30.12,9.2,Overcast
+488,3,Bowling Green,Wood,OH,28.9,22.8,85.0,30.17,5.8,Overcast
+489,2,Dayton,Montgomery,OH,30.0,19.5,96.0,30.14,13.8,Overcast
+490,2,Columbus,Franklin,OH,32.0,24.2,93.0,30.06,9.2,Overcast
+491,2,Reynoldsburg,Franklin,OH,32.0,24.2,80.0,30.07,9.2,Haze
+492,3,Columbus,Franklin,OH,32.0,24.2,80.0,30.07,9.2,Haze
+493,2,Dayton,Montgomery,OH,31.8,23.3,99.0,30.13,10.4,Overcast
+494,2,Casstown,Miami,OH,30.0,19.5,96.0,30.14,13.8,Overcast
+495,2,Columbus,Franklin,OH,32.0,24.2,88.0,30.12,9.2,Overcast
+496,2,Dayton,Greene,OH,32.5,27.1,92.0,30.18,5.8,Overcast
+497,2,Dayton,Montgomery,OH,32.0,28.7,93.0,30.2,3.5,Overcast
+498,2,Dayton,Montgomery,OH,32.0,25.6,88.0,30.2,6.9,Overcast
+499,2,Dayton,Montgomery,OH,32.0,24.8,88.0,30.2,8.1,Overcast
+500,2,Columbus,Franklin,OH,33.8,29.6,81.0,30.15,4.6,Overcast
+501,2,Columbus,Franklin,OH,34.0,26.6,70.0,30.19,9.2,Overcast
+502,2,Columbus,Franklin,OH,33.8,28.6,75.0,30.18,5.8,Overcast
+503,2,Columbus,Franklin,OH,33.8,28.6,75.0,30.18,5.8,Overcast
+504,2,Dayton,Montgomery,OH,33.1,,82.0,30.21,2.3,Overcast
+505,3,Findlay,Hancock,OH,30.9,23.5,85.0,30.08,8.1,Overcast
+506,2,Akron,Summit,OH,37.0,30.4,76.0,30.11,9.2,Clear
+507,3,Dublin,Franklin,OH,39.0,33.4,79.0,30.12,8.1,Clear
+508,2,Dayton,Montgomery,OH,42.1,36.6,70.0,30.1,9.2,Overcast
+509,3,Cleveland,Cuyahoga,OH,46.9,,56.0,30.04,21.9,Clear
+510,2,Miamisburg,Montgomery,OH,48.9,,54.0,30.12,12.7,Clear
+511,2,Dayton,Greene,OH,46.4,42.4,66.0,30.12,8.1,Mostly Cloudy
+512,3,Columbus,Franklin,OH,45.0,39.7,65.0,30.14,10.4,Clear
+513,2,Westerville,Franklin,OH,52.0,,47.0,30.14,11.5,Overcast
+514,2,Dayton,Montgomery,OH,60.1,,37.0,30.12,20.7,Overcast
+515,2,Dayton,Montgomery,OH,60.1,,37.0,30.12,20.7,Overcast
+516,2,Dayton,Montgomery,OH,57.9,,41.0,30.11,15.0,Clear
+517,2,Dayton,Montgomery,OH,62.1,,34.0,30.06,19.6,Clear
+518,2,Dayton,Montgomery,OH,59.0,,46.0,30.05,13.8,Light Rain
+519,2,Dayton,Montgomery,OH,62.4,,35.0,30.06,17.3,Light Rain
+520,3,Columbus,Franklin,OH,58.8,,47.0,30.06,8.1,Overcast
+521,3,Lima,Allen,OH,52.0,,59.0,30.03,9.2,Clear
+522,2,Dayton,Montgomery,OH,51.1,,56.0,30.07,9.2,Partly Cloudy
+523,2,Dayton,Montgomery,OH,53.1,,52.0,30.07,10.4,Mostly Cloudy
+524,2,Dayton,Montgomery,OH,50.5,,58.0,30.08,5.8,Overcast
+525,2,Columbus,Franklin,OH,54.0,,47.0,30.11,5.8,Overcast
+526,2,Amelia,Clermont,OH,55.4,,49.0,30.13,5.8,Clear
+527,2,Batavia,Clermont,OH,55.2,,50.0,30.15,4.6,Clear
+528,2,Columbus,Franklin,OH,53.1,,52.0,30.12,10.4,Overcast
+529,2,Westerville,Franklin,OH,55.0,,47.0,30.13,9.2,Overcast
+530,2,Dayton,Montgomery,OH,56.7,,51.0,30.14,13.8,Overcast
+531,3,Columbus,Franklin,OH,55.0,,49.0,30.16,9.2,Overcast
+532,3,Cleveland,Cuyahoga,OH,53.1,,50.0,30.12,10.4,Mostly Cloudy
+533,2,Dayton,Montgomery,OH,56.7,,51.0,30.14,13.8,Overcast
+534,2,Dayton,Montgomery,OH,61.2,,46.0,30.15,18.4,Mostly Cloudy
+535,2,Batavia,Clermont,OH,65.1,,43.0,30.18,11.5,Clear
+536,2,Miamisburg,Montgomery,OH,66.0,,45.0,30.14,16.1,Clear
+537,2,Dayton,Montgomery,OH,66.0,,45.0,30.14,16.1,Clear
+538,2,Dayton,Montgomery,OH,66.0,,50.0,30.13,19.6,Scattered Clouds
+539,2,Dayton,Montgomery,OH,70.2,,43.0,30.13,18.4,Clear
+540,3,Columbus,Franklin,OH,68.0,,45.0,30.14,13.8,Overcast
+541,2,Dayton,Montgomery,OH,71.6,,41.0,30.06,18.4,Clear
+542,2,Dayton,Montgomery,OH,71.1,,39.0,30.02,16.1,Mostly Cloudy
+543,2,Columbus,Franklin,OH,71.1,,32.0,30.0,15.0,Clear
+544,2,Dublin,Franklin,OH,69.1,,32.0,30.02,11.5,Clear
+545,2,Dublin,Franklin,OH,69.1,,32.0,30.02,11.5,Clear
+546,3,Columbus,Franklin,OH,69.1,,32.0,30.02,11.5,Clear
+547,3,Columbus,Franklin,OH,66.9,,31.0,30.03,8.1,Mostly Cloudy
+548,3,Lima,Allen,OH,57.0,,64.0,29.97,16.1,Clear
+549,2,Dayton,Montgomery,OH,55.9,,64.0,30.03,9.2,Clear
+550,2,Columbus,Franklin,OH,55.0,,64.0,30.05,8.1,Clear
+551,3,Columbus,Franklin,OH,54.0,,66.0,30.07,4.6,Mostly Cloudy
+552,2,Westerville,Franklin,OH,54.0,,66.0,30.07,4.6,Mostly Cloudy
+553,3,Dublin,Franklin,OH,63.0,,58.0,30.06,13.8,Clear
+554,2,Newark,Licking,OH,61.0,,62.0,30.08,6.9,Clear
+555,2,Dayton,Montgomery,OH,64.0,,58.0,30.06,16.1,Mostly Cloudy
+556,2,Dayton,Montgomery,OH,64.0,,58.0,30.06,16.1,Mostly Cloudy
+557,2,Columbus,Franklin,OH,63.0,,58.0,30.08,13.8,Partly Cloudy
+558,2,Dayton,Montgomery,OH,66.0,,54.0,30.08,15.0,Mostly Cloudy
+559,2,Dayton,Montgomery,OH,70.2,,49.0,30.04,19.6,Scattered Clouds
+560,2,Dayton,Montgomery,OH,70.2,,49.0,30.04,19.6,Scattered Clouds
+561,2,Dayton,Montgomery,OH,70.0,,47.0,30.03,21.9,Partly Cloudy
+562,2,Dayton,Montgomery,OH,73.0,,44.0,30.01,18.4,Mostly Cloudy
+563,2,Dayton,Montgomery,OH,69.8,,49.0,30.02,17.3,Light Rain Showers
+564,2,Dayton,Montgomery,OH,66.9,,59.0,30.03,16.1,Light Rain
+565,2,Dayton,Montgomery,OH,66.9,,59.0,30.03,16.1,Light Rain
+566,3,Springfield,Clark,OH,55.4,,100.0,30.02,5.8,Overcast
+567,3,Dayton,Montgomery,OH,57.0,,89.0,30.0,6.9,Overcast
+568,3,Springfield,Clark,OH,55.9,,100.0,30.03,4.6,Overcast
+569,3,Dayton,Montgomery,OH,59.0,,87.0,30.0,9.2,Light Rain
+570,3,Pickerington,Fairfield,OH,59.0,,87.0,30.05,9.2,Rain
+571,2,Dayton,Montgomery,OH,59.0,,87.0,30.0,6.9,Overcast
+572,2,Dayton,Montgomery,OH,57.9,,93.0,30.01,13.8,Light Rain
+573,3,Vandalia,Montgomery,OH,57.9,,93.0,30.01,13.8,Light Rain
+574,2,Galloway,Franklin,OH,57.2,,100.0,30.03,11.5,Light Rain
+575,2,Dayton,Montgomery,OH,59.2,,100.0,30.01,11.5,Overcast
+576,2,Batavia,Clermont,OH,60.1,,93.0,30.02,6.9,Overcast
+577,3,Columbus,Franklin,OH,57.2,,100.0,30.01,6.9,Overcast
+578,3,Columbus,Franklin,OH,59.0,,93.0,30.03,9.2,Mostly Cloudy
+579,2,Dayton,Montgomery,OH,57.9,,100.0,30.03,13.8,Light Rain
+580,2,Dayton,Montgomery,OH,57.9,,100.0,30.01,9.2,Light Rain
+581,2,Dayton,Montgomery,OH,59.0,,100.0,30.01,15.0,Light Rain
+582,2,Miamisburg,Montgomery,OH,59.0,,90.0,30.01,8.1,Light Rain
+583,2,Dayton,Montgomery,OH,60.8,,100.0,30.01,10.4,Light Rain
+584,2,Dayton,Montgomery,OH,59.9,,100.0,30.02,10.4,Light Rain
+585,3,Bloomingburg,Fayette,OH,60.1,,90.0,30.03,13.8,Rain
+586,3,Columbus,Franklin,OH,59.0,,94.0,30.02,6.9,Light Rain
+587,2,Dayton,Montgomery,OH,60.8,,100.0,29.98,11.5,Light Rain
+588,3,Columbus,Franklin,OH,60.8,,94.0,29.99,9.2,Rain
+589,3,Dayton,Montgomery,OH,60.8,,100.0,29.99,6.9,Light Rain
+590,2,Gallipolis,Gallia,OH,66.0,66.0,70.0,29.17,5.0,Light Rain
+591,2,Dayton,Montgomery,OH,60.8,,100.0,29.96,5.8,Light Rain
+592,3,Columbus,Franklin,OH,60.1,,90.0,29.98,12.7,Rain
+593,3,Miamisburg,Montgomery,OH,60.1,,93.0,29.96,6.9,Light Rain
+594,2,Columbus,Franklin,OH,58.5,,99.0,29.98,5.8,Light Rain
+595,3,Dayton,Montgomery,OH,57.6,,100.0,30.02,11.5,Rain
+596,2,Lockbourne,Franklin,OH,58.6,,98.0,30.0,9.2,Rain
+597,2,Lockbourne,Franklin,OH,56.5,,95.0,30.03,9.2,Rain
+598,2,Columbus,Franklin,OH,46.9,,80.0,30.19,10.4,Overcast
+599,3,Columbus,Franklin,OH,44.6,40.7,93.0,30.28,6.9,Mostly Cloudy
+600,2,Elyria,Lorain,OH,37.0,30.4,89.0,30.33,9.2,Overcast
+601,3,Milan,Erie,OH,,,,,,
+602,2,Cleveland,Cuyahoga,OH,37.0,28.9,89.0,30.37,12.7,Overcast
+603,2,Dayton,Montgomery,OH,45.5,40.3,98.0,30.33,10.4,Overcast
+604,2,Dayton,Montgomery,OH,45.0,38.9,90.0,30.33,12.7,Overcast
+605,2,Dayton,Montgomery,OH,45.0,38.9,90.0,30.33,12.7,Overcast
+606,2,Dayton,Montgomery,OH,46.9,,80.0,30.31,12.7,Overcast
+607,2,Dayton,Montgomery,OH,45.0,38.9,90.0,30.33,12.7,Overcast
+608,2,Dayton,Montgomery,OH,45.9,40.8,95.0,30.34,10.4,Overcast
+609,2,Dayton,Montgomery,OH,46.4,40.7,87.0,30.32,12.7,Overcast
+610,2,Columbus,Franklin,OH,45.0,40.1,80.0,30.33,9.2,Overcast
+611,3,Columbus,Franklin,OH,46.4,40.7,87.0,30.33,12.7,Overcast
+612,2,Moraine,Montgomery,OH,46.0,40.6,83.0,30.32,11.5,Overcast
+613,2,Goshen,Clermont,OH,49.6,,82.0,30.31,8.1,Overcast
+614,2,Dayton,Montgomery,OH,46.0,41.0,86.0,30.34,10.4,Overcast
+615,2,Columbus,Franklin,OH,48.2,,76.0,30.33,5.8,Mostly Cloudy
+616,2,Columbus,Franklin,OH,48.2,,76.0,30.33,5.8,Mostly Cloudy
+617,2,Dayton,Montgomery,OH,48.9,,74.0,30.33,10.4,Mostly Cloudy
+618,2,North Olmsted,Cuyahoga,OH,37.0,31.0,89.0,30.43,8.1,Overcast
+619,4,Columbus,Franklin,OH,51.8,,67.0,30.34,5.8,Clear
+620,3,Columbus,Franklin,OH,55.0,,51.0,30.32,,Overcast
+621,2,Columbus,Franklin,OH,55.9,,55.0,30.31,5.8,Clear
+622,3,Columbus,Franklin,OH,57.0,,51.0,30.31,6.9,Mostly Cloudy
+623,3,Dublin,Franklin,OH,57.0,,51.0,30.32,8.1,Clear
+624,2,Columbus,Franklin,OH,57.0,,51.0,30.31,6.9,Mostly Cloudy
+625,3,Columbus,Franklin,OH,57.0,,51.0,30.31,6.9,Mostly Cloudy
+626,3,Columbus,Franklin,OH,55.4,,54.0,30.31,4.6,Clear
+627,3,Columbus,Franklin,OH,51.1,,61.0,30.32,3.5,Mostly Cloudy
+628,3,Independence,Cuyahoga,OH,35.1,,89.0,30.25,,Clear
+629,3,Akron,Summit,OH,57.0,,51.0,30.2,3.5,Clear
+630,3,Columbus,Franklin,OH,59.0,,55.0,30.17,3.5,Clear
+631,2,Dayton,Montgomery,OH,57.0,,100.0,29.74,9.2,Mostly Cloudy
+632,2,Moscow,Clermont,OH,56.7,,100.0,29.75,3.5,Mostly Cloudy
+633,2,Springboro,Warren,OH,55.9,,97.0,29.74,10.4,Overcast
+634,2,Dayton,Montgomery,OH,57.0,,100.0,29.74,8.1,Overcast
+635,2,Columbus,Franklin,OH,57.2,,94.0,29.75,5.8,Overcast
+636,2,Mason,Warren,OH,51.1,,100.0,29.75,,Fog
+637,2,Dayton,Montgomery,OH,57.4,,100.0,29.75,5.8,Overcast
+638,2,Fairborn,Greene,OH,57.4,,100.0,29.75,5.8,Overcast
+639,2,Dayton,Montgomery,OH,55.9,,97.0,29.75,6.9,Overcast
+640,2,Dayton,Montgomery,OH,55.9,,100.0,29.76,10.4,Overcast
+641,2,Dublin,Franklin,OH,57.0,,96.0,29.76,8.1,Overcast
+642,2,Batavia,Clermont,OH,57.4,,100.0,29.76,3.5,Overcast
+643,2,Dayton,Montgomery,OH,57.0,,100.0,29.75,9.2,Overcast
+644,3,Elyria,Lorain,OH,57.9,,90.0,29.73,11.5,Mostly Cloudy
+645,2,Dayton,Montgomery,OH,57.9,,93.0,29.74,4.6,Scattered Clouds
+646,2,Bowling Green,Wood,OH,57.0,,89.0,29.72,9.2,Overcast
+647,2,Dayton,Montgomery,OH,57.0,,100.0,29.75,9.2,Overcast
+648,2,Dayton,Montgomery,OH,57.9,,93.0,29.74,4.6,Scattered Clouds
+649,2,Dayton,Montgomery,OH,60.8,,100.0,29.73,1.2,Mostly Cloudy
+650,2,Dayton,Montgomery,OH,62.1,,86.0,29.7,6.9,Rain
+651,3,Dayton,Montgomery,OH,61.0,,93.0,29.69,6.9,Rain
+652,2,Dayton,Montgomery,OH,65.8,,84.0,29.63,13.8,Mostly Cloudy
+653,3,Dayton,Montgomery,OH,66.9,,57.0,29.61,11.5,Mostly Cloudy
+654,3,Dayton,Montgomery,OH,66.0,,63.0,29.62,8.1,Scattered Clouds
+655,3,Millersport,Licking,OH,55.9,,84.0,29.77,11.5,Overcast
+656,2,Dayton,Montgomery,OH,54.3,,100.0,29.82,2.3,Overcast
+657,2,Westerville,Franklin,OH,53.6,,82.0,29.8,8.1,Haze
+658,2,Dayton,Montgomery,OH,53.6,,100.0,29.82,1.2,Overcast
+659,2,Dayton,Montgomery,OH,54.3,,100.0,29.83,2.3,Overcast
+660,2,Columbus,Franklin,OH,53.6,,94.0,29.83,5.8,Overcast
+661,3,Independence,Cuyahoga,OH,43.0,37.7,97.0,29.81,9.2,Light Rain
+662,2,Dayton,Montgomery,OH,53.1,,100.0,29.84,3.5,Overcast
+663,2,Dayton,Montgomery,OH,55.0,,93.0,29.86,3.5,Overcast
+664,2,Dayton,Montgomery,OH,60.8,,77.0,29.83,2.3,Mostly Cloudy
+665,3,Dayton,Montgomery,OH,62.1,,72.0,29.83,5.8,Scattered Clouds
+666,2,Dayton,Montgomery,OH,64.9,,68.0,29.81,5.8,Partly Cloudy
+667,2,Dayton,Montgomery,OH,66.9,,59.0,29.78,8.1,Scattered Clouds
+668,2,Dayton,Montgomery,OH,67.8,,63.0,29.79,3.5,Clear
+669,2,Dayton,Montgomery,OH,68.0,,59.0,29.75,8.1,Partly Cloudy
+670,3,Dayton,Montgomery,OH,63.1,,71.0,29.53,9.2,Haze
+671,2,Columbus,Franklin,OH,60.1,,62.0,29.55,5.8,Overcast
+672,3,Dayton,Montgomery,OH,64.4,,68.0,29.55,15.0,Mostly Cloudy
+673,2,New Carlisle,Clark,OH,60.4,,68.0,29.62,13.8,Scattered Clouds
+674,2,Dayton,Montgomery,OH,60.4,,68.0,29.62,13.8,Scattered Clouds
+675,2,Westerville,Franklin,OH,64.0,,56.0,29.57,12.7,Scattered Clouds
+676,2,Milford,Clermont,OH,62.1,,60.0,29.67,13.8,Scattered Clouds
+677,2,Pickerington,Fairfield,OH,64.0,,60.0,29.58,8.1,Overcast
+678,2,Dayton,Montgomery,OH,59.0,,67.0,29.64,19.6,Overcast
+679,2,Groveport,Franklin,OH,61.2,,71.0,29.61,11.5,Overcast
+680,3,Columbus,Franklin,OH,62.6,,72.0,29.63,9.2,Overcast
+681,3,Columbus,Franklin,OH,62.6,,72.0,29.61,11.5,Overcast
+682,3,Dayton,Montgomery,OH,59.0,,64.0,29.67,15.0,Overcast
+683,2,Columbus,Franklin,OH,59.0,,64.0,29.67,17.3,Overcast
+684,2,Dayton,Montgomery,OH,56.5,,61.0,29.72,21.9,Partly Cloudy
+685,3,Dayton,Montgomery,OH,55.0,,59.0,29.74,23.0,Partly Cloudy
+686,2,Sunbury,Delaware,OH,57.2,,51.0,29.73,23.0,Scattered Clouds
+687,3,North Olmsted,Cuyahoga,OH,59.0,,46.0,29.69,31.1,Scattered Clouds
+688,2,Dayton,Montgomery,OH,42.1,37.1,65.0,29.91,8.1,Scattered Clouds
+689,2,Dayton,Montgomery,OH,37.8,32.5,81.0,29.91,6.9,Clear
+690,2,Owensville,Clermont,OH,46.8,,57.0,29.93,5.8,Clear
+691,2,Dayton,Montgomery,OH,42.1,36.6,65.0,29.91,9.2,Clear
+692,2,Dayton,Montgomery,OH,43.0,39.5,60.0,29.9,5.8,Clear
+693,2,Dayton,Montgomery,OH,43.0,39.5,60.0,29.9,5.8,Clear
+694,2,Columbus,Franklin,OH,45.0,42.6,56.0,29.9,4.6,Scattered Clouds
+695,2,Columbus,Franklin,OH,45.0,42.6,56.0,29.9,4.6,Scattered Clouds
+696,2,Columbus,Franklin,OH,48.0,,52.0,29.91,6.9,Clear
+697,3,Dayton,Montgomery,OH,46.9,,59.0,29.93,10.4,Clear
+698,2,Dayton,Montgomery,OH,45.5,41.3,71.0,29.94,8.1,Clear
+699,2,Dayton,Montgomery,OH,45.5,41.3,71.0,29.94,8.1,Clear
+700,2,Dayton,Montgomery,OH,48.0,,52.0,29.92,6.9,Clear
+701,2,Dayton,Montgomery,OH,50.0,,50.0,29.94,18.4,Partly Cloudy
+702,2,Dayton,Montgomery,OH,55.0,,40.0,29.94,13.8,Clear
+703,2,Dayton,Montgomery,OH,54.0,,43.0,29.94,16.1,Partly Cloudy
+704,2,Dayton,Montgomery,OH,54.0,,43.0,29.94,16.1,Partly Cloudy
+705,2,Dayton,Montgomery,OH,54.0,,43.0,29.94,16.1,Partly Cloudy
+706,2,Dayton,Montgomery,OH,54.0,,43.0,29.94,16.1,Partly Cloudy
+707,2,Dayton,Montgomery,OH,55.0,,31.0,29.92,21.9,Scattered Clouds
+708,3,Grove City,Franklin,OH,57.2,,31.0,29.89,16.1,Scattered Clouds
+709,3,Columbus,Franklin,OH,52.0,,34.0,29.92,11.5,Scattered Clouds
+710,2,Dayton,Montgomery,OH,38.3,,72.0,29.98,,Clear
+711,2,Dayton,Montgomery,OH,39.7,37.6,72.0,30.0,3.5,Overcast
+712,2,Dayton,Montgomery,OH,37.0,34.5,70.0,30.0,3.5,Clear
+713,2,Dayton,Montgomery,OH,46.0,41.0,51.0,30.02,10.4,Scattered Clouds
+714,2,Dayton,Montgomery,OH,50.0,,38.0,30.06,12.7,Scattered Clouds
+715,2,Dayton,Montgomery,OH,50.0,,44.0,30.05,12.7,Clear
+716,2,Dayton,Montgomery,OH,51.1,,35.0,30.06,11.5,Clear
+717,2,Dayton,Montgomery,OH,52.0,,32.0,30.07,15.0,Scattered Clouds
+718,2,Dayton,Montgomery,OH,55.0,,30.0,30.06,17.3,Scattered Clouds
+719,3,Sunbury,Delaware,OH,53.6,,26.0,30.02,15.0,Clear
+720,2,Dayton,Montgomery,OH,55.9,,26.0,30.06,17.3,Clear
+721,2,Dayton,Montgomery,OH,57.0,,23.0,30.04,17.3,Clear
+722,2,Dayton,Montgomery,OH,55.4,,25.0,30.04,19.6,Mostly Cloudy
+723,2,Dayton,Montgomery,OH,55.8,,25.0,30.04,15.0,Mostly Cloudy
+724,2,Dayton,Montgomery,OH,55.9,,21.0,30.02,12.7,Clear
+725,3,Westerville,Franklin,OH,53.1,,26.0,30.01,18.4,Mostly Cloudy
+726,3,Akron,Summit,OH,48.9,,39.0,30.0,16.1,Mostly Cloudy
+727,2,London,Madison,OH,51.8,,35.0,30.02,11.5,Clear
+728,3,Vallejo,Solano,CA,75.0,,48.0,30.0,5.8,Clear
+729,3,Hayward,Alameda,CA,75.0,,48.0,30.06,4.6,Clear
+730,2,Walnut Creek,Contra Costa,CA,82.9,,31.0,29.97,4.6,Clear
+731,3,Cupertino,Santa Clara,CA,75.9,,48.0,30.04,4.6,Clear
+732,2,San Jose,Santa Clara,CA,75.2,,41.0,30.06,5.8,Clear
+733,3,Pleasanton,Alameda,CA,82.9,,24.0,30.0,5.8,Clear
+734,3,San Jose,Santa Clara,CA,73.0,,53.0,30.04,4.6,Partly Cloudy
+735,3,San Francisco,San Francisco,CA,71.1,,55.0,30.04,4.6,Partly Cloudy
+736,2,Orinda,Contra Costa,CA,82.9,,31.0,29.97,4.6,Clear
+737,3,Livermore,Alameda,CA,82.9,,24.0,30.0,5.8,Clear
+738,2,Cotati,Sonoma,CA,80.6,,39.0,30.04,5.8,Clear
+739,2,Concord,Contra Costa,CA,82.9,,31.0,29.97,4.6,Clear
+740,3,Livermore,Alameda,CA,82.9,,24.0,30.0,5.8,Clear
+741,2,Sunnyvale,Santa Clara,CA,75.9,,48.0,30.04,4.6,Clear
+742,3,Dublin,Alameda,CA,82.9,,24.0,30.0,5.8,Clear
+743,2,Sacramento,Sacramento,CA,86.0,,26.0,30.0,9.2,Clear
+744,3,Sacramento,Sacramento,CA,86.0,,20.0,30.01,9.2,Clear
+745,2,Sunnyvale,Santa Clara,CA,75.9,,48.0,30.04,4.6,Clear
+746,2,Oakland,Alameda,CA,73.9,,50.0,30.03,8.1,Partly Cloudy
+747,2,Alviso,Santa Clara,CA,82.0,,29.0,30.03,5.8,Clear
+748,3,San Jose,Santa Clara,CA,84.0,,27.0,30.01,8.1,Partly Cloudy
+749,3,Pleasanton,Alameda,CA,88.0,,19.0,29.99,4.6,Clear
+750,2,Morgan Hill,Santa Clara,CA,86.0,,20.0,30.02,12.7,Clear
+751,2,Petaluma,Sonoma,CA,82.4,,37.0,30.04,3.5,Clear
+752,3,Martinez,Contra Costa,CA,88.0,,25.0,29.96,8.1,Clear
+753,2,Petaluma,Sonoma,CA,84.2,,37.0,30.03,4.6,Clear
+754,2,Millbrae,San Mateo,CA,75.9,,38.0,30.03,12.7,Partly Cloudy
+755,3,North Highlands,Sacramento,CA,87.8,,21.0,30.0,9.2,Clear
+756,3,Hayward,Alameda,CA,77.0,,37.0,30.05,8.1,Clear
+757,3,Livermore,Alameda,CA,88.0,,19.0,29.99,4.6,Clear
+758,2,Windsor,Sonoma,CA,82.9,,34.0,29.98,5.8,Clear
+759,3,Alamo,Contra Costa,CA,88.0,,25.0,29.96,8.1,Clear
+760,2,Morgan Hill,Santa Clara,CA,89.6,,21.0,30.01,10.4,Clear
+761,2,San Martin,Santa Clara,CA,89.6,,21.0,30.01,10.4,Clear
+762,2,Healdsburg,Sonoma,CA,90.0,,25.0,29.96,4.6,Partly Cloudy
+763,2,Brisbane,San Mateo,CA,73.0,,44.0,30.02,19.6,Partly Cloudy
+764,2,Palo Alto,Santa Clara,CA,82.4,,45.0,30.01,13.8,Clear
+765,3,San Francisco,San Francisco,CA,73.0,,44.0,30.02,19.6,Partly Cloudy
+766,2,San Francisco,San Francisco,CA,77.0,,40.0,30.03,11.5,Partly Cloudy
+767,3,Milpitas,Santa Clara,CA,87.1,,24.0,30.01,9.2,Partly Cloudy
+768,3,San Jose,Santa Clara,CA,87.1,,24.0,30.01,9.2,Partly Cloudy
+769,3,Davis,Yolo,CA,91.4,,20.0,29.99,5.8,Clear
+770,3,Oakland,Alameda,CA,77.0,,40.0,30.03,11.5,Partly Cloudy
+771,3,Oakland,Alameda,CA,77.0,,40.0,30.03,11.5,Partly Cloudy
+772,3,San Jose,Santa Clara,CA,87.1,,24.0,30.01,9.2,Partly Cloudy
+773,2,Elk Grove,Sacramento,CA,91.9,,20.0,29.97,6.9,Clear
+774,3,Davis,Yolo,CA,93.2,,20.0,29.97,3.5,Clear
+775,2,Sacramento,Sacramento,CA,91.4,,18.0,29.98,6.9,Clear
+776,2,Half Moon Bay,San Mateo,CA,60.8,,77.0,30.07,17.3,Haze
+777,2,Menlo Park,San Mateo,CA,80.6,,48.0,30.0,13.8,Clear
+778,2,Elk Grove,Sacramento,CA,93.9,,17.0,29.96,6.9,Clear
+779,3,Tracy,Alameda,CA,93.9,,19.0,29.96,4.6,Clear
+780,2,Carmichael,Sacramento,CA,93.2,,12.0,29.97,6.9,Clear
+781,3,Oakland,Alameda,CA,79.0,,38.0,30.01,12.7,Partly Cloudy
+782,2,Granite Bay,Placer,CA,93.2,,12.0,29.97,6.9,Clear
+783,3,Union City,Alameda,CA,82.9,,26.0,30.03,11.5,Clear
+784,3,Davis,Yolo,CA,93.2,,20.0,29.96,,Clear
+785,2,Pleasant Hill,Contra Costa,CA,98.1,,11.0,29.91,11.5,Clear
+786,2,San Jose,Santa Clara,CA,93.2,,16.0,29.99,15.0,Clear
+787,2,San Mateo,San Mateo,CA,84.2,,33.0,29.99,10.4,Partly Cloudy
+788,3,San Francisco,San Francisco,CA,71.1,,47.0,30.0,24.2,Partly Cloudy
+789,3,Oakland,Alameda,CA,77.0,,40.0,30.0,15.0,Partly Cloudy
+790,2,Concord,Contra Costa,CA,98.1,,11.0,29.91,11.5,Clear
+791,2,Rancho Cordova,Sacramento,CA,96.8,,17.0,29.93,10.4,Clear
+792,2,Nevada City,Nevada,CA,87.8,,19.0,30.12,8.1,Clear
+793,2,Sacramento,Sacramento,CA,97.0,,13.0,29.91,3.5,Clear
+794,3,Palo Alto,San Mateo,CA,78.8,,51.0,29.97,17.3,Clear
+795,3,Vacaville,Solano,CA,99.0,,18.0,29.92,8.1,Clear
+796,2,Roseville,Placer,CA,95.0,,12.0,29.92,8.1,Clear
+797,2,Isleton,Sacramento,CA,96.8,,17.0,29.91,10.4,Clear
+798,3,Sacramento,Sacramento,CA,97.0,,16.0,29.88,5.8,Clear
+799,2,Sacramento,Sacramento,CA,98.6,,10.0,29.87,4.6,Clear
+800,2,Lincoln,Placer,CA,96.8,,11.0,29.86,3.5,Clear
+801,3,Sacramento,Sacramento,CA,93.9,,23.0,29.87,12.7,Clear
+802,2,El Dorado,El Dorado,CA,86.0,,18.0,30.06,3.5,Clear
+803,2,Corte Madera,Marin,CA,77.0,,32.0,29.94,3.5,Clear
+804,3,San Leandro,Alameda,CA,66.0,,59.0,29.99,8.1,Clear
+805,3,Danville,Contra Costa,CA,84.0,,15.0,29.88,11.5,Clear
+806,2,Los Gatos,Santa Clara,CA,73.0,,42.0,29.97,12.7,Clear
+807,3,Pleasanton,Alameda,CA,80.1,,27.0,29.93,9.2,Clear
+808,2,San Francisco,San Francisco,CA,61.0,,67.0,29.98,20.7,Partly Cloudy
+809,3,Castro Valley,Alameda,CA,66.0,,59.0,29.99,8.1,Clear
+810,3,Tracy,San Joaquin,CA,88.0,,24.0,29.89,15.0,Clear
+811,3,Livermore,Alameda,CA,80.1,,27.0,29.93,9.2,Clear
+812,3,Stockton,San Joaquin,CA,81.0,,31.0,29.9,6.9,Clear
+813,2,Willits,Mendocino,CA,78.1,,32.0,29.94,9.2,Clear
+814,2,Sacramento,Sacramento,CA,80.1,,23.0,29.88,9.2,Clear
+815,3,Roseville,Placer,CA,80.6,,23.0,29.89,9.2,Clear
+816,3,Roseville,Placer,CA,80.6,,23.0,29.89,9.2,Clear
+817,2,Granite Bay,Placer,CA,80.6,,23.0,29.89,9.2,Clear
+818,2,Santa Rosa,Sonoma,CA,59.0,,69.0,29.92,4.6,Clear
+819,3,Los Altos,Santa Clara,CA,64.0,,73.0,30.01,10.4,Clear
+820,3,San Jose,Santa Clara,CA,64.9,,63.0,29.99,5.8,Clear
+821,2,Richmond,Contra Costa,CA,72.0,,38.0,29.89,10.4,Clear
+822,3,Dixon,Solano,CA,69.8,,40.0,29.89,4.6,Clear
+823,2,Sacramento,Sacramento,CA,71.1,,41.0,29.87,9.2,Clear
+824,3,Hayward,Alameda,CA,59.0,,72.0,30.02,8.1,Clear
+825,2,Nevada City,Nevada,CA,73.4,,23.0,30.08,,Clear
+826,2,Nice,Lake,CA,64.0,,54.0,29.94,,Clear
+827,3,Oakland,Alameda,CA,57.9,,75.0,29.99,6.9,Partly Cloudy
+828,2,Antioch,Contra Costa,CA,62.1,,60.0,29.89,16.1,Clear
+829,2,Angwin,Napa,CA,52.0,,86.0,29.92,,Clear
+830,3,Walnut Creek,Contra Costa,CA,62.1,,60.0,29.89,16.1,Clear
+831,3,San Jose,Santa Clara,CA,64.4,,64.0,30.02,5.8,Clear
+832,2,San Jose,Santa Clara,CA,59.0,,78.0,29.97,3.5,Clear
+833,3,San Francisco,San Francisco,CA,55.9,,80.0,29.98,10.4,Mostly Cloudy
+834,2,Hayward,Alameda,CA,57.0,,74.0,30.01,8.1,Partly Cloudy
+835,3,Newark,Alameda,CA,57.2,,88.0,29.99,,Haze
+836,2,Novato,Marin,CA,50.0,,94.0,29.98,,Clear
+837,2,Burlingame,San Mateo,CA,55.9,,80.0,30.0,10.4,Partly Cloudy
+838,3,Sacramento,Sacramento,CA,64.4,,56.0,29.92,12.7,Clear
+839,3,Sunol,Alameda,CA,62.1,,65.0,29.97,8.1,Clear
+840,2,Placerville,El Dorado,CA,77.0,,24.0,30.03,6.9,Clear
+841,3,Fairfield,Solano,CA,62.1,,70.0,29.96,10.4,Clear
+842,2,Scotts Valley,Santa Cruz,CA,57.0,,87.0,30.03,,Overcast
+843,3,Livermore,Alameda,CA,66.0,,56.0,29.97,8.1,Clear
+844,2,Linden,San Joaquin,CA,80.1,,32.0,29.93,4.6,Clear
+845,2,Santa Clara,Santa Clara,CA,70.0,,53.0,30.0,6.9,Clear
+846,3,San Pablo,Contra Costa,CA,72.0,,43.0,29.92,12.7,Clear
+847,3,Pinole,Contra Costa,CA,72.0,,43.0,29.92,12.7,Clear
+848,2,Redwood City,San Mateo,CA,66.2,,52.0,30.01,10.4,Partly Cloudy
+849,2,Rancho Cordova,Sacramento,CA,73.4,,41.0,29.93,5.8,Clear
+850,3,Union City,Alameda,CA,61.0,,64.0,30.05,12.7,Partly Cloudy
+851,2,Concord,Contra Costa,CA,72.0,,43.0,29.92,12.7,Clear
+852,3,Dublin,Alameda,CA,70.0,,49.0,29.97,6.9,Clear
+853,3,Sacramento,Sacramento,CA,75.2,,38.0,29.94,9.2,Clear
+854,2,Redwood City,San Mateo,CA,66.2,,52.0,30.02,13.8,Partly Cloudy
+855,2,Salinas,Monterey,CA,64.0,,63.0,30.04,6.9,Clear
+856,3,Oakland,Alameda,CA,61.0,,70.0,30.03,6.9,Mostly Cloudy
+857,3,Sacramento,Sacramento,CA,77.0,,43.0,29.93,6.9,Clear
+858,2,Novato,Marin,CA,69.8,,53.0,29.98,8.1,Clear
+859,2,Petaluma,Sonoma,CA,68.0,,52.0,30.0,6.9,Clear
+860,3,Richmond,Contra Costa,CA,75.0,,40.0,29.92,16.1,Clear
+861,2,Orinda,Contra Costa,CA,75.0,,40.0,29.92,16.1,Clear
+862,2,Soquel,Santa Cruz,CA,66.9,,63.0,30.03,4.6,Clear
+863,2,Monterey,Monterey,CA,57.9,,78.0,30.1,10.4,Scattered Clouds
+864,3,Livermore,Alameda,CA,75.0,,41.0,29.97,10.4,Clear
+865,2,Salinas,Monterey,CA,63.0,,67.0,30.05,15.0,Clear
+866,3,Vallejo,Solano,CA,69.1,,57.0,29.95,13.8,Clear
+867,3,Fremont,Alameda,CA,66.9,,63.0,30.03,9.2,Clear
+868,3,Milpitas,Santa Clara,CA,72.0,,49.0,30.01,6.9,Clear
+869,3,Sunol,Alameda,CA,75.0,,41.0,29.97,10.4,Clear
+870,3,Hercules,Contra Costa,CA,75.0,,40.0,29.92,16.1,Clear
+871,3,Oakland,Alameda,CA,62.1,,67.0,30.03,8.1,Scattered Clouds
+872,3,Martinez,Contra Costa,CA,75.0,,40.0,29.92,16.1,Clear
+873,3,Sunol,Alameda,CA,78.1,,37.0,29.97,9.2,Clear
+874,2,Seaside,Monterey,CA,57.9,,78.0,30.06,11.5,Overcast
+875,2,San Jose,Santa Clara,CA,77.0,,41.0,30.02,16.1,Clear
+876,2,Sacramento,Sacramento,CA,77.0,,43.0,29.93,6.9,Clear
+877,3,Sacramento,Sacramento,CA,80.6,,32.0,29.94,8.1,Clear
+878,2,Sacramento,Sacramento,CA,82.4,,32.0,29.93,5.8,Clear
+879,3,Tracy,Alameda,CA,78.1,,37.0,29.97,9.2,Clear
+880,3,Pinole,Contra Costa,CA,78.1,,35.0,29.92,17.3,Clear
+881,2,Cupertino,Santa Clara,CA,69.1,,58.0,30.03,10.4,Clear
+882,2,Saratoga,Santa Clara,CA,72.0,,53.0,30.01,10.4,Clear
+883,2,Sacramento,Sacramento,CA,81.0,,38.0,29.93,5.8,Clear
+884,2,Elk Grove,Sacramento,CA,81.0,,38.0,29.93,5.8,Clear
+885,3,Walnut Creek,Contra Costa,CA,81.0,,30.0,29.91,15.0,Clear
+886,2,Stockton,San Joaquin,CA,88.0,,21.0,29.93,11.5,Clear
+887,3,Hercules,Contra Costa,CA,81.0,,30.0,29.91,15.0,Clear
+888,3,San Leandro,Alameda,CA,64.0,,60.0,30.05,11.5,Clear
+889,3,Cupertino,Santa Clara,CA,69.1,,58.0,30.03,11.5,Clear
+890,2,Santa Clara,Santa Clara,CA,73.9,,50.0,30.0,11.5,Clear
+891,2,Brisbane,San Mateo,CA,63.0,,63.0,30.03,21.9,Partly Cloudy
+892,3,American Canyon,Solano,CA,73.9,,50.0,29.94,15.0,Clear
+893,3,Oakland,Alameda,CA,64.9,,61.0,30.02,11.5,Partly Cloudy
+894,2,Saratoga,Santa Clara,CA,73.9,,50.0,30.0,11.5,Clear
+895,3,San Francisco,San Francisco,CA,64.9,,61.0,30.02,11.5,Partly Cloudy
+896,3,Oakland,Alameda,CA,64.9,,61.0,30.02,11.5,Partly Cloudy
+897,2,Orinda,Contra Costa,CA,81.0,,30.0,29.91,15.0,Clear
+898,2,Sacramento,Sacramento,CA,84.0,,33.0,29.92,8.1,Clear
+899,2,San Mateo,San Mateo,CA,71.6,,50.0,30.0,12.7,Partly Cloudy
+900,2,Sacramento,Sacramento,CA,89.6,,24.0,29.91,3.5,Clear
+901,3,Oakland,Alameda,CA,64.9,,61.0,30.02,9.2,Partly Cloudy
+902,2,Martinez,Contra Costa,CA,82.9,,29.0,29.9,13.8,Clear
+903,3,Sacramento,Sacramento,CA,89.6,,22.0,29.91,,Clear
+904,3,Sacramento,Sacramento,CA,89.6,,22.0,29.91,,Clear
+905,3,Newark,Alameda,CA,69.8,,64.0,30.0,18.4,Clear
+906,2,Wilton,Sacramento,CA,89.6,,24.0,29.9,9.2,Clear
+907,3,Sacramento,Sacramento,CA,87.1,,27.0,29.9,5.8,Clear
+908,2,Pittsburg,Contra Costa,CA,84.0,,27.0,29.89,12.7,Clear
+909,2,Grass Valley,Nevada,CA,84.2,,15.0,30.06,6.9,Clear
+910,2,Santa Cruz,Santa Cruz,CA,71.1,,53.0,30.0,9.2,Clear
+911,2,Fremont,Alameda,CA,70.0,,59.0,30.01,12.7,Clear
+912,2,Lodi,San Joaquin,CA,95.0,,19.0,29.9,11.5,Clear
+913,2,Sonoma,Sonoma,CA,75.2,,41.0,29.99,11.5,Clear
+914,2,Sacramento,Sacramento,CA,93.2,,19.0,29.89,8.1,Clear
+915,3,San Francisco,San Francisco,CA,66.0,,59.0,30.01,13.8,Partly Cloudy
+916,3,San Jose,Santa Clara,CA,75.0,,48.0,29.98,13.8,Clear
+917,2,Auburn,Placer,CA,91.4,,20.0,29.97,5.8,Clear
+918,3,Roseville,Placer,CA,93.2,,19.0,29.88,10.4,Clear
+919,2,Nevada City,Nevada,CA,84.2,,13.0,30.05,5.8,Clear
+920,3,Milpitas,Santa Clara,CA,73.0,,51.0,29.98,16.1,Clear
+921,2,Sacramento,Sacramento,CA,93.2,,19.0,29.87,11.5,Clear
+922,2,Sacramento,Sacramento,CA,93.2,,17.0,29.87,10.4,Clear
+923,2,Orangevale,Sacramento,CA,93.2,,19.0,29.87,11.5,Clear
+924,2,Grass Valley,Nevada,CA,86.0,,13.0,30.05,4.6,Clear
+925,3,Davis,Yolo,CA,89.6,,29.0,29.85,8.1,Clear
+926,2,Fremont,Alameda,CA,63.0,,63.0,30.02,9.2,Clear
+927,3,Auburn,Placer,CA,91.4,,15.0,29.95,6.9,Clear
+928,2,Auburn,Placer,CA,91.4,,17.0,29.95,8.1,Clear
+929,3,San Jose,Santa Clara,CA,72.0,,49.0,29.98,11.5,Clear
+930,3,San Jose,Santa Clara,CA,71.1,,47.0,29.99,9.2,Clear
+931,3,Emeryville,Alameda,CA,63.0,,65.0,30.0,11.5,Partly Cloudy
+932,3,South San Francisco,San Mateo,CA,62.1,,62.0,30.0,12.7,Partly Cloudy
+933,3,Castro Valley,Alameda,CA,64.0,,60.0,30.03,12.7,Clear
+934,3,Alamo,Contra Costa,CA,75.9,,38.0,29.88,16.1,Clear
+935,2,Elk Grove,Sacramento,CA,84.0,,31.0,29.85,9.2,Clear
+936,3,Sacramento,Sacramento,CA,86.0,,27.0,29.86,10.4,Clear
+937,3,Davis,Solano,CA,84.2,,30.0,29.85,10.4,Clear
+938,3,Sacramento,Sacramento,CA,78.1,,37.0,29.86,8.1,Clear
+939,3,Sacramento,Sacramento,CA,78.1,,37.0,29.86,8.1,Clear
+940,3,Auburn,Placer,CA,87.8,,21.0,29.95,8.1,Clear
+941,3,Sacramento,Sacramento,CA,82.4,,30.0,29.87,12.7,Clear
+942,3,Lathrop,San Joaquin,CA,81.0,,21.0,29.88,16.1,Clear
+943,3,Lathrop,San Joaquin,CA,81.0,,21.0,29.88,16.1,Clear
+944,3,Sacramento,Sacramento,CA,82.4,,30.0,29.87,12.7,Clear
+945,2,Cameron Park,El Dorado,CA,75.2,,21.0,30.03,6.9,Clear
+946,2,Tracy,San Joaquin,CA,81.0,,21.0,29.88,16.1,Clear
+947,3,San Jose,Santa Clara,CA,64.0,,63.0,30.0,6.9,Clear
+948,3,Roseville,Placer,CA,77.0,,34.0,29.88,15.0,Clear
+949,2,Grass Valley,Nevada,CA,75.2,,27.0,30.04,,Clear
+950,2,North Highlands,Sacramento,CA,75.2,,36.0,29.89,11.5,Clear
+951,3,San Bruno,San Mateo,CA,57.0,,77.0,30.02,12.7,Partly Cloudy
+952,3,Fremont,Alameda,CA,59.0,,69.0,30.05,8.1,Clear
+953,2,Sacramento,Sacramento,CA,71.6,,41.0,29.91,9.2,Clear
+954,2,Sonoma,Sonoma,CA,53.6,,88.0,30.01,,Mostly Cloudy
+955,3,San Francisco,San Francisco,CA,59.0,,75.0,30.01,12.7,Partly Cloudy
+956,2,Modesto,Stanislaus,CA,78.1,,15.0,29.91,10.4,Clear
+957,2,Placerville,El Dorado,CA,69.8,,28.0,30.05,9.2,Clear
+958,3,Fairfield,Solano,CA,55.9,,80.0,29.96,9.2,Light Rain
+959,3,San Jose,Santa Clara,CA,59.0,,72.0,30.03,3.5,Clear
+960,1,Tracy,San Joaquin,CA,66.0,,42.0,29.94,6.9,Clear
+961,2,San Jose,Santa Clara,CA,59.0,,72.0,30.03,5.8,Clear
+962,3,Los Altos,Santa Clara,CA,55.9,,84.0,30.05,3.5,Clear
+963,2,Castro Valley,Alameda,CA,57.0,,77.0,30.04,10.4,Scattered Clouds
+964,3,San Jose,Santa Clara,CA,57.9,,75.0,30.04,4.6,Clear
+965,3,Pleasanton,Alameda,CA,55.0,,80.0,30.01,10.4,Clear
+966,3,Pleasanton,Alameda,CA,55.9,,77.0,30.01,12.7,Clear
+967,3,Oakland,Alameda,CA,55.9,,80.0,30.04,8.1,Overcast
+968,3,Fairfield,Solano,CA,54.0,,83.0,29.98,5.8,Light Rain
+969,2,San Francisco,San Francisco,CA,54.0,,86.0,30.04,11.5,Partly Cloudy
+970,2,Castro Valley,Alameda,CA,57.0,,77.0,30.06,9.2,Mostly Cloudy
+971,3,Berkeley,Alameda,CA,55.9,,80.0,30.06,4.6,Mostly Cloudy
+972,2,San Francisco,San Francisco,CA,57.9,,78.0,30.07,,Scattered Clouds
+973,2,Lathrop,San Joaquin,CA,68.0,,49.0,30.02,4.6,Clear
+974,2,Lincoln,Placer,CA,64.4,,45.0,29.98,10.4,Clear
+975,2,Stockton,San Joaquin,CA,62.1,,58.0,30.0,4.6,Clear
+976,3,Burlingame,San Mateo,CA,59.0,,72.0,30.08,16.1,Partly Cloudy
+977,3,San Jose,Santa Clara,CA,64.0,,65.0,30.08,3.5,Clear
+978,2,Gilroy,Santa Clara,CA,64.4,,68.0,30.09,3.5,Clear
+979,2,Sacramento,Sacramento,CA,68.0,,46.0,30.03,10.4,Clear
+980,3,Fairfield,Solano,CA,66.0,,54.0,30.04,6.9,Clear
+981,3,San Jose,Santa Clara,CA,66.2,,56.0,30.1,,Clear
+982,3,Lathrop,San Joaquin,CA,72.0,,38.0,30.02,,Clear
+983,2,Roseville,Placer,CA,71.6,,38.0,30.03,8.1,Clear
+984,2,Petaluma,Sonoma,CA,64.4,,56.0,30.09,5.8,Clear
+985,3,Sacramento,Sacramento,CA,71.6,,38.0,30.03,8.1,Clear
+986,2,Escalon,San Joaquin,CA,79.0,,29.0,30.01,8.1,Clear
+987,3,San Francisco,San Francisco,CA,61.0,,62.0,30.08,19.6,Partly Cloudy
+988,3,San Jose,Santa Clara,CA,68.0,,50.0,30.08,,Clear
+989,3,San Jose,Santa Clara,CA,68.0,,50.0,30.08,,Clear
+990,2,Byron,Contra Costa,CA,71.1,,44.0,30.05,9.2,Clear
+991,2,Penryn,Placer,CA,78.8,,20.0,30.06,5.8,Clear
+992,2,Walnut Creek,Contra Costa,CA,75.0,,26.0,30.0,8.1,Clear
+993,3,Pleasanton,Alameda,CA,71.1,,44.0,30.05,9.2,Clear
+994,3,Davis,Yolo,CA,75.2,,41.0,30.03,4.6,Clear
+995,2,Pittsburg,Contra Costa,CA,78.1,,24.0,30.01,9.2,Clear
+996,3,Pleasanton,Alameda,CA,71.1,,44.0,30.05,9.2,Clear
+997,2,North Highlands,Sacramento,CA,77.0,,34.0,30.03,5.8,Clear
+998,2,Citrus Heights,Sacramento,CA,77.0,,34.0,30.03,5.8,Clear
+999,2,El Dorado Hills,El Dorado,CA,77.0,,34.0,30.02,3.5,Clear
