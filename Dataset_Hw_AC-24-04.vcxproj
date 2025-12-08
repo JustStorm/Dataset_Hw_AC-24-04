@@ -124,11 +124,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AoSdataset.cpp" />
     <ClCompile Include="Dataset_Hw_AC-24-04.cpp" />
-    <ClCompile Include="read_dataset.cpp" />
+    <ClCompile Include="SoAdataset.cpp" />
+    <ClCompile Include="utils.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="read_dataset.h" />
+    <ClInclude Include="AoSdataset.h" />
+    <ClInclude Include="SoAdataset.h" />
+    <ClInclude Include="utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

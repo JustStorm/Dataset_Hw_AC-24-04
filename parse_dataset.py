@@ -7,13 +7,18 @@ import pathlib
 # 
 
 # Кол-во строк
-read_amount = 1_000
+read_amount = 10_000
 
 inputfile = 'US_Accidents_March23.csv'
 # inputfile = 'small.csv'
 
 # outfile = 'output.csv'
 outfile = f'Accidents_{read_amount // 1000}k.csv'
+
+
+
+read_amount = 999999999999
+outfile = f'Accidents_full.csv'
 
 # 
 # КОНЕЦ НАСТРОЕК
