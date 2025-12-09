@@ -11,7 +11,7 @@
 
 struct accident {
 	int id;                  // 0
-	char severity;           // 2
+	short int severity;           // 2
 	char city[20];           // 12
 	char county[20];         // 13
 	char state[3];           // 14
