@@ -85,7 +85,7 @@ const float SoAdataset::get_temperature(int index) {
 	return temperature[index];
 }
 const float SoAdataset::get_wind_temperature(int index) {
-	return temperature[index];
+	return wind_temperature[index];
 }
 const float SoAdataset::get_humidity_percent(int index) {
 	return humidity_percent[index];

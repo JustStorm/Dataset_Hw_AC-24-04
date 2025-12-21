@@ -1,5 +1,4 @@
-﻿#pragma once
-#include "FilterDataset.h"
+﻿#include "FilterDataset.h"
 #include "utils.h"
 
 using namespace std;

@@ -1,6 +1,4 @@
 #pragma once
-#ifndef SOADATASET_H
-#define SOADATASET_H
 
 #include <fstream>
 #include <iostream>
@@ -47,5 +45,3 @@ public:
 	const float get_wind_speed(int index);
 	const char* get_weather_condition(int index);
 };
-
-#endif
