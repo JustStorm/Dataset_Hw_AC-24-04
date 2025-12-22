@@ -25,6 +25,81 @@ void SoAdataset::swapitems(int index1, int index2) {
 	std::swap(weather_condition[index1], weather_condition[index2]);
 }
 
+void SoAdataset::insert() {
+	int index = size / 2;
+	int count = size / 2;
+    if (count <= 0) return;  
+    if (index < 0) index = 0;  
+    if (index > size) index = size;
+
+    int new_size = size + count;
+
+    int* new_id = new int[new_size];
+    short int* new_severity = new short int[new_size];
+    char (*new_city)[20] = new char[new_size][20];
+    char (*new_county)[20] = new char[new_size][20];
+    char (*new_state)[3] = new char[new_size][3];
+    float* new_temperature = new float[new_size];
+    float* new_wind_temperature = new float[new_size];
+    float* new_humidity_percent = new float[new_size];
+    float* new_pressure = new float[new_size];
+    float* new_wind_speed = new float[new_size];
+    char (*new_weather_condition)[15] = new char[new_size][15];
+
+    std::memcpy(new_id, id, index * sizeof(int));
+    std::memcpy(new_severity, severity, index * sizeof(short int));
+    std::memcpy(new_city, city, index * sizeof(char[20]));
+    std::memcpy(new_county, county, index * sizeof(char[20]));
+    std::memcpy(new_state, state, index * sizeof(char[3]));
+    std::memcpy(new_temperature, temperature, index * sizeof(float));
+    std::memcpy(new_wind_temperature, wind_temperature, index * sizeof(float));
+    std::memcpy(new_humidity_percent, humidity_percent, index * sizeof(float));
+    std::memcpy(new_pressure, pressure, index * sizeof(float));
+    std::memcpy(new_wind_speed, wind_speed, index * sizeof(float));
+    std::memcpy(new_weather_condition, weather_condition, index * sizeof(char[15]));
+
+    for (int i = 0; i < count; ++i) {
+        int pos = index + i;
+        new_id[pos] = count; 
+        new_severity[pos] = static_cast<short int>(count);
+        strncpy(new_city[pos], "new_city", 19); new_city[pos][19] = '\0';
+        strncpy(new_county[pos], "new_county", 19); new_county[pos][19] = '\0';
+        strncpy(new_state[pos], "ns", 2); new_state[pos][2] = '\0'; 
+        new_temperature[pos] = static_cast<float>(count);
+        new_wind_temperature[pos] = static_cast<float>(count);
+        new_humidity_percent[pos] = static_cast<float>(count);
+        new_pressure[pos] = static_cast<float>(count);
+        new_wind_speed[pos] = static_cast<float>(count);
+        strncpy(new_weather_condition[pos], "new_weather", 14); new_weather_condition[pos][14] = '\0';
+    }
+
+    std::memcpy(new_id + index + count, id + index, (size - index) * sizeof(int));
+    std::memcpy(new_severity + index + count, severity + index, (size - index) * sizeof(short int));
+    std::memcpy(new_city + index + count, city + index, (size - index) * sizeof(char[20]));
+    std::memcpy(new_county + index + count, county + index, (size - index) * sizeof(char[20]));
+    std::memcpy(new_state + index + count, state + index, (size - index) * sizeof(char[3]));
+    std::memcpy(new_temperature + index + count, temperature + index, (size - index) * sizeof(float));
+    std::memcpy(new_wind_temperature + index + count, wind_temperature + index, (size - index) * sizeof(float));
+    std::memcpy(new_humidity_percent + index + count, humidity_percent + index, (size - index) * sizeof(float));
+    std::memcpy(new_pressure + index + count, pressure + index, (size - index) * sizeof(float));
+    std::memcpy(new_wind_speed + index + count, wind_speed + index, (size - index) * sizeof(float));
+    std::memcpy(new_weather_condition + index + count, weather_condition + index, (size - index) * sizeof(char[15]));
+
+    delete[] id; id = new_id;
+    delete[] severity; severity = new_severity;
+    delete[] city; city = reinterpret_cast<char (*)[20]>(new_city);
+    delete[] county; county = reinterpret_cast<char (*)[20]>(new_county);
+    delete[] state; state = reinterpret_cast<char (*)[3]>(new_state);
+    delete[] temperature; temperature = new_temperature;
+    delete[] wind_temperature; wind_temperature = new_wind_temperature;
+    delete[] humidity_percent; humidity_percent = new_humidity_percent;
+    delete[] pressure; pressure = new_pressure;
+    delete[] wind_speed; wind_speed = new_wind_speed;
+    delete[] weather_condition; weather_condition = reinterpret_cast<char (*)[15]>(new_weather_condition);
+
+    size = new_size;
+}
+
 void SoAdataset::alloc_data() {
 	free_data();
 	id = new int[size];

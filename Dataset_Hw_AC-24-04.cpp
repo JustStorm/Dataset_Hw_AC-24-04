@@ -16,9 +16,11 @@ int main()
     //const char fname[] = "./dataset/output.csv";
 
     SoAdataset SoA(fname, 100000);
-    AoSdataset AoS(fname, 100000);
+    // AoSdataset AoS(fname, 100000);
+    SoVdataset SoV(fname, 100000);
 
-    ComparisonTime(SoA, AoS);
+
+    ComparisonTime(SoA, SoV);
 
     return 0;
 

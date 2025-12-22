@@ -1,10 +1,19 @@
 #pragma once
 #include "SoAdataset.h"
 #include "AoSdataset.h"
+#include "SoVdataset.h"
 
 
 template <typename dataset>
+void AddItems(dataset& list) {
+	int sz = list.get_size();
+	for (int i = 0, j = sz / 2; i < sz; i++, j++) {
 
+	}
+}
+
+
+template <typename dataset>
 void FilterForTemperature(dataset& list) {
 	int cnt = 0;
 	for (int i = 0; i < list.get_size(); i++) {
@@ -46,4 +55,9 @@ void SearchForTemperatureAndWindspeed(dataset& list) {
 		if (list.get_temperature(i) == 36.0 && list.get_wind_speed(i) == 3.5)
 			cnt++;
 	}
+}
+
+template <typename dataset>
+void InsertItems(dataset& list) {
+    list.insert();
 }

@@ -28,26 +28,3 @@ void parse_spaces(ifstream& input, stringstream& output) {
 	}
 }
 
-void ComparisonTime(SoAdataset& SoA, AoSdataset& AoS) {
-	std::cout << "Test 1 SoA" << std::endl;
-	timeit(FilterForTemperature<SoAdataset>, SoA);
-	std::cout << "Test 1 AoS" << std::endl;
-	timeit(FilterForTemperature<AoSdataset>, AoS);
-	std::cout << "Test 2 SoA" << std::endl;
-	timeit(SortForTemperature<SoAdataset>, SoA);
-	std::cout << "Test 2 AoS" << std::endl;
-	timeit(SortForTemperature<AoSdataset>, AoS);
-	std::cout << "Test 3 SoA" << std::endl;
-	timeit(SearchForTemperature<SoAdataset>, SoA);
-	std::cout << "Test 3 AoS" << std::endl;
-	timeit(SearchForTemperature<AoSdataset>, AoS);
-	std::cout << "Test 4 SoA" << std::endl;
-	timeit(FilterForTemperatureAndWindspeed<SoAdataset>, SoA);
-	std::cout << "Test 4 AoS" << std::endl;
-	timeit(FilterForTemperatureAndWindspeed<AoSdataset>, AoS);
-	std::cout << "Test 5 SoA" << std::endl;
-	timeit(SearchForTemperatureAndWindspeed<SoAdataset>, SoA);
-	std::cout << "Test 5 AoS" << std::endl;
-	timeit(SearchForTemperatureAndWindspeed<AoSdataset>, AoS);
-
-}
