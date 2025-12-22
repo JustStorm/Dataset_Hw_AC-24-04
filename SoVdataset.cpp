@@ -133,11 +133,11 @@ void SoVdataset::insert() {
 
     id.insert(id.begin() + index, count, 999999);
     severity.insert(severity.begin() + index, count, static_cast<short int>(2));
-    temperature.insert(temperature.begin() + index, count, 50.0f);
-    wind_temperature.insert(wind_temperature.begin() + index, count, 45.0f);
-    humidity_percent.insert(humidity_percent.begin() + index, count, 70.0f);
-    pressure.insert(pressure.begin() + index, count, 30.0f);
-    wind_speed.insert(wind_speed.begin() + index, count, 10.0f);
+    temperature.insert(temperature.begin() + index, count, 50.);
+    wind_temperature.insert(wind_temperature.begin() + index, count, 45.);
+    humidity_percent.insert(humidity_percent.begin() + index, count, 70.);
+    pressure.insert(pressure.begin() + index, count, 30.);
+    wind_speed.insert(wind_speed.begin() + index, count, 10.);
 
     std::array<char, 20> new_city{};
     std::memcpy(new_city.data(), "new_city\0", 9);
@@ -157,6 +157,23 @@ void SoVdataset::insert() {
     weather_condition.insert(weather_condition.begin() + index, count, new_weather);
 
     size += count;  
+}
+
+void SoVdataset::delete_item(int index) {
+	id.erase(id.begin() + index);
+	severity.erase(severity.begin() + index);
+	temperature.erase(temperature.begin() + index);
+	wind_temperature.erase(wind_temperature.begin() + index);
+	humidity_percent.erase(humidity_percent.begin() + index);
+	pressure.erase(pressure.begin() + index);
+	wind_speed.erase(wind_speed.begin() + index);
+
+	city.erase(city.begin() + index);
+	county.erase(county.begin() + index);
+	state.erase(state.begin() + index);
+	weather_condition.erase(weather_condition.begin() + index);
+
+	size--;  
 }
 
 SoVdataset::SoVdataset(string fname, int sz) {

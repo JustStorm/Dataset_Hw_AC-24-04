@@ -44,4 +44,5 @@ public:
     const char* get_weather_condition(int index);
 
     void insert();
+    void delete_item(int index);
 };

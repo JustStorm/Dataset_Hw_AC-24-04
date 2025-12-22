@@ -25,12 +25,26 @@ void SoAdataset::swapitems(int index1, int index2) {
 	std::swap(weather_condition[index1], weather_condition[index2]);
 }
 
+void SoAdataset::delete_item(int index) {
+	for (int i = index + 1; i < size; i++) {
+		id[i - 1] = id[i];
+		severity[i - 1] = severity[i];
+		strncpy(city[i - 1], city[i], 19); city[i - 1][19] = '\0';
+		strncpy(county[i - 1], county[i], 19); county[i - 1][19] = '\0';
+		strncpy(state[i - 1], state[i], 2); state[i - 1][2] = '\0';
+		temperature[i - 1] = temperature[i];
+		wind_temperature[i - 1] = wind_temperature[i];
+		humidity_percent[i - 1] = humidity_percent[i];
+		pressure[i - 1] = pressure[i];
+		wind_speed[i - 1] = wind_speed[i];
+		strncpy(weather_condition[i - 1], weather_condition[i], 14); weather_condition[i - 1][14] = '\0';
+	}
+	size--;
+}
+
 void SoAdataset::insert() {
 	int index = size / 2;
 	int count = size / 2;
-    if (count <= 0) return;  
-    if (index < 0) index = 0;  
-    if (index > size) index = size;
 
     int new_size = size + count;
 
@@ -46,17 +60,19 @@ void SoAdataset::insert() {
     float* new_wind_speed = new float[new_size];
     char (*new_weather_condition)[15] = new char[new_size][15];
 
-    std::memcpy(new_id, id, index * sizeof(int));
-    std::memcpy(new_severity, severity, index * sizeof(short int));
-    std::memcpy(new_city, city, index * sizeof(char[20]));
-    std::memcpy(new_county, county, index * sizeof(char[20]));
-    std::memcpy(new_state, state, index * sizeof(char[3]));
-    std::memcpy(new_temperature, temperature, index * sizeof(float));
-    std::memcpy(new_wind_temperature, wind_temperature, index * sizeof(float));
-    std::memcpy(new_humidity_percent, humidity_percent, index * sizeof(float));
-    std::memcpy(new_pressure, pressure, index * sizeof(float));
-    std::memcpy(new_wind_speed, wind_speed, index * sizeof(float));
-    std::memcpy(new_weather_condition, weather_condition, index * sizeof(char[15]));
+    for (int i = 0; i < index; ++i) {
+		new_id[i] = id[i];
+		new_severity[i] = severity[i];
+		strncpy(new_city[i], city[i], 19); new_city[i][19] = '\0';
+		strncpy(new_county[i], county[i], 19); new_county[i][19] = '\0';
+		strncpy(new_state[i], state[i], 2); new_state[i][2] = '\0';
+		new_temperature[i] = temperature[i];
+		new_wind_temperature[i] = wind_temperature[i];
+		new_humidity_percent[i] = humidity_percent[i];
+		new_pressure[i] = pressure[i];
+		new_wind_speed[i] = wind_speed[i];
+		strncpy(new_weather_condition[i], weather_condition[i], 14); new_weather_condition[i][14] = '\0';
+	}
 
     for (int i = 0; i < count; ++i) {
         int pos = index + i;
@@ -73,18 +89,20 @@ void SoAdataset::insert() {
         strncpy(new_weather_condition[pos], "new_weather", 14); new_weather_condition[pos][14] = '\0';
     }
 
-    std::memcpy(new_id + index + count, id + index, (size - index) * sizeof(int));
-    std::memcpy(new_severity + index + count, severity + index, (size - index) * sizeof(short int));
-    std::memcpy(new_city + index + count, city + index, (size - index) * sizeof(char[20]));
-    std::memcpy(new_county + index + count, county + index, (size - index) * sizeof(char[20]));
-    std::memcpy(new_state + index + count, state + index, (size - index) * sizeof(char[3]));
-    std::memcpy(new_temperature + index + count, temperature + index, (size - index) * sizeof(float));
-    std::memcpy(new_wind_temperature + index + count, wind_temperature + index, (size - index) * sizeof(float));
-    std::memcpy(new_humidity_percent + index + count, humidity_percent + index, (size - index) * sizeof(float));
-    std::memcpy(new_pressure + index + count, pressure + index, (size - index) * sizeof(float));
-    std::memcpy(new_wind_speed + index + count, wind_speed + index, (size - index) * sizeof(float));
-    std::memcpy(new_weather_condition + index + count, weather_condition + index, (size - index) * sizeof(char[15]));
-
+	for (int i = index; i < size; ++i) {
+		int pos = index + i;
+		new_id[pos] = id[i];
+		new_severity[pos] = severity[i];
+		strncpy(new_city[pos], city[i], 19); new_city[pos][19] = '\0';
+		strncpy(new_county[pos], county[i], 19); new_county[pos][19] = '\0';
+		strncpy(new_state[pos], state[i], 2); new_state[pos][2] = '\0';
+		new_temperature[pos] = temperature[i];
+		new_wind_temperature[pos] = wind_temperature[i];
+		new_humidity_percent[pos] = humidity_percent[i];
+		new_pressure[pos] = pressure[i];
+		new_wind_speed[pos] = wind_speed[i];
+		strncpy(new_weather_condition[pos], weather_condition[i], 14); new_weather_condition[pos][14] = '\0';
+	}
     delete[] id; id = new_id;
     delete[] severity; severity = new_severity;
     delete[] city; city = reinterpret_cast<char (*)[20]>(new_city);

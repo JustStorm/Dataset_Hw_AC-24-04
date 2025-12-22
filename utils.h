@@ -22,30 +22,14 @@ void timeit(func function, dataset& list) {
 	std::cout << duration.count() << " microseconds\n";
 }
 
-template <typename dataset1, typename dataset2>
-void ComparisonTime(dataset1& SoA, dataset2& AoS) {
-	std::cout << "Test 1 SoA" << std::endl;
-	timeit(FilterForTemperature<dataset1>, SoA);
-	std::cout << "Test 1 AoS" << std::endl;
-	timeit(FilterForTemperature<dataset2>, AoS);
-	std::cout << "Test 2 SoA" << std::endl;
-	timeit(SortForTemperature<dataset1>, SoA);
-	std::cout << "Test 2 AoS" << std::endl;
-	timeit(SortForTemperature<dataset2>, AoS);
-	std::cout << "Test 3 SoA" << std::endl;
-	timeit(SearchForTemperature<dataset1>, SoA);
-	std::cout << "Test 3 AoS" << std::endl;
-	timeit(SearchForTemperature<dataset2>, AoS);
-	std::cout << "Test 4 SoA" << std::endl;
-	timeit(FilterForTemperatureAndWindspeed<dataset1>, SoA);
-	std::cout << "Test 4 AoS" << std::endl;
-	timeit(FilterForTemperatureAndWindspeed<dataset2>, AoS);
-	std::cout << "Test 5 SoA" << std::endl;
-	timeit(SearchForTemperatureAndWindspeed<dataset1>, SoA);
-	std::cout << "Test 5 AoS" << std::endl;
-	timeit(SearchForTemperatureAndWindspeed<dataset2>, AoS);
-	std::cout << "Test 6 SoA" << std::endl;
-	timeit(InsertItems<dataset1>, SoA);
-	std::cout << "Test 6 SoV" << std::endl;
-	timeit(InsertItems<dataset2>, AoS);
+template <typename dataset>
+void ComparisonTime(dataset& DS) {
+	std::cout << "Deleting one eighth of the elements" << std::endl;
+	timeit(DeleteItems<dataset>, DS);
+	std::cout << "Sorting elements" << std::endl;
+	timeit(SortForTemperature<dataset>, DS);
+	std::cout << "Counting elements passing the filter (read speed)" << std::endl;
+	timeit(SearchForTemperature<dataset>, DS);
+	std::cout << "Adding size / 2 elements" << std::endl;
+	timeit(InsertItems<dataset>, DS);
 }

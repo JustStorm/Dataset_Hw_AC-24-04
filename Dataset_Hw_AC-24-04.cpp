@@ -16,11 +16,18 @@ int main()
     //const char fname[] = "./dataset/output.csv";
 
     SoAdataset SoA(fname, 100000);
-    // AoSdataset AoS(fname, 100000);
     SoVdataset SoV(fname, 100000);
+    AoSdataset AoS(fname, 100000);
+    VoSdataset VoS(fname, 100000);
 
-
-    ComparisonTime(SoA, SoV);
+    cout << "Operation speed of structure of arrays" << endl;
+    ComparisonTime(SoA);
+    cout << "\n\nOperation speed of structure of vectors" << endl;
+    ComparisonTime(SoV);
+    cout << "\n\nOperations speed of array of structures" << endl;
+    ComparisonTime(AoS);
+    cout << "\n\nOperation speed of vector of structures" << endl;
+    ComparisonTime(VoS);
 
     return 0;
 

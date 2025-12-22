@@ -1,5 +1,6 @@
 #pragma once
 
+#include <vector>
 #include <fstream>
 #include <iostream>
 #include <string>
@@ -9,15 +10,13 @@
 #include "Struct.h"
 
 
-class AoSdataset {
+class VoSdataset {
 	int size;
-	accident* entry = nullptr;
+	std::vector<accident> entry;
 
 	void alloc_data();
-	void free_data();
 public:
-	AoSdataset(std::string fname, int size);
-	~AoSdataset();
+	VoSdataset(std::string fname, int size);
 	int get_size();
 	void swapitems(int index1, int index2);
 
