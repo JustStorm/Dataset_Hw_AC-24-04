@@ -44,7 +44,7 @@ void SoAdataset::delete_item(int index) {
 
 void SoAdataset::insert() {
 	int index = size / 2;
-	int count = size / 2;
+	int count = size;
 
     int new_size = size + count;
 

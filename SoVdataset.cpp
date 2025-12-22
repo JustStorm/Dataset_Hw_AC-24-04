@@ -126,10 +126,8 @@ void SoVdataset::write_cached(std::string cached_fname) {
 
 void SoVdataset::insert() {
 	int index = size / 2;
-	int count = size / 2;
-    if (count <= 0) return;
-    if (index < 0) index = 0;
-    if (index > size) index = size;
+	int count;
+
 
     id.insert(id.begin() + index, count, 999999);
     severity.insert(severity.begin() + index, count, static_cast<short int>(2));

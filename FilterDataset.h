@@ -3,6 +3,7 @@
 #include "AoSdataset.h"
 #include "SoVdataset.h"
 #include "VoSdataset.h"
+#include "UMoSdataset.h"
 #include <iostream>
 
 template <typename dataset>

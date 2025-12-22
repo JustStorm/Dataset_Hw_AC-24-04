@@ -111,7 +111,7 @@ const char* VoSdataset::get_weather_condition(int index) {
 
 void VoSdataset::insert() {
 	int index = size / 2;
-	int count = size / 2;
+	int count = size;
     
     entry.insert(entry.begin() + index, count, new_accident);
     size += count;

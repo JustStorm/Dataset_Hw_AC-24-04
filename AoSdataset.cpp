@@ -115,7 +115,7 @@ const char* AoSdataset::get_weather_condition(int index) {
 
 void AoSdataset::insert() {
 	int index = size / 2;
-	int count = size / 2;
+	int count = size;
 
     int new_size = size + count;
 
@@ -131,6 +131,7 @@ void AoSdataset::insert() {
 
     delete[] entry;
     entry = new_entry;
+	size = new_size;
 }
 
 void AoSdataset::delete_item(int index) {

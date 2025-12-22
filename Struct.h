@@ -11,5 +11,5 @@ struct accident {
 	float humidity_percent;    // 22
 	float pressure;          // 23
 	float wind_speed;        // 26
-	char weather_condition[15];  // 28
+	char weather_condition[70];  // 28
 };

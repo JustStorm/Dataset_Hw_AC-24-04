@@ -30,6 +30,16 @@ void ComparisonTime(dataset& DS) {
 	timeit(SortForTemperature<dataset>, DS);
 	std::cout << "Counting elements passing the filter (read speed)" << std::endl;
 	timeit(SearchForTemperature<dataset>, DS);
-	std::cout << "Adding size / 2 elements" << std::endl;
+	std::cout << "Adding size elements" << std::endl;
+	timeit(InsertItems<dataset>, DS);
+}
+
+template <typename dataset>
+void ComparisonTimeMaps(dataset& DS) {
+	std::cout << "Deleting one eighth of the elements" << std::endl;
+	timeit(DeleteItems<dataset>, DS);
+	std::cout << "Counting elements passing the filter (read speed)" << std::endl;
+	timeit(SearchForTemperature<dataset>, DS);
+	std::cout << "Adding size elements" << std::endl;
 	timeit(InsertItems<dataset>, DS);
 }
