@@ -3,6 +3,20 @@
 
 using namespace std;
 
+const accident new_accident = {
+    999999,                  
+    2,                       
+    "new_city",              
+    "new_county",
+    "NS",
+    50.0,                  
+    45.0,                   
+    70.0,                   
+    30.0,                   
+    10.0,                   
+    "Inserted"
+};
+
 
 AoSdataset::AoSdataset(std::string fname, int sz) {
 	string cached_fname = fname + ".cachedAOS";
@@ -24,7 +38,6 @@ AoSdataset::AoSdataset(std::string fname, int sz) {
 	auto parse_start = clock::now();
 
 	stringstream separated{};
-	separated.width(100);
 
 	for (int i = 0; i < size; i++) {
 		parse_spaces(file, separated);
@@ -99,6 +112,26 @@ const char* AoSdataset::get_weather_condition(int index) {
 	return entry[index].weather_condition;
 }
 
+
+void AoSdataset::insert() {
+	int index = size / 2;
+	int count = size / 2;
+
+    int new_size = size + count;
+
+    accident* new_entry = new accident[new_size];
+
+    std::memcpy(new_entry, entry, index * sizeof(accident));
+
+    for (int i = 0; i < count; ++i) {
+		new_entry[index + i] = new_accident;
+    }
+
+    std::memcpy(new_entry + index + count, entry + index, (size - index) * sizeof(accident));
+
+    delete[] entry;
+    entry = new_entry;
+}
 
 bool AoSdataset::read_cached(std::string cached_fname, int expected_size) {
 	ifstream file_cached(cached_fname, ios::binary);

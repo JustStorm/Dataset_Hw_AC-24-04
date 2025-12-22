@@ -36,6 +36,8 @@ public:
 	bool read_cached(std::string fname, int expected_size);
 	void write_cached(std::string fname);
 
+	void insert();
+
 	const int get_id(int index);
 	const short int get_severity(int index);
 	const char* get_city(int index);
