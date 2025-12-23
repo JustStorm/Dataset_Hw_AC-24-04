@@ -1,7 +1,11 @@
 #pragma once
 
+#include <fstream>
+#include <iostream>
 #include <string>
-
+#include <chrono>
+#include <sstream>
+#include <utility>
 
 class SoAdataset {
 	int size;
@@ -40,7 +44,4 @@ public:
 	const float get_pressure(int index);
 	const float get_wind_speed(int index);
 	const char* get_weather_condition(int index);
-
-	void insert();
-	void delete_item(int index);
 };

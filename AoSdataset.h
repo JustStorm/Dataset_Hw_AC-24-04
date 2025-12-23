@@ -1,9 +1,12 @@
 #pragma once
 
+#include <fstream>
+#include <iostream>
 #include <string>
-#include <cstring>
+#include <chrono>
+#include <sstream>
+#include <utility>
 #include "Struct.h"
-
 
 class AoSdataset {
 	int size;
@@ -19,9 +22,6 @@ public:
 
 	bool read_cached(std::string fname, int expected_size);
 	void write_cached(std::string fname);
-
-	void insert();
-	void delete_item(int index);
 
 	const int get_id(int index);
 	const short int get_severity(int index);

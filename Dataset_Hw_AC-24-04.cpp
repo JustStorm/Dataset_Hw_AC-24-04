@@ -15,29 +15,29 @@ int main()
     //const char fname[] = "./dataset/Accidents_1k.csv";
     //const char fname[] = "./dataset/output.csv";
 
-    SoAdataset SoA(fname, 50000);
-    SoVdataset SoV(fname, 50000);
-    SoDdataset SoD(fname, 50000);
-    AoSdataset AoS(fname, 50000);
-    VoSdataset VoS(fname, 50000);
-    DoSdataset DoS(fname, 50000);
-    UMoSdataset UMoS(fname, 50000);
+    SoAdataset SoA(fname, 10000);
+    SoVdataset SoV(fname, 10000);
+    SoDdataset SoD(fname, 10000);
+    AoSdataset AoS(fname, 10000);
+    VoSdataset VoS(fname, 10000);
+    DoSdataset DoS(fname, 10000);
+    UMoSdataset UMoS(fname, 10000);
 
-    cout << "\n\nOperation speed of structure of arrays" << endl;
-    ComparisonTime(SoA);
+    cout << "\n\n"
+    ComparisonTime(SoA, AoS);
+
+
     cout << "\n\nOperation speed of structure of vectors" << endl;
-    ComparisonTime(SoV);
+    OperationSpeed(SoV);
     cout << "\n\nOperation speed of structure of deques" << endl;
-    ComparisonTime(SoD);
-    cout << "\n\nOperations speed of array of structures" << endl;
-    ComparisonTime(AoS);
+    OperationSpeed(SoD);
     cout << "\n\nOperation speed of vector of structures" << endl;
-    ComparisonTime(VoS);
+    OperationSpeed(VoS);
     cout << "\n\nOperation speed of deque of structures" << endl;
-    ComparisonTime(DoS);
+    OperationSpeed(DoS);
     cout << "\n\nOperation speed of unordered map of structures" << endl;
-    ComparisonTimeMaps(UMoS);
-    return 0;
+    OperationSpeedMaps(UMoS);
 
+    return 0;
 
 }

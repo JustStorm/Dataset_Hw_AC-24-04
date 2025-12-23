@@ -10,6 +10,8 @@
 
 void parse_spaces(std::ifstream& input, std::stringstream& output);
 
+void ComparisonTime(SoAdataset& SoA, AoSdataset& AoS);
+
 template<typename func,typename dataset>
 void timeit(func function, dataset& list) {
 	using clock = std::chrono::high_resolution_clock;
@@ -23,19 +25,19 @@ void timeit(func function, dataset& list) {
 }
 
 template <typename dataset>
-void ComparisonTime(dataset& DS) {
+void OperationSpeed(dataset& DS) {
 	std::cout << "Deleting one eighth of the elements" << std::endl;
 	timeit(DeleteItems<dataset>, DS);
 	std::cout << "Sorting elements" << std::endl;
-	timeit(SortForTemperature<dataset>, DS);
+	timeit(SortByTemperature<dataset>, DS);
 	std::cout << "Counting elements passing the filter (read speed)" << std::endl;
-	timeit(SearchForTemperature<dataset>, DS);
+	timeit(SearchByTemperature<dataset>, DS);
 	std::cout << "Adding size elements" << std::endl;
 	timeit(InsertItems<dataset>, DS);
 }
 
 template <typename dataset>
-void ComparisonTimeMaps(dataset& DS) {
+void OperationSpeedMaps(dataset& DS) {
 	std::cout << "Deleting one eighth of the elements" << std::endl;
 	timeit(DeleteItems<dataset>, DS);
 	std::cout << "Counting elements passing the filter (read speed)" << std::endl;
