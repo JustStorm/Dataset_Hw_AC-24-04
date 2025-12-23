@@ -30,14 +30,14 @@ int main()
 
     // ==================== ТЕСТ ПОИСКА ПОДСТРОКИ ====================
     cout << "=== Testing REGISTER-SENSITIVE substring search algorithm ===" << endl;
-    cout << "\nSearching for 'rain' in weather_condition (SoA):" << endl;
+    cout << "\nSearching for 'Rain' in weather_condition (SoA):" << endl;
 
     auto results = countSubstringOccurrences(
         SoA,
         [](SoAdataset& ds, int idx) -> const char* {
             return ds.get_weather_condition(idx);
         },
-        "rain" 
+        "Rain" 
     );
 
     int total_rain = 0;
@@ -49,8 +49,8 @@ int main()
         }
     }
 
-    cout << "Total 'rain' occurrences: " << total_rain << endl;
-    cout << "Records containing 'rain': " << records_with_rain << endl;
+    cout << "Total 'Rain' occurrences: " << total_rain << endl;
+    cout << "Records containing 'Rain': " << records_with_rain << endl;
     cout << "Total records processed: " << SoA.get_size() << endl;
 
     /*
