@@ -10,7 +10,6 @@
     <ClCompile Include="UMoSdataset.cpp" />
     <ClCompile Include="utils.cpp" />
     <ClCompile Include="VoSdataset.cpp" />
-    <ClCompile Include="substring_searcher.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AoSdataset.h" />
