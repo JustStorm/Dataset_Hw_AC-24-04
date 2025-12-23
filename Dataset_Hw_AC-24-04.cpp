@@ -2,6 +2,7 @@
 #include "utils.h"
 #include "SeverityBucketSort.h"
 #include "MergeSort.h"
+#include "Compression.h"  // Добавляем заголовочный файл для алгоритмов сжатия
 #include "substring_searcher.h"
 
 using namespace std;
@@ -55,7 +56,7 @@ int main()
 
     /*
     ComparisonTime(SoA, AoS);
-    
+
     Compare5Datasets("Test1Compare_Filter_for_temperature",
         SoV, FilterForTemperature<SoVdataset>,
         VoS, FilterForTemperature<VoSdataset>,
@@ -63,7 +64,7 @@ int main()
         DoS, FilterForTemperature<DoSdataset>,
         UMoS, FilterForTemperature<UMoSdataset>
     );
-    
+
     Compare5Datasets("Test2Compare_Sort_for_temperature",
         SoV, SortForTemperature<SoVdataset>,
         VoS, SortForTemperature<VoSdataset>,
@@ -95,7 +96,7 @@ int main()
         DoS, SearchForTemperatureAndWindspeed<DoSdataset>,
         UMoS, SearchForTemperatureAndWindspeed<UMoSdataset>
     );
-    
+
     Compare5Datasets("Test6Compare_Insert_item_in_beginning",
         SoV, InsertItemsInBeginning<SoVdataset>,
         VoS, InsertItemsInBeginning<VoSdataset>,
@@ -137,10 +138,42 @@ int main()
     
 
     // MergeSort
+    merge_sort(SoA, 10000, [&](int i) { return SoA.get_temperature(i); });
+    check_sort("MergeSort", SoA, [&SoA](int i) { return SoA.get_temperature(i); });
+    
     int merge_time = timeit([](AoSdataset& data, int sz) {merge_sort(data, sz, [&data](int i) {return data.get_temperature(i); }); }, AoS, AoS.get_size(), 1);
     cout << "MergeSort took " << merge_time << "mcs.\n";
     //merge_sort(AoS, AoS.get_size(), [&AoS](int i) { return AoS.get_temperature(i); });
     check_sort("MergeSort", AoS, [&AoS](int i) { return AoS.get_temperature(i); });
-    
+  
+  
+    // ============================================================
+    // COMPRESSION ALGORITHMS TESTING SECTION
+    // ============================================================
+
+    cout << "\n\n";
+    cout << "========================================================================" << endl;
+    cout << "COMPRESSION ALGORITHMS TESTING" << endl;
+    cout << "========================================================================" << endl;
+
+    // Run compression algorithms benchmark
+    DatasetCompression::benchmarkCompression(compression_test_file);
+
+    cout << "\n\n";
+    cout << "========================================================================" << endl;
+    cout << "COMPRESSION ALGORITHMS DETAILED ANALYSIS" << endl;
+    cout << "========================================================================" << endl;
+
+    // Run detailed compression analysis
+    DatasetCompression::testAllCompressionAlgorithms(compression_test_file);
+
+    cout << "\n\n";
+    cout << "========================================================================" << endl;
+    cout << "COMPRESSION ALGORITHMS CORRECTNESS DEMONSTRATION" << endl;
+    cout << "========================================================================" << endl;
+
+    // Run compression demo for correctness verification
+    DatasetCompression::runCompressionDemo();
+
     return 0;
 }

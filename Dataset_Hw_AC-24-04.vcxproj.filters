@@ -10,6 +10,7 @@
     <ClCompile Include="UMoSdataset.cpp" />
     <ClCompile Include="utils.cpp" />
     <ClCompile Include="VoSdataset.cpp" />
+    <ClCompile Include="Compression.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AoSdataset.h" />
@@ -24,6 +25,7 @@
     <ClInclude Include="UMoSdataset.h" />
     <ClInclude Include="utils.h" />
     <ClInclude Include="VoSdataset.h" />
+    <ClInclude Include="Compression.h" />
     <ClInclude Include="substring_searcher.h" />
   </ItemGroup>
 </Project>
