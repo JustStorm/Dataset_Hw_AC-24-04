@@ -2,7 +2,6 @@
 #include <cstring>
 #include <algorithm>
 
-// Вычисление префикс-функции для KMP алгоритма
 std::vector<int> SubstringSearcher::computeLPS(const std::string& pattern) {
     int m = pattern.length();
     std::vector<int> lps(m, 0);
@@ -27,8 +26,6 @@ std::vector<int> SubstringSearcher::computeLPS(const std::string& pattern) {
     }
     return lps;
 }
-
-// Поиск всех вхождений подстроки в текст с помощью KMP
 int SubstringSearcher::kmpSearch(const std::string& text, const std::string& pattern) {
     if (pattern.empty()) return 0;
 
@@ -39,8 +36,8 @@ int SubstringSearcher::kmpSearch(const std::string& text, const std::string& pat
 
     std::vector<int> lps = computeLPS(pattern);
     int count = 0;
-    int i = 0; // индекс для текста
-    int j = 0; // индекс для паттерна
+    int i = 0; 
+    int j = 0; 
 
     while (i < n) {
         if (pattern[j] == text[i]) {
@@ -49,7 +46,7 @@ int SubstringSearcher::kmpSearch(const std::string& text, const std::string& pat
         }
 
         if (j == m) {
-            count++; // найдено вхождение
+            count++; 
             j = lps[j - 1];
         }
         else if (i < n && pattern[j] != text[i]) {

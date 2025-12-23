@@ -31,40 +31,33 @@ int main()
     // ==================== ТЕСТИРОВАНИЕ ПОИСКА ПОДСТРОК ====================
     cout << "=== Testing substring search algorithms ===" << endl;
 
-    // Тест 1: Поиск в поле weather_condition
     cout << "\n--- Test 1: Searching for 'rain' in weather_condition ---" << endl;
 
-    // Для SoA
     auto soa_results = SubstringSearcher::searchInWeatherCondition(SoA, "rain");
     int soa_count = 0;
     for (auto r : soa_results) soa_count += r;
     cout << "SoA: Found 'rain' " << soa_count << " times in weather_condition" << endl;
 
-    // Для AoS
     auto aos_results = SubstringSearcher::searchInWeatherCondition(AoS, "rain");
     int aos_count = 0;
     for (auto r : aos_results) aos_count += r;
     cout << "AoS: Found 'rain' " << aos_count << " times in weather_condition" << endl;
 
-    // Для SoV
     auto sov_results = SubstringSearcher::searchInWeatherCondition(SoV, "rain");
     int sov_count = 0;
     for (auto r : sov_results) sov_count += r;
     cout << "SoV: Found 'rain' " << sov_count << " times in weather_condition" << endl;
 
-    // Для VoS
     auto vos_results = SubstringSearcher::searchInWeatherCondition(VoS, "rain");
     int vos_count = 0;
     for (auto r : vos_results) vos_count += r;
     cout << "VoS: Found 'rain' " << vos_count << " times in weather_condition" << endl;
 
-    // Для SoD
     auto sod_results = SubstringSearcher::searchInWeatherCondition(SoD, "rain");
     int sod_count = 0;
     for (auto r : sod_results) sod_count += r;
     cout << "SoD: Found 'rain' " << sod_count << " times in weather_condition" << endl;
 
-    // Проверка корректности (все должны показывать одинаковый результат)
     if (soa_count == aos_count && aos_count == sov_count &&
         sov_count == vos_count && vos_count == sod_count) {
         cout << "✓ All datasets show consistent results!" << endl;
@@ -73,7 +66,6 @@ int main()
         cout << "✗ Inconsistent results detected!" << endl;
     }
 
-    // Тест 2: Поиск в поле city
     cout << "\n--- Test 2: Searching for 'New' in city field ---" << endl;
 
     auto city_results = SubstringSearcher::searchInCity(SoA, "New");
@@ -81,7 +73,7 @@ int main()
     for (auto r : city_results) city_count += r;
     cout << "SoA: Found 'New' " << city_count << " times in city field" << endl;
 
-    // Тест 3: Поиск во всех строковых полях
+ 
     cout << "\n--- Test 3: Searching for 'County' in all string fields ---" << endl;
 
     auto all_results = SubstringSearcher::searchInAllStringFields(SoA, "County");
@@ -89,13 +81,11 @@ int main()
     for (auto r : all_results) all_count += r;
     cout << "SoA: Found 'County' " << all_count << " times across all string fields" << endl;
 
-    // Тест 4: Производительность поиска
     cout << "\n--- Test 4: Performance measurement of substring search ---" << endl;
 
     using clock = std::chrono::high_resolution_clock;
     auto start = clock::now();
 
-    // Выполняем поиск несколько раз для измерения времени
     const int iterations = 10;
     for (int i = 0; i < iterations; i++) {
         SubstringSearcher::searchInAllStringFields(SoA, "rain");

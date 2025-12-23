@@ -13,7 +13,6 @@ private:
     static int kmpSearch(const std::string& text, const std::string& pattern);
 
 public:
-    // Упрощенная версия без отдельного countSubstringOccurrences
     template<typename DatasetType>
     static std::vector<int> searchInCity(DatasetType& dataset, const std::string& pattern) {
         int size = dataset.get_size();
@@ -103,13 +102,11 @@ public:
         int size = dataset.get_size();
         std::vector<int> totalResults(size, 0);
 
-        // Получаем результаты для каждого поля
         std::vector<int> cityResults = searchInCity(dataset, pattern);
         std::vector<int> countyResults = searchInCounty(dataset, pattern);
         std::vector<int> stateResults = searchInState(dataset, pattern);
         std::vector<int> weatherResults = searchInWeatherCondition(dataset, pattern);
 
-        // Суммируем результаты
         for (int i = 0; i < size; i++) {
             totalResults[i] = cityResults[i] + countyResults[i] + stateResults[i] + weatherResults[i];
         }
@@ -118,4 +115,4 @@ public:
     }
 };
 
-#endif // SUBSTRING_SEARCHER_H
+#endif 
