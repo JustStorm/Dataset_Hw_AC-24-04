@@ -19,6 +19,16 @@ int main()
     AoSdataset AoS(fname, 100000);
 
     ComparisonTime(SoA, AoS);
+    
+    /*
+    Compare5Datasets("Test5Compare",
+        SoA, FilterForTemperature<SoAdataset>,
+        AoS, FilterForTemperature<AoSdataset>,
+        SoA, FilterForTemperature<SoAdataset>,
+        SoA, FilterForTemperature<SoAdataset>,
+        AoS, FilterForTemperature<AoSdataset>
+    );
+    */
 
     return 0;
 
