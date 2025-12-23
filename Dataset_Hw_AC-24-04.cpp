@@ -12,20 +12,20 @@ int main()
 {
 
     //// ПЕРЕД ТЕМ, КАК СЧИТЫВАТЬ БОЛЬШОЕ КОЛИЧЕСТВО, УБЕДИТЕСЬ ЧТО ФАЙЛ ДОСТАТОЧНО БОЛЬШОЙ
-    const char fname[] = "./dataset/Accidents_full.csv";
-    //const char fname[] = "./dataset/Accidents_100k.csv";
+    //const char fname[] = "./dataset/Accidents_full.csv";
+    const char fname[] = "./dataset/Accidents_100k.csv";
     //const char fname[] = "./dataset/Accidents_50k.csv";
     //const char fname[] = "./dataset/Accidents_100k.csv";
     //const char fname[] = "./dataset/Accidents_1k.csv";
     //const char fname[] = "./dataset/output.csv";
 
-    SoAdataset SoA(fname, 1000000);
-    SoVdataset SoV(fname, 1000000);
-    SoDdataset SoD(fname, 1000000);
-    AoSdataset AoS(fname, 1000000);
-    VoSdataset VoS(fname, 1000000);
-    DoSdataset DoS(fname, 1000000);
-    UMoSdataset UMoS(fname, 1000000);
+    SoAdataset SoA(fname, 100000);
+    SoVdataset SoV(fname, 100000);
+    SoDdataset SoD(fname, 100000);
+    AoSdataset AoS(fname, 100000);
+    VoSdataset VoS(fname, 100000);
+    DoSdataset DoS(fname, 100000);
+    UMoSdataset UMoS(fname, 100000);
     
     cout << "\n\n";
 
@@ -130,6 +130,8 @@ int main()
     );
     */
 
+
+    /*
     // Severity sorting with bucket sort
     int bucket_time = timeit([](AoSdataset &data, int sz) {bucket_sort_by_severity(data, sz, [&data](int i) {return data.get_severity(i); }); }, AoS, AoS.get_size(), 1);
     cout << "BucketSort took " << bucket_time << "mcs.\n";
@@ -145,7 +147,7 @@ int main()
     cout << "MergeSort took " << merge_time << "mcs.\n";
     //merge_sort(AoS, AoS.get_size(), [&AoS](int i) { return AoS.get_temperature(i); });
     check_sort("MergeSort", AoS, [&AoS](int i) { return AoS.get_temperature(i); });
-  
+    */
   
     // ============================================================
     // COMPRESSION ALGORITHMS TESTING SECTION
@@ -157,7 +159,7 @@ int main()
     cout << "========================================================================" << endl;
 
     // Run compression algorithms benchmark
-    DatasetCompression::benchmarkCompression(compression_test_file);
+    DatasetCompression::benchmarkCompression(fname);
 
     cout << "\n\n";
     cout << "========================================================================" << endl;
@@ -165,7 +167,7 @@ int main()
     cout << "========================================================================" << endl;
 
     // Run detailed compression analysis
-    DatasetCompression::testAllCompressionAlgorithms(compression_test_file);
+    DatasetCompression::testAllCompressionAlgorithms(fname);
 
     cout << "\n\n";
     cout << "========================================================================" << endl;
