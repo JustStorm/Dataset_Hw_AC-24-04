@@ -1,17 +1,22 @@
 #pragma once
 
-#include <vector>
+#include <fstream>
+#include <iostream>
 #include <string>
+#include <chrono>
+#include <sstream>
+#include <utility>
 #include "Struct.h"
+#include <deque>
 
 
-class VoSdataset {
+class DoSdataset {
 	int size;
-	std::vector<accident> entry;
+	std::deque<accident> entry;
 
 	void alloc_data();
 public:
-	VoSdataset(std::string fname, int size);
+	DoSdataset(std::string fname, int size);
 	int get_size();
 	void swapitems(int index1, int index2);
 

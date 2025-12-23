@@ -1,24 +1,24 @@
 #pragma once
-#include <vector>
+#include <deque>
 #include <string>
 #include <array>
 
-class SoVdataset {
+class SoDdataset {
     int size;
-    std::vector<int> id;
-    std::vector<short int> severity;
-    std::vector<std::array<char, 20>> city;
-    std::vector<std::array<char, 20>> county;
-    std::vector<std::array<char, 3>> state;
-    std::vector<float> temperature;
-    std::vector<float> wind_temperature;
-    std::vector<float> humidity_percent;
-    std::vector<float> pressure;
-    std::vector<float> wind_speed;
-    std::vector<std::array<char, 15>> weather_condition;
+    std::deque<int> id;
+    std::deque<short int> severity;
+    std::deque<std::array<char, 20>> city;
+    std::deque<std::array<char, 20>> county;
+    std::deque<std::array<char, 3>> state;
+    std::deque<float> temperature;
+    std::deque<float> wind_temperature;
+    std::deque<float> humidity_percent;
+    std::deque<float> pressure;
+    std::deque<float> wind_speed;
+    std::deque<std::array<char, 15>> weather_condition;
     void alloc_data();
 public:
-    SoVdataset(std::string fname, int size);
+    SoDdataset(std::string fname, int size);
 
     bool read_cached(std::string fname, int expected_size);
 	void write_cached(std::string fname);

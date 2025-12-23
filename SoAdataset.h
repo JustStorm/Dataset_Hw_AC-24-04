@@ -1,12 +1,7 @@
 #pragma once
 
-#include <fstream>
-#include <iostream>
 #include <string>
-#include <chrono>
-#include <sstream>
-#include <utility>
-#include <cstring>
+
 
 class SoAdataset {
 	int size;

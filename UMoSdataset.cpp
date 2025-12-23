@@ -43,7 +43,6 @@ UMoSdataset::UMoSdataset(std::string fname, int sz) {
         separated.str("");
         separated.clear();
         parse_spaces(file, separated);
-        cout << "Parsing entry " << i << "\n";
         accident a{};
         separated >> a.id;
         separated >> a.severity;

@@ -2,7 +2,9 @@
 #include "SoAdataset.h"
 #include "AoSdataset.h"
 #include "SoVdataset.h"
+#include "SoDdataset.h"
 #include "VoSdataset.h"
+#include "DoSdataset.h"
 #include "UMoSdataset.h"
 #include <iostream>
 

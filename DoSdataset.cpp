@@ -1,4 +1,4 @@
-#include "VoSdataset.h"
+#include "DoSdataset.h"
 #include "utils.h"
 
 using namespace std;
@@ -18,8 +18,8 @@ const accident new_accident = {
 };
 
 
-VoSdataset::VoSdataset(std::string fname, int sz) {
-	string cached_fname = fname + ".cachedVoS";
+DoSdataset::DoSdataset(std::string fname, int sz) {
+	string cached_fname = fname + ".cachedDoS";
 	if (read_cached(cached_fname, sz)) return;
 
 	size = sz;
@@ -64,52 +64,52 @@ VoSdataset::VoSdataset(std::string fname, int sz) {
 	write_cached(cached_fname);
 }
 
-int VoSdataset::get_size() {
+int DoSdataset::get_size() {
 	return size;
 }
 
-void VoSdataset::swapitems(int index1, int index2) {
+void DoSdataset::swapitems(int index1, int index2) {
 	std::swap(entry[index1], entry[index2]);
 }
 
 
 
-const int VoSdataset::get_id(int index) {
+const int DoSdataset::get_id(int index) {
 	return entry[index].id;
 }
-const short int VoSdataset::get_severity(int index) {
+const short int DoSdataset::get_severity(int index) {
 	return entry[index].severity;
 }
-const char* VoSdataset::get_city(int index) {
+const char* DoSdataset::get_city(int index) {
 	return entry[index].city;
 }
-const char* VoSdataset::get_county(int index) {
+const char* DoSdataset::get_county(int index) {
 	return entry[index].county;
 }
-const char* VoSdataset::get_state(int index) {
+const char* DoSdataset::get_state(int index) {
 	return entry[index].state;
 }
-const float VoSdataset::get_temperature(int index) {
+const float DoSdataset::get_temperature(int index) {
 	return entry[index].temperature;
 }
-const float VoSdataset::get_wind_temperature(int index) {
+const float DoSdataset::get_wind_temperature(int index) {
 	return entry[index].wind_temperature;
 }
-const float VoSdataset::get_humidity_percent(int index) {
+const float DoSdataset::get_humidity_percent(int index) {
 	return entry[index].humidity_percent;
 }
-const float VoSdataset::get_pressure(int index) {
+const float DoSdataset::get_pressure(int index) {
 	return entry[index].pressure;
 }
-const float VoSdataset::get_wind_speed(int index) {
+const float DoSdataset::get_wind_speed(int index) {
 	return entry[index].wind_speed;
 }
-const char* VoSdataset::get_weather_condition(int index) {
+const char* DoSdataset::get_weather_condition(int index) {
 	return entry[index].weather_condition;
 }
 
 
-void VoSdataset::insert() {
+void DoSdataset::insert() {
 	int index = 0;
 	int count = size;
     for (int i = 0; i < count; i++){
@@ -118,19 +118,19 @@ void VoSdataset::insert() {
     size += count;
 }
 
-void VoSdataset::delete_item(int index) {
+void DoSdataset::delete_item(int index) {
 	entry.erase(entry.begin() + index);
 	size--;
 }
 
-bool VoSdataset::read_cached(std::string cached_fname, int expected_size) {
+bool DoSdataset::read_cached(std::string cached_fname, int expected_size) {
 	ifstream file_cached(cached_fname, ios::binary);
 	if (!file_cached.is_open()) {
 		std::cout << "Could not find cached version! Proceeding to parsing...\n";
 		return false;
 	}
 
-	std::cout << "Found a processed version VoS! Loading processed...\n";
+	std::cout << "Found a processed version DoS! Loading processed...\n";
 
 	file_cached.read(reinterpret_cast<char*>(&size), sizeof(size));
 
@@ -140,25 +140,25 @@ bool VoSdataset::read_cached(std::string cached_fname, int expected_size) {
 	}
 	alloc_data();
 
-	file_cached.read(reinterpret_cast<char*>(entry.data()), sizeof(accident) * size);
+	file_cached.read(reinterpret_cast<char*>(&entry), sizeof(accident) * size);
 
 	file_cached.close();
 	return true;
 }
 
-void VoSdataset::write_cached(std::string cached_fname) {
+void DoSdataset::write_cached(std::string cached_fname) {
 	ofstream cached(cached_fname, ios::binary);
 	if (!cached.is_open()) {
 		cout << "Failed to open file '" << cached_fname << "', can not save cache!";
 	}
 
 	cached.write(reinterpret_cast<char*>(&size), sizeof(size));
-	cached.write(reinterpret_cast<char*>(entry.data()), sizeof(accident) * size);
+	cached.write(reinterpret_cast<char*>(&entry), sizeof(accident) * size);
 
 	cached.close();
 	cout << "Saved processed to cache successfully!\n";
 }
 
-void VoSdataset::alloc_data() {
+void DoSdataset::alloc_data() {
 	entry.resize(size);
 }

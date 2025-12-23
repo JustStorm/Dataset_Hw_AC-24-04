@@ -1,9 +1,9 @@
-#include "SoVdataset.h"
+#include "SoDdataset.h"
 #include "utils.h"
 
 using namespace std;
 
-void SoVdataset::alloc_data() {
+void SoDdataset::alloc_data() {
 	id.resize(size);
 	severity.resize(size);
 	city.resize(size);
@@ -17,7 +17,7 @@ void SoVdataset::alloc_data() {
 	weather_condition.resize(size);
 }
 
-void SoVdataset::swapitems(int index1, int index2) {
+void SoDdataset::swapitems(int index1, int index2) {
 	std::swap(id[index1], id[index2]);
 	std::swap(severity[index1], severity[index2]);
 	std::swap(city[index1], city[index2]);
@@ -31,52 +31,52 @@ void SoVdataset::swapitems(int index1, int index2) {
 	std::swap(weather_condition[index1], weather_condition[index2]);
 }
 
-int SoVdataset::get_size() {
+int SoDdataset::get_size() {
 	return size;
 }
 
-const int SoVdataset::get_id(int index) {
+const int SoDdataset::get_id(int index) {
 	return id[index];
 }
-const short int SoVdataset::get_severity(int index) {
+const short int SoDdataset::get_severity(int index) {
 	return severity[index];
 }
-const char* SoVdataset::get_city(int index) {
+const char* SoDdataset::get_city(int index) {
 	return city[index].data();
 }
-const char* SoVdataset::get_county(int index) {
+const char* SoDdataset::get_county(int index) {
 	return county[index].data();
 }
-const char* SoVdataset::get_state(int index) {
+const char* SoDdataset::get_state(int index) {
 	return state[index].data();
 }
-const float SoVdataset::get_temperature(int index) {
+const float SoDdataset::get_temperature(int index) {
 	return temperature[index];
 }
-const float SoVdataset::get_wind_temperature(int index) {
+const float SoDdataset::get_wind_temperature(int index) {
 	return wind_temperature[index];
 }
-const float SoVdataset::get_humidity_percent(int index) {
+const float SoDdataset::get_humidity_percent(int index) {
 	return humidity_percent[index];
 }
-const float SoVdataset::get_pressure(int index) {
+const float SoDdataset::get_pressure(int index) {
 	return pressure[index];
 }
-const float SoVdataset::get_wind_speed(int index) {
+const float SoDdataset::get_wind_speed(int index) {
 	return wind_speed[index];
 }
-const char* SoVdataset::get_weather_condition(int index) {
+const char* SoDdataset::get_weather_condition(int index) {
 	return weather_condition[index].data();
 }
 
-bool SoVdataset::read_cached(std::string cached_fname, int expected_size) {
+bool SoDdataset::read_cached(std::string cached_fname, int expected_size) {
 	ifstream file_cached(cached_fname, ios::binary);
 	if (!file_cached.is_open()) {
 		std::cout << "Could not find cached version! Proceeding to parsing...\n";
 		return false;
 	}
 
-	std::cout << "Found a processed version SoV! Loading processed...\n";
+	std::cout << "Found a processed version SoD! Loading processed...\n";
 
 	file_cached.read(reinterpret_cast<char*>(&size), sizeof(size));
 	if (size != expected_size) {
@@ -85,46 +85,49 @@ bool SoVdataset::read_cached(std::string cached_fname, int expected_size) {
 	}
 
 	alloc_data();
-	file_cached.read(reinterpret_cast<char*>(id.data()), sizeof(int) * size);
-	file_cached.read(reinterpret_cast<char*>(severity.data()), sizeof(short int) * size);
-	file_cached.read(reinterpret_cast<char*>(city.data()), sizeof(char) * size * 20);
-	file_cached.read(reinterpret_cast<char*>(county.data()), sizeof(char) * size * 20);
-	file_cached.read(reinterpret_cast<char*>(state.data()), sizeof(char) * size * 3);
-	file_cached.read(reinterpret_cast<char*>(temperature.data()), sizeof(float) * size);
-	file_cached.read(reinterpret_cast<char*>(wind_temperature.data()), sizeof(float) * size);
-	file_cached.read(reinterpret_cast<char*>(humidity_percent.data()), sizeof(float) * size);
-	file_cached.read(reinterpret_cast<char*>(pressure.data()), sizeof(float) * size);
-	file_cached.read(reinterpret_cast<char*>(wind_speed.data()), sizeof(float) * size);
-	file_cached.read(reinterpret_cast<char*>(weather_condition.data()), sizeof(char) * size * 15);
+    for (int i = 0; i < size; ++i) {
+        file_cached.read(reinterpret_cast<char*>(&id[i]), sizeof(int));
+        file_cached.read(reinterpret_cast<char*>(&severity[i]), sizeof(short int));
+        file_cached.read(reinterpret_cast<char*>(&city[i]), sizeof(std::array<char, 20>));
+        file_cached.read(reinterpret_cast<char*>(&county[i]), sizeof(std::array<char, 20>));
+        file_cached.read(reinterpret_cast<char*>(&state[i]), sizeof(std::array<char, 3>));
+        file_cached.read(reinterpret_cast<char*>(&temperature[i]), sizeof(float));
+        file_cached.read(reinterpret_cast<char*>(&wind_temperature[i]), sizeof(float));
+        file_cached.read(reinterpret_cast<char*>(&humidity_percent[i]), sizeof(float));
+        file_cached.read(reinterpret_cast<char*>(&pressure[i]), sizeof(float));
+        file_cached.read(reinterpret_cast<char*>(&wind_speed[i]), sizeof(float));
+        file_cached.read(reinterpret_cast<char*>(&weather_condition[i]), sizeof(std::array<char, 15>));
+    }
 
 	file_cached.close();
 	return true;
 }
 
-void SoVdataset::write_cached(std::string cached_fname) {
+void SoDdataset::write_cached(std::string cached_fname) {
 	ofstream cached(cached_fname, ios::binary);
 	if (!cached.is_open()) {
 		cout << "Failed to open file '" << cached_fname << "', can not save cache!";
 	}
 	cached.write(reinterpret_cast<char*>(&size), sizeof(size));
 
-	cached.write(reinterpret_cast<char*>(id.data()), sizeof(int) * size);
-	cached.write(reinterpret_cast<char*>(severity.data()), sizeof(short int) * size);
-	cached.write(reinterpret_cast<char*>(city.data()), sizeof(char) * size * 20);
-	cached.write(reinterpret_cast<char*>(county.data()), sizeof(char) * size * 20);
-	cached.write(reinterpret_cast<char*>(state.data()), sizeof(char) * size * 3);
-	cached.write(reinterpret_cast<char*>(temperature.data()), sizeof(float) * size);
-	cached.write(reinterpret_cast<char*>(wind_temperature.data()), sizeof(float) * size);
-	cached.write(reinterpret_cast<char*>(humidity_percent.data()), sizeof(float) * size);
-	cached.write(reinterpret_cast<char*>(pressure.data()), sizeof(float) * size);
-	cached.write(reinterpret_cast<char*>(wind_speed.data()), sizeof(float) * size);
-	cached.write(reinterpret_cast<char*>(weather_condition.data()), sizeof(char) * size * 15);
-
+    for (int i = 0; i < size; ++i) {
+        cached.write(reinterpret_cast<const char*>(&id[i]), sizeof(int));
+        cached.write(reinterpret_cast<const char*>(&severity[i]), sizeof(short int));
+        cached.write(reinterpret_cast<const char*>(&city[i]), sizeof(std::array<char, 20>));
+        cached.write(reinterpret_cast<const char*>(&county[i]), sizeof(std::array<char, 20>));
+        cached.write(reinterpret_cast<const char*>(&state[i]), sizeof(std::array<char, 3>));
+        cached.write(reinterpret_cast<const char*>(&temperature[i]), sizeof(float));
+        cached.write(reinterpret_cast<const char*>(&wind_temperature[i]), sizeof(float));
+        cached.write(reinterpret_cast<const char*>(&humidity_percent[i]), sizeof(float));
+        cached.write(reinterpret_cast<const char*>(&pressure[i]), sizeof(float));
+        cached.write(reinterpret_cast<const char*>(&wind_speed[i]), sizeof(float));
+        cached.write(reinterpret_cast<const char*>(&weather_condition[i]), sizeof(std::array<char, 15>));
+    }
 	cached.close();
 	cout << "Saved processed to cache successfully!\n";
 }
 
-void SoVdataset::insert() {
+void SoDdataset::insert() {
 	int index = 0;
 	int count = size;
 
@@ -160,7 +163,7 @@ void SoVdataset::insert() {
 
 }
 
-void SoVdataset::delete_item(int index) {
+void SoDdataset::delete_item(int index) {
 	id.erase(id.begin() + index);
 	severity.erase(severity.begin() + index);
 	temperature.erase(temperature.begin() + index);
@@ -177,8 +180,8 @@ void SoVdataset::delete_item(int index) {
 	size--;  
 }
 
-SoVdataset::SoVdataset(string fname, int sz) {
-	string cached_fname = fname + ".cachedSOV";
+SoDdataset::SoDdataset(string fname, int sz) {
+	string cached_fname = fname + ".cachedSoD";
 	if (read_cached(cached_fname, sz)) return;
 
 	size = sz;
