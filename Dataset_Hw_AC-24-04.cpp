@@ -1,5 +1,6 @@
 ﻿#include "FilterDataset.h"
 #include "utils.h"
+#include "SeverityBucketSort.h"
 
 using namespace std;
 
@@ -20,6 +21,14 @@ int main()
 
     ComparisonTime(SoA, AoS);
 
+    // Severity sorting with bucket sort
+    bucket_sort_by_severity(AoS, [&AoS](int i) {return AoS.get_severity(i); });
+    bool flag = true;
+    for (int i = 0; i < 99999; i++) {
+        if (AoS.get_severity(i) > AoS.get_severity(i + 1)) flag = false;
+        //cout << AoS.get_severity(i);
+    }
+    cout << ((flag) ? "Bucket sorting finished correct\n" : "Bucket sorting is incorrect\n");
     return 0;
 
 
