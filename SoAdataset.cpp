@@ -37,7 +37,7 @@ void SoAdataset::alloc_data() {
 	humidity_percent = new float[size];
 	pressure = new float[size];
 	wind_speed = new float[size];
-	weather_condition = new char[size][15];
+	weather_condition = new char[size][60];
 }
 
 void SoAdataset::free_data() {
@@ -131,7 +131,7 @@ bool SoAdataset::read_cached(std::string cached_fname, int expected_size) {
 	file_cached.read(reinterpret_cast<char*>(humidity_percent), sizeof(float) * size);
 	file_cached.read(reinterpret_cast<char*>(pressure), sizeof(float) * size);
 	file_cached.read(reinterpret_cast<char*>(wind_speed), sizeof(float) * size);
-	file_cached.read(reinterpret_cast<char*>(weather_condition), sizeof(char) * size * 15);
+	file_cached.read(reinterpret_cast<char*>(weather_condition), sizeof(char) * size * 60);
 
 	file_cached.close();
 	return true;
@@ -154,7 +154,7 @@ void SoAdataset::write_cached(std::string cached_fname) {
 	cached.write(reinterpret_cast<char*>(humidity_percent), sizeof(float) * size);
 	cached.write(reinterpret_cast<char*>(pressure), sizeof(float) * size);
 	cached.write(reinterpret_cast<char*>(wind_speed), sizeof(float) * size);
-	cached.write(reinterpret_cast<char*>(weather_condition), sizeof(char) * size * 15);
+	cached.write(reinterpret_cast<char*>(weather_condition), sizeof(char) * size * 60);
 
 	cached.close();
 	cout << "Saved processed to cache successfully!\n";

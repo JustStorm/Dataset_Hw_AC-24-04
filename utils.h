@@ -103,6 +103,49 @@ void Compare2Datasets(const char funcname[], dataset1& data1, func1 function1, d
 	std::cout << "Saved to '" << path << "'\n\n";
 }
 
+template <typename dataset>
+void OperationSpeed(dataset& DS) {
+	std::cout << "Filter for one feature" << std::endl;
+	std::cout << timeit(FilterForTemperature<dataset>, DS) << std::endl;
+	std::cout << "Swaping elements" << std::endl;
+	std::cout << timeit(SortForTemperature<dataset>, DS) << std::endl;
+	std::cout << "Searching for one feature" << std::endl;
+	std::cout << timeit(SearchForTemperature<dataset>, DS) << std::endl;
+	std::cout << "Filter for two features" << std::endl;
+	std::cout << timeit(FilterForTemperatureAndWindspeed<dataset>, DS) << std::endl;
+	std::cout << "Searching for two features" << std::endl;
+	std::cout << timeit(SearchForTemperatureAndWindspeed<dataset>, DS) << std::endl;
+	std::cout << "Adding size / 2 elements in the beginning" << std::endl;
+	std::cout << timeit(InsertItemsInBeginning<dataset>, DS) << std::endl;
+	std::cout << "Deleting one third of the elements" << std::endl;
+	std::cout << timeit(DeleteItems<dataset>, DS) << std::endl;
+	std::cout << "Adding size / 2 elements in the middle" << std::endl;
+	std::cout << timeit(InsertItemsInMiddle<dataset>, DS) << std::endl;
+}
+
+template <typename dataset>
+void OperationSpeedMaps(dataset& DS)  {
+	std::cout << "Deleting one third of the elements" << std::endl;
+	std::cout << timeit(DeleteItems<dataset>, DS) << std::endl;
+	std::cout << "Counting elements passing the filter (read speed)" << std::endl;
+	std::cout << timeit(SearchForTemperature<dataset>, DS) << std::endl;
+	std::cout << "Adding size / 2 elements in the beginning" << std::endl;
+	std::cout << timeit(InsertItemsInBeginning<dataset>, DS) << std::endl;
+}
+
+template <typename dataset>
+void OperationSpeedArrays(dataset& DS) {
+	std::cout << "Filter for one feature" << std::endl;
+	std::cout << timeit(FilterForTemperature<dataset>, DS);
+	std::cout << "Swaping elements" << std::endl;
+	std::cout << timeit(SortForTemperature<dataset>, DS);
+	std::cout << "Searching for one feature" << std::endl;
+	std::cout << timeit(SearchForTemperature<dataset>, DS);
+	std::cout << "Filter for two features" << std::endl;
+	std::cout << timeit(FilterForTemperatureAndWindspeed<dataset>, DS);
+	std::cout << "Searching for two features" << std::endl;
+	std::cout << timeit(SearchForTemperatureAndWindspeed<dataset>, DS);
+}
 
 template<typename func1, typename func2, typename func3, typename func4, typename func5, typename dataset1, typename dataset2, typename dataset3, typename dataset4, typename dataset5>
 void Compare5Datasets(const char funcname[], dataset1& data1, func1 function1, dataset2& data2, func2 function2, dataset3& data3, func3 function3, dataset4& data4, func4 function4, dataset5& data5, func5 function5, int inputsize = -1) {
