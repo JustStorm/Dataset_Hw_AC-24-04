@@ -2,18 +2,15 @@
 #include <vector>
 #include <cstddef>
 
-class AoSdataset;
-class SoAdataset;
-
-template <class Dataset>
-inline void bucket_sort_by_severity(Dataset& ds) {
+template <class Dataset, typename getter>
+inline void bucket_sort_by_severity(Dataset& ds, getter get) {
     const int n = ds.get_size();
     if (n <= 1) return;
 
-    short int mn = ds.get_severity(0);
-    short int mx = mn;
+    auto mn = get(0);
+    auto mx = mn;
     for (int i = 1; i < n; ++i) {
-        short int s = ds.get_severity(i);
+        auto s = get(i);
         if (s < mn) mn = s;
         if (s > mx) mx = s;
     }
@@ -23,7 +20,7 @@ inline void bucket_sort_by_severity(Dataset& ds) {
 
     std::vector<std::size_t> cnt(static_cast<std::size_t>(k), 0);
     for (int i = 0; i < n; ++i) {
-        const int b = static_cast<int>(ds.get_severity(i) - mn);
+        const int b = static_cast<int>(get(i) - mn);
         ++cnt[static_cast<std::size_t>(b)];
     }
 
@@ -34,7 +31,7 @@ inline void bucket_sort_by_severity(Dataset& ds) {
     std::vector<std::size_t> order(static_cast<std::size_t>(n));
     auto write_pos = start;
     for (int i = 0; i < n; ++i) {
-        const int b = static_cast<int>(ds.get_severity(i) - mn);
+        const int b = static_cast<int>(get(i) - mn);
         const std::size_t pos = write_pos[static_cast<std::size_t>(b)]++;
         order[pos] = static_cast<std::size_t>(i);
     }
@@ -62,6 +59,3 @@ inline void bucket_sort_by_severity(Dataset& ds) {
         pos_of_label[b] = static_cast<std::size_t>(pos);
     }
 }
-
-void bucket_sort_severity(AoSdataset& ds);
-void bucket_sort_severity(SoAdataset& ds);
