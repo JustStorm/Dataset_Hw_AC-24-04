@@ -1,11 +1,7 @@
 ﻿#include "FilterDataset.h"
 #include "utils.h"
 #include "SeverityBucketSort.h"
-<<<<<<< HEAD
-#include <functional>
-=======
 #include "MergeSort.h"
->>>>>>> 9a434c1467cbbdefd7efe709fd786aef6a2131ee
 
 using namespace std;
 
@@ -26,7 +22,7 @@ int main()
     SoDdataset SoD(fname, 50000);
     AoSdataset AoS(fname, 50000);
     VoSdataset VoS(fname, 50000);
-    //DoSdataset DoS(fname, 50000);
+    DoSdataset DoS(fname, 50000);
     UMoSdataset UMoS(fname, 50000);
 
     cout << "\n\n";
