@@ -9,8 +9,22 @@
 #include <array>
 #include <vector>
 
-
-
+template<typename dataset, typename getter>
+void check_sort(const char fname[], dataset &data, getter get) {
+	bool flag = true;
+	for (int i = 0; i < 9999; i++) {
+		if (get(i) > get(i + 1)) {
+			flag = false;
+		}
+	}
+	if (flag) {
+		std::cout << fname << " finished correctly\n";
+	}
+	else {
+		std::cout << fname << " finished incorrectly\n";
+	};
+	return;
+}
 void parse_spaces(std::ifstream& input, std::stringstream& output);
 
 template<typename func, typename dataset>

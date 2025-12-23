@@ -1,7 +1,11 @@
 ﻿#include "FilterDataset.h"
 #include "utils.h"
 #include "SeverityBucketSort.h"
+<<<<<<< HEAD
 #include <functional>
+=======
+#include "MergeSort.h"
+>>>>>>> 9a434c1467cbbdefd7efe709fd786aef6a2131ee
 
 using namespace std;
 
@@ -22,14 +26,13 @@ int main()
     SoDdataset SoD(fname, 50000);
     AoSdataset AoS(fname, 50000);
     VoSdataset VoS(fname, 50000);
-    DoSdataset DoS(fname, 50000);
+    //DoSdataset DoS(fname, 50000);
     UMoSdataset UMoS(fname, 50000);
 
     cout << "\n\n";
 
     ComparisonTime(SoA, AoS);
     
-
     Compare5Datasets("Test1Compare_Filter_for_temperature",
         SoV, FilterForTemperature<SoVdataset>,
         VoS, FilterForTemperature<VoSdataset>,
@@ -103,30 +106,15 @@ int main()
     );
 
 
-    // // Severity sorting with bucket sort
-    // bucket_sort_by_severity(AoS, [&AoS](int i) {return AoS.get_severity(i); });
-    // bool flag = true;
-    // for (int i = 0; i < AoS.get_size()-1; i++) {
-    //     if (AoS.get_severity(i) > AoS.get_severity(i + 1)) flag = false;
-    //     //cout << AoS.get_severity(i);
-    // }
-    // cout << ((flag) ? "Bucket sorting finished correct\n" : "Bucket sorting is incorrect\n");
+    // Severity sorting with bucket sort
+    bucket_sort_by_severity(AoS, [&AoS](int i) {return AoS.get_severity(i); });
+    check_sort("BucketSort", AoS, [&AoS](int i) {return AoS.get_severity(i); });
+
+    // MergeSort
+    merge_sort(SoA, 10000, [&](int i) { return SoA.get_temperature(i); });
+    check_sort("MergeSort", SoA, [&SoA](int i) { return SoA.get_temperature(i); });
     
-    
-    // cout << "\n\nOperation speed of structure of arrays" << endl;
-    // OperationSpeedArrays(SoA);
-    // cout << "\n\nOperation speed of array of structures" << endl;
-    // OperationSpeedArrays(AoS);
-    // cout << "\n\nOperation speed of structure of vectors" << endl;
-    // OperationSpeed(SoV);
-    // cout << "\n\nOperation speed of vector of structures" << endl;
-    // OperationSpeed(VoS);
-    // cout << "\n\nOperation speed of structure of deques" << endl;
-    // OperationSpeed(SoD);
-    // cout << "\n\nOperation speed of deque of structures" << endl;
-    // OperationSpeed(DoS);
-    // cout << "\n\nOperation speed of unordered map of structures" << endl;
-    // OperationSpeedMaps(UMoS);
+
 
     return 0;
 }
