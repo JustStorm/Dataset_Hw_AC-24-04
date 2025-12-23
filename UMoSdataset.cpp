@@ -3,20 +3,6 @@
 #include <iostream>
 using namespace std;
 
-const accident new_accident = {
-    -999999,                  
-    2,                       
-    "new_city",
-    "new_county",
-    "NS",
-    50.0,
-    45.0,
-    70.0,
-    30.0,
-    10.0,
-    "Inserted"
-};
-
 
 UMoSdataset::UMoSdataset(std::string fname, int sz) {
     string cached_fname = fname + ".cachedUMoS";
@@ -124,11 +110,11 @@ const char* UMoSdataset::get_weather_condition(int index) {
 }
 
 
-void UMoSdataset::insert() {
+void UMoSdataset::insert(int index) {
     int count = size;
 
     for (int i = 0; i < count; i++) {
-        entry[new_accident.id + i] = new_accident;
+        entry.emplace(new_accident.id + i, new_accident);
     }
 
     size += count;

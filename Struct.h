@@ -13,3 +13,17 @@ struct accident {
 	float wind_speed;        // 26
 	char weather_condition[60];  // 28
 };
+
+const accident new_accident = {
+    999999,                  
+    2,                       
+    "new_city",              
+    "new_county",
+    "NS",
+    50.0,                  
+    45.0,                   
+    70.0,                   
+    30.0,                   
+    10.0,                   
+    "Inserted"
+};

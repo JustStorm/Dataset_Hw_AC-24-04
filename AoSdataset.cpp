@@ -24,7 +24,6 @@ AoSdataset::AoSdataset(std::string fname, int sz) {
 	auto parse_start = clock::now();
 
 	stringstream separated{};
-	separated.width(100);
 
 	for (int i = 0; i < size; i++) {
 		parse_spaces(file, separated);

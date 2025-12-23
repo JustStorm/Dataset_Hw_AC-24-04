@@ -16,7 +16,7 @@ class SoVdataset {
     std::vector<float> humidity_percent;
     std::vector<float> pressure;
     std::vector<float> wind_speed;
-    std::vector<std::array<char, 15>> weather_condition;
+    std::vector<std::array<char, 60>> weather_condition;
     void alloc_data();
 public:
     SoVdataset(std::string fname, int size);
@@ -39,6 +39,6 @@ public:
     const float get_wind_speed(int index);
     const char* get_weather_condition(int index);
 
-    void insert();
+    void insert(int index);
     void delete_item(int index);
 };

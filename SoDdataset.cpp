@@ -96,7 +96,7 @@ bool SoDdataset::read_cached(std::string cached_fname, int expected_size) {
         file_cached.read(reinterpret_cast<char*>(&humidity_percent[i]), sizeof(float));
         file_cached.read(reinterpret_cast<char*>(&pressure[i]), sizeof(float));
         file_cached.read(reinterpret_cast<char*>(&wind_speed[i]), sizeof(float));
-        file_cached.read(reinterpret_cast<char*>(&weather_condition[i]), sizeof(std::array<char, 15>));
+        file_cached.read(reinterpret_cast<char*>(&weather_condition[i]), sizeof(std::array<char, 60>));
     }
 
 	file_cached.close();
@@ -121,15 +121,14 @@ void SoDdataset::write_cached(std::string cached_fname) {
         cached.write(reinterpret_cast<const char*>(&humidity_percent[i]), sizeof(float));
         cached.write(reinterpret_cast<const char*>(&pressure[i]), sizeof(float));
         cached.write(reinterpret_cast<const char*>(&wind_speed[i]), sizeof(float));
-        cached.write(reinterpret_cast<const char*>(&weather_condition[i]), sizeof(std::array<char, 15>));
+        cached.write(reinterpret_cast<const char*>(&weather_condition[i]), sizeof(std::array<char, 60>));
     }
 	cached.close();
 	cout << "Saved processed to cache successfully!\n";
 }
 
-void SoDdataset::insert() {
-	int index = 0;
-	int count = size;
+void SoDdataset::insert(int index) {
+	int count = size / 2;
 
     std::array<char, 20> new_city{};
     std::memcpy(new_city.data(), "new_city\0", 9);
@@ -140,7 +139,7 @@ void SoDdataset::insert() {
     std::array<char, 3> new_state{};
     std::memcpy(new_state.data(), "NS\0", 3);
 
-    std::array<char, 15> new_weather{};
+    std::array<char, 60> new_weather{};
     std::memcpy(new_weather.data(), "new_weather\0", 12);
 	for (int i = 0; i < count; i++){
 		id.insert(id.begin() + index, 999999);
@@ -153,7 +152,7 @@ void SoDdataset::insert() {
 
 
 
-		city.insert(city.begin() + index, new_city);
+		city.emplace(city.begin() + index, new_city);
 		county.insert(county.begin() + index, new_county);
 		state.insert(state.begin() + index, new_state);
 		weather_condition.insert(weather_condition.begin() + index, new_weather);

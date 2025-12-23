@@ -15,7 +15,7 @@ class SoDdataset {
     std::deque<float> humidity_percent;
     std::deque<float> pressure;
     std::deque<float> wind_speed;
-    std::deque<std::array<char, 15>> weather_condition;
+    std::deque<std::array<char, 60>> weather_condition;
     void alloc_data();
 public:
     SoDdataset(std::string fname, int size);
@@ -38,6 +38,6 @@ public:
     const float get_wind_speed(int index);
     const char* get_weather_condition(int index);
 
-    void insert();
+    void insert(int index);
     void delete_item(int index);
 };

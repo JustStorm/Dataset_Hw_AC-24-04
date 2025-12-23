@@ -52,3 +52,4 @@ void ComparisonTime(SoAdataset& SoA, AoSdataset& AoS) {
 	timeit(SearchForTemperatureAndWindspeed<AoSdataset>, AoS);
 
 }
+

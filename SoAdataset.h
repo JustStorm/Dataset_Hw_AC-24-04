@@ -19,7 +19,7 @@ class SoAdataset {
 	float* humidity_percent = nullptr;
 	float* pressure = nullptr;
 	float* wind_speed = nullptr;
-	char (*weather_condition)[15] = nullptr;
+	char (*weather_condition)[60] = nullptr;
 
 	void alloc_data();
 	void free_data();

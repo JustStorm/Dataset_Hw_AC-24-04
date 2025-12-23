@@ -95,7 +95,7 @@ bool SoVdataset::read_cached(std::string cached_fname, int expected_size) {
 	file_cached.read(reinterpret_cast<char*>(humidity_percent.data()), sizeof(float) * size);
 	file_cached.read(reinterpret_cast<char*>(pressure.data()), sizeof(float) * size);
 	file_cached.read(reinterpret_cast<char*>(wind_speed.data()), sizeof(float) * size);
-	file_cached.read(reinterpret_cast<char*>(weather_condition.data()), sizeof(char) * size * 15);
+	file_cached.read(reinterpret_cast<char*>(weather_condition.data()), sizeof(char) * size * 60);
 
 	file_cached.close();
 	return true;
@@ -118,15 +118,14 @@ void SoVdataset::write_cached(std::string cached_fname) {
 	cached.write(reinterpret_cast<char*>(humidity_percent.data()), sizeof(float) * size);
 	cached.write(reinterpret_cast<char*>(pressure.data()), sizeof(float) * size);
 	cached.write(reinterpret_cast<char*>(wind_speed.data()), sizeof(float) * size);
-	cached.write(reinterpret_cast<char*>(weather_condition.data()), sizeof(char) * size * 15);
+	cached.write(reinterpret_cast<char*>(weather_condition.data()), sizeof(char) * size * 60);
 
 	cached.close();
 	cout << "Saved processed to cache successfully!\n";
 }
 
-void SoVdataset::insert() {
-	int index = 0;
-	int count = size;
+void SoVdataset::insert(int index) {
+	int count = size / 2;
 
     std::array<char, 20> new_city{};
     std::memcpy(new_city.data(), "new_city\0", 9);
@@ -137,7 +136,7 @@ void SoVdataset::insert() {
     std::array<char, 3> new_state{};
     std::memcpy(new_state.data(), "NS\0", 3);
 
-    std::array<char, 15> new_weather{};
+    std::array<char, 60> new_weather{};
     std::memcpy(new_weather.data(), "new_weather\0", 12);
 	for (int i = 0; i < count; i++){
 		id.insert(id.begin() + index, 999999);

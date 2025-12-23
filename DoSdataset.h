@@ -23,7 +23,7 @@ public:
 	bool read_cached(std::string fname, int expected_size);
 	void write_cached(std::string fname);
 
-	void insert();
+	void insert(int index);
 	void delete_item(int index);
 
 	const int get_id(int index);

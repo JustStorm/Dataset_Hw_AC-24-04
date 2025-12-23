@@ -26,22 +26,44 @@ void timeit(func function, dataset& list) {
 
 template <typename dataset>
 void OperationSpeed(dataset& DS) {
-	std::cout << "Deleting one eighth of the elements" << std::endl;
+	std::cout << "Filter for one feature" << std::endl;
+	timeit(FilterForTemperature<dataset>, DS);
+	std::cout << "Swaping elements" << std::endl;
+	timeit(SortForTemperature<dataset>, DS);
+	std::cout << "Searching for one feature" << std::endl;
+	timeit(SearchForTemperature<dataset>, DS);
+	std::cout << "Filter for two features" << std::endl;
+	timeit(FilterForTemperatureAndWindspeed<dataset>, DS);
+	std::cout << "Searching for two features" << std::endl;
+	timeit(SearchForTemperatureAndWindspeed<dataset>, DS);
+	std::cout << "Adding size / 2 elements in the beginning" << std::endl;
+	timeit(InsertItemsInBeginning<dataset>, DS);
+	std::cout << "Deleting one third of the elements" << std::endl;
 	timeit(DeleteItems<dataset>, DS);
-	std::cout << "Sorting elements" << std::endl;
-	timeit(SortByTemperature<dataset>, DS);
-	std::cout << "Counting elements passing the filter (read speed)" << std::endl;
-	timeit(SearchByTemperature<dataset>, DS);
-	std::cout << "Adding size elements" << std::endl;
-	timeit(InsertItems<dataset>, DS);
+	std::cout << "Adding size / 2 elements in the middle" << std::endl;
+	timeit(InsertItemsInMiddle<dataset>, DS);
 }
 
 template <typename dataset>
-void OperationSpeedMaps(dataset& DS) {
-	std::cout << "Deleting one eighth of the elements" << std::endl;
+void OperationSpeedMaps(dataset& DS)  {
+	std::cout << "Deleting one third of the elements" << std::endl;
 	timeit(DeleteItems<dataset>, DS);
 	std::cout << "Counting elements passing the filter (read speed)" << std::endl;
 	timeit(SearchForTemperature<dataset>, DS);
-	std::cout << "Adding size elements" << std::endl;
-	timeit(InsertItems<dataset>, DS);
+	std::cout << "Adding size / 2 elements in the beginning" << std::endl;
+	timeit(InsertItemsInBeginning<dataset>, DS);
+}
+
+template <typename dataset>
+void OperationSpeedArrays(dataset& DS) {
+	std::cout << "Filter for one feature" << std::endl;
+	timeit(FilterForTemperature<dataset>, DS);
+	std::cout << "Swaping elements" << std::endl;
+	timeit(SortForTemperature<dataset>, DS);
+	std::cout << "Searching for one feature" << std::endl;
+	timeit(SearchForTemperature<dataset>, DS);
+	std::cout << "Filter for two features" << std::endl;
+	timeit(FilterForTemperatureAndWindspeed<dataset>, DS);
+	std::cout << "Searching for two features" << std::endl;
+	timeit(SearchForTemperatureAndWindspeed<dataset>, DS);
 }

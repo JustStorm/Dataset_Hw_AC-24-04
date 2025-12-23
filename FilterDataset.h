@@ -12,7 +12,7 @@ template <typename dataset>
 void DeleteItems(dataset& list) {
 	int cnt = list.get_size();
 	int count = 0;
-	for (int i = cnt / 8; i < cnt / 4; i++) {
+	for (int i = cnt / 3; i < cnt / 3 * 2; i++) {
 		list.delete_item(i);
 		count++;
 	}
@@ -20,32 +20,13 @@ void DeleteItems(dataset& list) {
 }
 
 template <typename dataset>
-void SortByTemperature(dataset& list) {
-	for (int i = 0; i < list.get_size()-1; i++) {
-		int mn = list.get_temperature(i), ind = i;
-		for (int j = i + 1; j < list.get_size(); j++){
-			if (mn > list.get_temperature(j)){
-				mn = list.get_temperature(j);
-				ind = j;
-			}
-		}
-		list.swapitems(i, ind);
-	}
+void InsertItemsInBeginning(dataset& list) {
+    list.insert(0);
 }
 
 template <typename dataset>
-void SearchByTemperature(dataset& list) {
-	int cnt = 0;
-	for (int i = 0; i < list.get_size(); i++) {
-		if (list.get_temperature(i) == 36.0)
-			cnt++;
-	}
-}
-
-
-template <typename dataset>
-void InsertItems(dataset& list) {
-    list.insert();
+void InsertItemsInMiddle(dataset& list) {
+    list.insert(list.get_size()/2);
 }
 
 template <typename dataset>

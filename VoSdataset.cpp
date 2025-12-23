@@ -3,19 +3,7 @@
 
 using namespace std;
 
-const accident new_accident = {
-    999999,                  
-    2,                       
-    "new_city",              
-    "new_county",
-    "NS",
-    50.0,                  
-    45.0,                   
-    70.0,                   
-    30.0,                   
-    10.0,                   
-    "Inserted"
-};
+
 
 
 VoSdataset::VoSdataset(std::string fname, int sz) {
@@ -109,11 +97,10 @@ const char* VoSdataset::get_weather_condition(int index) {
 }
 
 
-void VoSdataset::insert() {
-	int index = 0;
+void VoSdataset::insert(int index) {
 	int count = size;
     for (int i = 0; i < count; i++){
-    	entry.insert(entry.begin() + index, new_accident);
+    	entry.emplace(entry.begin() + index, new_accident);
 	}
     size += count;
 }

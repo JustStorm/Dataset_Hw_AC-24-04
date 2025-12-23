@@ -3,20 +3,6 @@
 
 using namespace std;
 
-const accident new_accident = {
-    999999,                  
-    2,                       
-    "new_city",              
-    "new_county",
-    "NS",
-    50.0,                  
-    45.0,                   
-    70.0,                   
-    30.0,                   
-    10.0,                   
-    "Inserted"
-};
-
 
 DoSdataset::DoSdataset(std::string fname, int sz) {
 	string cached_fname = fname + ".cachedDoS";
@@ -109,11 +95,16 @@ const char* DoSdataset::get_weather_condition(int index) {
 }
 
 
-void DoSdataset::insert() {
-	int index = 0;
-	int count = size;
+void DoSdataset::insert(int index) {
+	int count = size / 2;
+	if (index == 0) {
+		for (int i = 0; i < count; i++) 
+			entry.emplace_front(new_accident);
+		size += count;
+		return ;
+	}
     for (int i = 0; i < count; i++){
-    	entry.insert(entry.begin() + index, new_accident);
+    	entry.emplace(entry.begin() + index, new_accident);
 	}
     size += count;
 }
@@ -139,8 +130,9 @@ bool DoSdataset::read_cached(std::string cached_fname, int expected_size) {
 		return false;
 	}
 	alloc_data();
-
-	file_cached.read(reinterpret_cast<char*>(&entry), sizeof(accident) * size);
+	for (int i = 0; i < size; i++){
+		file_cached.read(reinterpret_cast<char*>(&entry[i]), sizeof(accident));
+	}
 
 	file_cached.close();
 	return true;
