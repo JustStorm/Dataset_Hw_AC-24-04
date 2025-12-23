@@ -59,6 +59,7 @@
     <ClInclude Include="SeverityBucketSort.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="MergeSort.h">
     <ClInclude Include="DoSdataset.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
