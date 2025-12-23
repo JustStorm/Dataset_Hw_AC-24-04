@@ -9,7 +9,7 @@
 #include <iostream>
 
 template <typename dataset>
-void DeleteItems(dataset& list) {
+void DeleteItems(dataset& list, int size) {
 	int cnt = list.get_size();
 	int count = 0;
 	for (int i = cnt / 3; i < cnt / 3 * 2; i++) {
@@ -20,12 +20,12 @@ void DeleteItems(dataset& list) {
 }
 
 template <typename dataset>
-void InsertItemsInBeginning(dataset& list) {
+void InsertItemsInBeginning(dataset& list, int size) {
     list.insert(0);
 }
 
 template <typename dataset>
-void InsertItemsInMiddle(dataset& list) {
+void InsertItemsInMiddle(dataset& list, int size) {
     list.insert(list.get_size()/2);
 }
 

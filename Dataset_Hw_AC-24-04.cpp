@@ -41,12 +41,11 @@ int main()
     // Severity sorting with bucket sort
     bucket_sort_by_severity(AoS, [&AoS](int i) {return AoS.get_severity(i); });
     bool flag = true;
-    for (int i = 0; i < 99999; i++) {
+    for (int i = 0; i < AoS.get_size()-1; i++) {
         if (AoS.get_severity(i) > AoS.get_severity(i + 1)) flag = false;
         //cout << AoS.get_severity(i);
     }
     cout << ((flag) ? "Bucket sorting finished correct\n" : "Bucket sorting is incorrect\n");
-    return 0;
     
     
     cout << "\n\nOperation speed of structure of arrays" << endl;
@@ -63,4 +62,6 @@ int main()
     OperationSpeed(DoS);
     cout << "\n\nOperation speed of unordered map of structures" << endl;
     OperationSpeedMaps(UMoS);
+
+    return 0;
 }

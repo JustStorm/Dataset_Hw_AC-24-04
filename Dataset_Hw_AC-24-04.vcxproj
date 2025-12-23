@@ -126,15 +126,26 @@
   <ItemGroup>
     <ClCompile Include="AoSdataset.cpp" />
     <ClCompile Include="Dataset_Hw_AC-24-04.cpp" />
+    <ClCompile Include="DoSdataset.cpp" />
     <ClCompile Include="SoAdataset.cpp" />
+    <ClCompile Include="SoDdataset.cpp" />
+    <ClCompile Include="SoVdataset.cpp" />
+    <ClCompile Include="UMoSdataset.cpp" />
     <ClCompile Include="utils.cpp" />
+    <ClCompile Include="VoSdataset.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AoSdataset.h" />
+    <ClInclude Include="DoSdataset.h" />
     <ClInclude Include="FilterDataset.h" />
     <ClInclude Include="SeverityBucketSort.h" />
     <ClInclude Include="SoAdataset.h" />
+    <ClInclude Include="SoDdataset.h" />
+    <ClInclude Include="SoVdataset.h" />
+    <ClInclude Include="Struct.h" />
+    <ClInclude Include="UMoSdataset.h" />
     <ClInclude Include="utils.h" />
+    <ClInclude Include="VoSdataset.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
