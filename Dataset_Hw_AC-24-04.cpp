@@ -22,13 +22,14 @@ int main()
     SoDdataset SoD(fname, 50000);
     AoSdataset AoS(fname, 50000);
     VoSdataset VoS(fname, 50000);
-    DoSdataset DoS(fname, 50000);
+    //DoSdataset DoS(fname, 50000);
     UMoSdataset UMoS(fname, 50000);
 
     cout << "\n\n";
 
     ComparisonTime(SoA, AoS);
     
+    // EXAMPLE COMPARE5
     /*
     Compare5Datasets("Test5Compare",
         SoA, FilterForTemperature<SoAdataset>,
@@ -41,24 +42,11 @@ int main()
 
     // Severity sorting with bucket sort
     bucket_sort_by_severity(AoS, [&AoS](int i) {return AoS.get_severity(i); });
-    bool flag = true;
-    for (int i = 0; i < AoS.get_size()-1; i++) {
-        if (AoS.get_severity(i) > AoS.get_severity(i + 1)) flag = false;
-        //cout << AoS.get_severity(i);
-    }
-    cout << ((flag) ? "Bucket sorting finished correct\n" : "Bucket sorting is incorrect\n");
+    check_sort("BucketSort", AoS, [&AoS](int i) {return AoS.get_severity(i); });
 
-    // Вызов merge sort
+    // MergeSort
     merge_sort(SoA, 10000, [&](int i) { return SoA.get_temperature(i); });
-
-    // Проверка корректности
-    bool flag_merge = true;
-    for (int i = 0; i < 9999; i++) {
-        if (SoA.get_temperature(i) > SoA.get_temperature(i + 1)) {
-            flag_merge = false;
-        }
-    }
-    cout << ((flag_merge) ? "Merge sorting finished correct\n" : "Merge sorting is incorrect\n");
+    check_sort("MergeSort", SoA, [&SoA](int i) { return SoA.get_temperature(i); });
     
     
     cout << "\n\nOperation speed of structure of arrays" << endl;
@@ -72,7 +60,7 @@ int main()
     cout << "\n\nOperation speed of structure of deques" << endl;
     OperationSpeed(SoD);
     cout << "\n\nOperation speed of deque of structures" << endl;
-    OperationSpeed(DoS);
+    //OperationSpeed(DoS);
     cout << "\n\nOperation speed of unordered map of structures" << endl;
     OperationSpeedMaps(UMoS);
 
