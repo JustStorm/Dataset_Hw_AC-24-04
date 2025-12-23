@@ -3,8 +3,7 @@
 #include <cstddef>
 
 template <class Dataset, typename getter>
-inline void bucket_sort_by_severity(Dataset& ds, getter get) {
-    const int n = ds.get_size();
+inline void bucket_sort_by_severity(Dataset& ds, int n, getter get) {
     if (n <= 1) return;
 
     auto mn = get(0);

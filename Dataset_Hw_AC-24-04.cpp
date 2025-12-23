@@ -10,23 +10,23 @@ int main()
 {
 
     //// ПЕРЕД ТЕМ, КАК СЧИТЫВАТЬ БОЛЬШОЕ КОЛИЧЕСТВО, УБЕДИТЕСЬ ЧТО ФАЙЛ ДОСТАТОЧНО БОЛЬШОЙ
-    //const char fname[] = "./dataset/Accidents_full.csv";
+    const char fname[] = "./dataset/Accidents_full.csv";
     //const char fname[] = "./dataset/Accidents_100k.csv";
     //const char fname[] = "./dataset/Accidents_50k.csv";
-    const char fname[] = "./dataset/Accidents_100k.csv";
+    //const char fname[] = "./dataset/Accidents_100k.csv";
     //const char fname[] = "./dataset/Accidents_1k.csv";
     //const char fname[] = "./dataset/output.csv";
 
-    SoAdataset SoA(fname, 50000);
-    SoVdataset SoV(fname, 50000);
-    SoDdataset SoD(fname, 50000);
-    AoSdataset AoS(fname, 50000);
-    VoSdataset VoS(fname, 50000);
-    DoSdataset DoS(fname, 50000);
-    UMoSdataset UMoS(fname, 50000);
-
+    SoAdataset SoA(fname, 1000000);
+    SoVdataset SoV(fname, 1000000);
+    SoDdataset SoD(fname, 1000000);
+    AoSdataset AoS(fname, 1000000);
+    VoSdataset VoS(fname, 1000000);
+    DoSdataset DoS(fname, 1000000);
+    UMoSdataset UMoS(fname, 1000000);
+    
     cout << "\n\n";
-
+    /*
     ComparisonTime(SoA, AoS);
     
     Compare5Datasets("Test1Compare_Filter_for_temperature",
@@ -100,17 +100,20 @@ int main()
         DoS, DeleteItemInMiddle<DoSdataset>,
         UMoS, DeleteItemInMiddle<UMoSdataset>
     );
-
+    */
 
     // Severity sorting with bucket sort
-    bucket_sort_by_severity(AoS, [&AoS](int i) {return AoS.get_severity(i); });
+    int bucket_time = timeit([](AoSdataset &data, int sz) {bucket_sort_by_severity(data, sz, [&data](int i) {return data.get_severity(i); }); }, AoS, AoS.get_size(), 1);
+    cout << "BucketSort took " << bucket_time << "mcs.\n";
+    //bucket_sort_by_severity(AoS, AoS.get_size(), [&AoS](int i) {return AoS.get_severity(i); });
     check_sort("BucketSort", AoS, [&AoS](int i) {return AoS.get_severity(i); });
-
-    // MergeSort
-    merge_sort(SoA, 10000, [&](int i) { return SoA.get_temperature(i); });
-    check_sort("MergeSort", SoA, [&SoA](int i) { return SoA.get_temperature(i); });
     
 
-
+    // MergeSort
+    int merge_time = timeit([](AoSdataset& data, int sz) {merge_sort(data, sz, [&data](int i) {return data.get_temperature(i); }); }, AoS, AoS.get_size(), 1);
+    cout << "MergeSort took " << merge_time << "mcs.\n";
+    //merge_sort(AoS, AoS.get_size(), [&AoS](int i) { return AoS.get_temperature(i); });
+    check_sort("MergeSort", AoS, [&AoS](int i) { return AoS.get_temperature(i); });
+    
     return 0;
 }
