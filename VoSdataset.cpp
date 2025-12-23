@@ -98,11 +98,8 @@ const char* VoSdataset::get_weather_condition(int index) {
 
 
 void VoSdataset::insert(int index) {
-	int count = size;
-    for (int i = 0; i < count; i++){
-    	entry.emplace(entry.begin() + index, new_accident);
-	}
-    size += count;
+	entry.emplace(entry.begin() + index, new_accident);
+    size++;
 }
 
 void VoSdataset::delete_item(int index) {

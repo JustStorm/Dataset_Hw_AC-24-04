@@ -9,14 +9,13 @@
 #include <iostream>
 
 template <typename dataset>
-void DeleteItems(dataset& list, int size) {
-	int cnt = list.get_size();
-	int count = 0;
-	for (int i = cnt / 3; i < cnt / 3 * 2; i++) {
-		list.delete_item(i);
-		count++;
-	}
-	std::cout << "Deleted " << count << " items\n";
+void DeleteItemInBeginning(dataset& list, int size) {
+	list.delete_item(0);
+}
+
+template <typename dataset>
+void DeleteItemInMiddle(dataset& list, int size) {
+	list.delete_item(list.get_size() / 2);
 }
 
 template <typename dataset>
@@ -26,7 +25,7 @@ void InsertItemsInBeginning(dataset& list, int size) {
 
 template <typename dataset>
 void InsertItemsInMiddle(dataset& list, int size) {
-    list.insert(list.get_size()/2);
+    list.insert(list.get_size() / 2);
 }
 
 template <typename dataset>

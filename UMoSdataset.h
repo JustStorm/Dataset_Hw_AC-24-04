@@ -17,6 +17,7 @@ public:
 
 	void insert(int index);
 	void delete_item(int index);
+	void swapitems(int ind1, int ind2);
 
 	const int get_id(int index);
 	const short int get_severity(int index);

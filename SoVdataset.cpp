@@ -125,7 +125,6 @@ void SoVdataset::write_cached(std::string cached_fname) {
 }
 
 void SoVdataset::insert(int index) {
-	int count = size / 2;
 
     std::array<char, 20> new_city{};
     std::memcpy(new_city.data(), "new_city\0", 9);
@@ -138,24 +137,22 @@ void SoVdataset::insert(int index) {
 
     std::array<char, 60> new_weather{};
     std::memcpy(new_weather.data(), "new_weather\0", 12);
-	for (int i = 0; i < count; i++){
-		id.insert(id.begin() + index, 999999);
-		severity.insert(severity.begin() + index, static_cast<short int>(2));
-		temperature.insert(temperature.begin() + index, 50.);
-		wind_temperature.insert(wind_temperature.begin() + index, 45.);
-		humidity_percent.insert(humidity_percent.begin() + index, 70.);
-		pressure.insert(pressure.begin() + index, 30.);
-		wind_speed.insert(wind_speed.begin() + index, 10.);
+	id.insert(id.begin() + index, 999999);
+	severity.insert(severity.begin() + index, static_cast<short int>(2));
+	temperature.insert(temperature.begin() + index, 50.);
+	wind_temperature.insert(wind_temperature.begin() + index, 45.);
+	humidity_percent.insert(humidity_percent.begin() + index, 70.);
+	pressure.insert(pressure.begin() + index, 30.);
+	wind_speed.insert(wind_speed.begin() + index, 10.);
 
 
 
-		city.insert(city.begin() + index, new_city);
-		county.insert(county.begin() + index, new_county);
-		state.insert(state.begin() + index, new_state);
-		weather_condition.insert(weather_condition.begin() + index, new_weather);
+	city.insert(city.begin() + index, new_city);
+	county.insert(county.begin() + index, new_county);
+	state.insert(state.begin() + index, new_state);
+	weather_condition.insert(weather_condition.begin() + index, new_weather);
  
-	}
-	size += count; 
+	size++; 
 
 }
 

@@ -12,7 +12,8 @@
 template<typename dataset, typename getter>
 void check_sort(const char fname[], dataset &data, getter get) {
 	bool flag = true;
-	for (int i = 0; i < 9999; i++) {
+	int sz = data.get_size()-100;
+	for (int i = 0; i < sz; i++) {
 		if (get(i) > get(i + 1)) {
 			flag = false;
 		}
@@ -28,10 +29,10 @@ void check_sort(const char fname[], dataset &data, getter get) {
 void parse_spaces(std::ifstream& input, std::stringstream& output);
 
 template<typename func, typename dataset>
-int timeit(func function, dataset& data, int size) {
+int timeit(func function, dataset& data, int size, int tries = -1) {
+	if (tries == -1) tries = 10;
 	using clock = std::chrono::high_resolution_clock;
-	const int tries = 10;
-	std::array<int, tries> time;
+	std::vector<int> time(tries, 0);
 
 	for (int N = 0; N < tries; N++) {
 		auto start = clock::now();
@@ -49,19 +50,6 @@ int timeit(func function, dataset& data, int size) {
 
 
 
-
-#define MEASURE(DATA, IDX) \
-{ \
-    time.fill(0); \
-    for (int N = 0; N < tries; ++N) { \
-        auto start = clock::now(); \
-        function(DATA, size); \
-        auto end = clock::now(); \
-        time[N] = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count(); \
-    } \
-    std::sort(time.begin(), time.end()); \
-    EXEC_TIME[IDX].push_back(time[tries / 2]); \
-}
 
 
 
@@ -133,7 +121,7 @@ void OperationSpeed(dataset& DS) {
 	std::cout << "Adding size / 2 elements in the beginning" << std::endl;
 	std::cout << timeit(InsertItemsInBeginning<dataset>, DS, sz) << std::endl;
 	std::cout << "Deleting one third of the elements" << std::endl;
-	std::cout << timeit(DeleteItems<dataset>, DS, sz) << std::endl;
+	std::cout << timeit(DeleteItemInBeginning<dataset>, DS, sz) << std::endl;
 	std::cout << "Adding size / 2 elements in the middle" << std::endl;
 	std::cout << timeit(InsertItemsInMiddle<dataset>, DS, sz) << std::endl;
 }
@@ -142,7 +130,7 @@ template <typename dataset>
 void OperationSpeedMaps(dataset& DS)  {
 	int sz = DS.get_size();
 	std::cout << "Deleting one third of the elements" << std::endl;
-	std::cout << timeit(DeleteItems<dataset>, DS, sz) << std::endl;
+	std::cout << timeit(DeleteItemInBeginning<dataset>, DS, sz) << std::endl;
 	std::cout << "Counting elements passing the filter (read speed)" << std::endl;
 	std::cout << timeit(SearchForTemperature<dataset>, DS, sz) << std::endl;
 	std::cout << "Adding size / 2 elements in the beginning" << std::endl;
