@@ -42,12 +42,12 @@ int main()
     cout << ((flag) ? "Bucket sorting finished correct\n" : "Bucket sorting is incorrect\n");
 
     // Вызов merge sort
-    merge_sort(SoA, 10000, [&](int i) { return SoA.get_severity(i); });
+    merge_sort(SoA, 10000, [&](int i) { return SoA.get_temperature(i); });
 
-    // Проверка корректности (аналогично bucket sort)
+    // Проверка корректности
     bool flag_merge = true;
     for (int i = 0; i < 9999; i++) {
-        if (SoA.get_severity(i) > SoA.get_severity(i + 1)) {
+        if (SoA.get_temperature(i) > SoA.get_temperature(i + 1)) {
             flag_merge = false;
         }
     }
