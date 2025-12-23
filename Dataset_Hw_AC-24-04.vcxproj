@@ -125,6 +125,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AoSdataset.cpp" />
+    <ClCompile Include="Compression.cpp" />
     <ClCompile Include="Dataset_Hw_AC-24-04.cpp" />
     <ClCompile Include="DoSdataset.cpp" />
     <ClCompile Include="SoAdataset.cpp" />
@@ -136,6 +137,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AoSdataset.h" />
+    <ClInclude Include="Compression.h" />
     <ClInclude Include="DoSdataset.h" />
     <ClInclude Include="FilterDataset.h" />
     <ClInclude Include="MergeSort.h" />
