@@ -1,6 +1,7 @@
 ﻿#include "FilterDataset.h"
 #include "utils.h"
 #include "SeverityBucketSort.h"
+#include "MergeSort.h"
 
 using namespace std;
 
@@ -39,7 +40,18 @@ int main()
         //cout << AoS.get_severity(i);
     }
     cout << ((flag) ? "Bucket sorting finished correct\n" : "Bucket sorting is incorrect\n");
+
+    // Вызов merge sort
+    merge_sort(SoA, 10000, [&](int i) { return SoA.get_severity(i); });
+
+    // Проверка корректности (аналогично bucket sort)
+    bool flag_merge = true;
+    for (int i = 0; i < 9999; i++) {
+        if (SoA.get_severity(i) > SoA.get_severity(i + 1)) {
+            flag_merge = false;
+        }
+    }
+    cout << ((flag_merge) ? "Merge sorting finished correct\n" : "Merge sorting is incorrect\n");
+
     return 0;
-
-
 }
