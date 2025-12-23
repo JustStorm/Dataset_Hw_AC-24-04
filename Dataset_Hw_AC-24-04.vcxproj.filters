@@ -26,5 +26,6 @@
     <ClInclude Include="utils.h" />
     <ClInclude Include="VoSdataset.h" />
     <ClInclude Include="Compression.h" />
+    <ClInclude Include="substring_searcher.h" />
   </ItemGroup>
 </Project>

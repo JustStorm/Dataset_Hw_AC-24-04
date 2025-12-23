@@ -140,6 +140,7 @@
     <ClInclude Include="Compression.h" />
     <ClInclude Include="DoSdataset.h" />
     <ClInclude Include="FilterDataset.h" />
+    <ClInclude Include="substring_searcher.h" />
     <ClInclude Include="MergeSort.h" />
     <ClInclude Include="SeverityBucketSort.h" />
     <ClInclude Include="SoAdataset.h" />
