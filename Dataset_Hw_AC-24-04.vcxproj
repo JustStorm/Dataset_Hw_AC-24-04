@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClInclude Include="AoSdataset.h" />
     <ClInclude Include="FilterDataset.h" />
+    <ClInclude Include="SeverityBucketSort.h" />
     <ClInclude Include="SoAdataset.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>

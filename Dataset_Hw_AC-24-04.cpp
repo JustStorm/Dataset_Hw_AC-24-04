@@ -1,5 +1,6 @@
 ﻿#include "FilterDataset.h"
 #include "utils.h"
+#include "SeverityBucketSort.h"
 
 using namespace std;
 
@@ -24,8 +25,30 @@ int main()
     UMoSdataset UMoS(fname, 50000);
 
     cout << "\n\n";
-    // ComparisonTime(SoA, AoS);
 
+    ComparisonTime(SoA, AoS);
+    
+    /*
+    Compare5Datasets("Test5Compare",
+        SoA, FilterForTemperature<SoAdataset>,
+        AoS, FilterForTemperature<AoSdataset>,
+        SoA, FilterForTemperature<SoAdataset>,
+        SoA, FilterForTemperature<SoAdataset>,
+        AoS, FilterForTemperature<AoSdataset>
+    );
+    */
+
+    // Severity sorting with bucket sort
+    bucket_sort_by_severity(AoS, [&AoS](int i) {return AoS.get_severity(i); });
+    bool flag = true;
+    for (int i = 0; i < 99999; i++) {
+        if (AoS.get_severity(i) > AoS.get_severity(i + 1)) flag = false;
+        //cout << AoS.get_severity(i);
+    }
+    cout << ((flag) ? "Bucket sorting finished correct\n" : "Bucket sorting is incorrect\n");
+    return 0;
+    
+    
     cout << "\n\nOperation speed of structure of arrays" << endl;
     OperationSpeedArrays(SoA);
     cout << "\n\nOperation speed of array of structures" << endl;
@@ -40,7 +63,4 @@ int main()
     OperationSpeed(DoS);
     cout << "\n\nOperation speed of unordered map of structures" << endl;
     OperationSpeedMaps(UMoS);
-
-    return 0;
-
 }
