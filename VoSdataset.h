@@ -1,27 +1,25 @@
 #pragma once
 
-#include <fstream>
-#include <iostream>
+#include <vector>
 #include <string>
-#include <chrono>
-#include <sstream>
-#include <utility>
 #include "Struct.h"
 
-class AoSdataset {
+
+class VoSdataset {
 	int size;
-	accident* entry = nullptr;
+	std::vector<accident> entry;
 
 	void alloc_data();
-	void free_data();
 public:
-	AoSdataset(std::string fname, int size);
-	~AoSdataset();
+	VoSdataset(std::string fname, int size);
 	int get_size();
 	void swapitems(int index1, int index2);
 
 	bool read_cached(std::string fname, int expected_size);
 	void write_cached(std::string fname);
+
+	void insert(int index);
+	void delete_item(int index);
 
 	const int get_id(int index);
 	const short int get_severity(int index);

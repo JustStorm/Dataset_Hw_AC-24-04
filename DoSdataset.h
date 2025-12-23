@@ -7,21 +7,24 @@
 #include <sstream>
 #include <utility>
 #include "Struct.h"
+#include <deque>
 
-class AoSdataset {
+
+class DoSdataset {
 	int size;
-	accident* entry = nullptr;
+	std::deque<accident> entry;
 
 	void alloc_data();
-	void free_data();
 public:
-	AoSdataset(std::string fname, int size);
-	~AoSdataset();
+	DoSdataset(std::string fname, int size);
 	int get_size();
 	void swapitems(int index1, int index2);
 
 	bool read_cached(std::string fname, int expected_size);
 	void write_cached(std::string fname);
+
+	void insert(int index);
+	void delete_item(int index);
 
 	const int get_id(int index);
 	const short int get_severity(int index);

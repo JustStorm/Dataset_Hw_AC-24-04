@@ -1,11 +1,13 @@
-#include "AoSdataset.h"
+#include "VoSdataset.h"
 #include "utils.h"
 
 using namespace std;
 
 
-AoSdataset::AoSdataset(std::string fname, int sz) {
-	string cached_fname = fname + ".cachedAOS";
+
+
+VoSdataset::VoSdataset(std::string fname, int sz) {
+	string cached_fname = fname + ".cachedVoS";
 	if (read_cached(cached_fname, sz)) return;
 
 	size = sz;
@@ -50,63 +52,72 @@ AoSdataset::AoSdataset(std::string fname, int sz) {
 	write_cached(cached_fname);
 }
 
-AoSdataset::~AoSdataset() {
-	free_data();
-}
-
-int AoSdataset::get_size() {
+int VoSdataset::get_size() {
 	return size;
 }
 
-void AoSdataset::swapitems(int index1, int index2) {
+void VoSdataset::swapitems(int index1, int index2) {
 	std::swap(entry[index1], entry[index2]);
 }
 
 
 
-const int AoSdataset::get_id(int index) {
+const int VoSdataset::get_id(int index) {
 	return entry[index].id;
 }
-const short int AoSdataset::get_severity(int index) {
+const short int VoSdataset::get_severity(int index) {
 	return entry[index].severity;
 }
-const char* AoSdataset::get_city(int index) {
+const char* VoSdataset::get_city(int index) {
 	return entry[index].city;
 }
-const char* AoSdataset::get_county(int index) {
+const char* VoSdataset::get_county(int index) {
 	return entry[index].county;
 }
-const char* AoSdataset::get_state(int index) {
+const char* VoSdataset::get_state(int index) {
 	return entry[index].state;
 }
-const float AoSdataset::get_temperature(int index) {
+const float VoSdataset::get_temperature(int index) {
 	return entry[index].temperature;
 }
-const float AoSdataset::get_wind_temperature(int index) {
+const float VoSdataset::get_wind_temperature(int index) {
 	return entry[index].wind_temperature;
 }
-const float AoSdataset::get_humidity_percent(int index) {
+const float VoSdataset::get_humidity_percent(int index) {
 	return entry[index].humidity_percent;
 }
-const float AoSdataset::get_pressure(int index) {
+const float VoSdataset::get_pressure(int index) {
 	return entry[index].pressure;
 }
-const float AoSdataset::get_wind_speed(int index) {
+const float VoSdataset::get_wind_speed(int index) {
 	return entry[index].wind_speed;
 }
-const char* AoSdataset::get_weather_condition(int index) {
+const char* VoSdataset::get_weather_condition(int index) {
 	return entry[index].weather_condition;
 }
 
 
-bool AoSdataset::read_cached(std::string cached_fname, int expected_size) {
+void VoSdataset::insert(int index) {
+	int count = size;
+    for (int i = 0; i < count; i++){
+    	entry.emplace(entry.begin() + index, new_accident);
+	}
+    size += count;
+}
+
+void VoSdataset::delete_item(int index) {
+	entry.erase(entry.begin() + index);
+	size--;
+}
+
+bool VoSdataset::read_cached(std::string cached_fname, int expected_size) {
 	ifstream file_cached(cached_fname, ios::binary);
 	if (!file_cached.is_open()) {
 		std::cout << "Could not find cached version! Proceeding to parsing...\n";
 		return false;
 	}
 
-	std::cout << "Found a processed version AoS! Loading processed...\n";
+	std::cout << "Found a processed version VoS! Loading processed...\n";
 
 	file_cached.read(reinterpret_cast<char*>(&size), sizeof(size));
 
@@ -116,31 +127,25 @@ bool AoSdataset::read_cached(std::string cached_fname, int expected_size) {
 	}
 	alloc_data();
 
-	file_cached.read(reinterpret_cast<char*>(entry), sizeof(accident) * size);
+	file_cached.read(reinterpret_cast<char*>(entry.data()), sizeof(accident) * size);
 
 	file_cached.close();
 	return true;
 }
 
-void AoSdataset::write_cached(std::string cached_fname) {
+void VoSdataset::write_cached(std::string cached_fname) {
 	ofstream cached(cached_fname, ios::binary);
 	if (!cached.is_open()) {
 		cout << "Failed to open file '" << cached_fname << "', can not save cache!";
 	}
 
 	cached.write(reinterpret_cast<char*>(&size), sizeof(size));
-	cached.write(reinterpret_cast<char*>(entry), sizeof(accident) * size);
+	cached.write(reinterpret_cast<char*>(entry.data()), sizeof(accident) * size);
 
 	cached.close();
 	cout << "Saved processed to cache successfully!\n";
 }
 
-void AoSdataset::alloc_data() {
-	free_data();
-	entry = new accident[size];
-}
-
-void AoSdataset::free_data() {
-	delete[] entry;
-	entry = nullptr;
+void VoSdataset::alloc_data() {
+	entry.resize(size);
 }

@@ -1,27 +1,22 @@
 #pragma once
 
-#include <fstream>
-#include <iostream>
-#include <string>
-#include <chrono>
-#include <sstream>
-#include <utility>
 #include "Struct.h"
+#include <unordered_map>
+#include <string>
 
-class AoSdataset {
-	int size;
-	accident* entry = nullptr;
 
-	void alloc_data();
-	void free_data();
+class UMoSdataset {
+    int size;
+    std::unordered_map<int, accident> entry;
 public:
-	AoSdataset(std::string fname, int size);
-	~AoSdataset();
+    UMoSdataset(std::string fname, int size);
 	int get_size();
-	void swapitems(int index1, int index2);
 
 	bool read_cached(std::string fname, int expected_size);
 	void write_cached(std::string fname);
+
+	void insert(int index);
+	void delete_item(int index);
 
 	const int get_id(int index);
 	const short int get_severity(int index);

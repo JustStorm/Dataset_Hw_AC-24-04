@@ -17,8 +17,15 @@ int main()
     //const char fname[] = "./dataset/Accidents_1k.csv";
     //const char fname[] = "./dataset/output.csv";
 
-    SoAdataset SoA(fname, 100000);
-    AoSdataset AoS(fname, 100000);
+    SoAdataset SoA(fname, 50000);
+    SoVdataset SoV(fname, 50000);
+    SoDdataset SoD(fname, 50000);
+    AoSdataset AoS(fname, 50000);
+    VoSdataset VoS(fname, 50000);
+    DoSdataset DoS(fname, 50000);
+    UMoSdataset UMoS(fname, 50000);
+
+    cout << "\n\n";
 
     ComparisonTime(SoA, AoS);
     
@@ -35,7 +42,7 @@ int main()
     // Severity sorting with bucket sort
     bucket_sort_by_severity(AoS, [&AoS](int i) {return AoS.get_severity(i); });
     bool flag = true;
-    for (int i = 0; i < 99999; i++) {
+    for (int i = 0; i < AoS.get_size()-1; i++) {
         if (AoS.get_severity(i) > AoS.get_severity(i + 1)) flag = false;
         //cout << AoS.get_severity(i);
     }
@@ -52,6 +59,22 @@ int main()
         }
     }
     cout << ((flag_merge) ? "Merge sorting finished correct\n" : "Merge sorting is incorrect\n");
+    
+    
+    cout << "\n\nOperation speed of structure of arrays" << endl;
+    OperationSpeedArrays(SoA);
+    cout << "\n\nOperation speed of array of structures" << endl;
+    OperationSpeedArrays(AoS);
+    cout << "\n\nOperation speed of structure of vectors" << endl;
+    OperationSpeed(SoV);
+    cout << "\n\nOperation speed of vector of structures" << endl;
+    OperationSpeed(VoS);
+    cout << "\n\nOperation speed of structure of deques" << endl;
+    OperationSpeed(SoD);
+    cout << "\n\nOperation speed of deque of structures" << endl;
+    OperationSpeed(DoS);
+    cout << "\n\nOperation speed of unordered map of structures" << endl;
+    OperationSpeedMaps(UMoS);
 
     return 0;
 }

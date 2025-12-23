@@ -29,6 +29,7 @@ void parse_spaces(ifstream& input, stringstream& output) {
 	}
 }
 
+
 void ComparisonTime(SoAdataset& SoA, AoSdataset& AoS) {
 	Compare2Datasets("FilterForTemperature", AoS, FilterForTemperature<AoSdataset>, SoA, FilterForTemperature<SoAdataset>);
 	Compare2Datasets("SortForTemperature", AoS, SortForTemperature<AoSdataset>, SoA, SortForTemperature<SoAdataset>);

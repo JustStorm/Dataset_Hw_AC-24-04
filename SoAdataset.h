@@ -19,7 +19,7 @@ class SoAdataset {
 	float* humidity_percent = nullptr;
 	float* pressure = nullptr;
 	float* wind_speed = nullptr;
-	char (*weather_condition)[15] = nullptr;
+	char (*weather_condition)[60] = nullptr;
 
 	void alloc_data();
 	void free_data();
@@ -44,14 +44,4 @@ public:
 	const float get_pressure(int index);
 	const float get_wind_speed(int index);
 	const char* get_weather_condition(int index);
-
-	// В конце public секции класса SoAdataset добавьте:
-	int* get_id_array() { return id; }
-	short int* get_severity_array() { return severity; }
-	float* get_temperature_array() { return temperature; }
-	float* get_wind_temperature_array() { return wind_temperature; }
-	float* get_humidity_percent_array() { return humidity_percent; }
-	float* get_pressure_array() { return pressure; }
-	float* get_wind_speed_array() { return wind_speed; }
-
 };
