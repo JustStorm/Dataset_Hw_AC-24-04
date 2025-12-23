@@ -12,24 +12,25 @@ int main()
 {
 
     //// ПЕРЕД ТЕМ, КАК СЧИТЫВАТЬ БОЛЬШОЕ КОЛИЧЕСТВО, УБЕДИТЕСЬ ЧТО ФАЙЛ ДОСТАТОЧНО БОЛЬШОЙ
-    //const char fname[] = "./dataset/Accidents_full.csv";
-    const char fname[] = "./dataset/Accidents_100k.csv";
+    const char fname[] = "./dataset/Accidents_full.csv";
+    //const char fname[] = "./dataset/Accidents_100k.csv";
     //const char fname[] = "./dataset/Accidents_50k.csv";
     //const char fname[] = "./dataset/Accidents_100k.csv";
     //const char fname[] = "./dataset/Accidents_1k.csv";
     //const char fname[] = "./dataset/output.csv";
 
-    SoAdataset SoA(fname, 100000);
-    SoVdataset SoV(fname, 100000);
-    SoDdataset SoD(fname, 100000);
-    AoSdataset AoS(fname, 100000);
-    VoSdataset VoS(fname, 100000);
-    DoSdataset DoS(fname, 100000);
-    UMoSdataset UMoS(fname, 100000);
+    SoAdataset SoA(fname, 1000000);
+    SoVdataset SoV(fname, 1000000);
+    SoDdataset SoD(fname, 1000000);
+    AoSdataset AoS(fname, 1000000);
+    VoSdataset VoS(fname, 1000000);
+    DoSdataset DoS(fname, 1000000);
+    UMoSdataset UMoS(fname, 1000000);
     
     cout << "\n\n";
 
     // ==================== ТЕСТ ПОИСКА ПОДСТРОКИ ====================
+    /*
     cout << "=== Testing REGISTER-SENSITIVE substring search algorithm ===" << endl;
     cout << "\nSearching for 'Rain' in weather_condition (SoA):" << endl;
 
@@ -53,8 +54,14 @@ int main()
     cout << "Total 'Rain' occurrences: " << total_rain << endl;
     cout << "Records containing 'Rain': " << records_with_rain << endl;
     cout << "Total records processed: " << SoA.get_size() << endl;
+    */
+
+
+
+
 
     /*
+    // STL TESTING
     ComparisonTime(SoA, AoS);
 
     Compare5Datasets("Test1Compare_Filter_for_temperature",
@@ -131,6 +138,8 @@ int main()
     */
 
 
+
+
     /*
     // Severity sorting with bucket sort
     int bucket_time = timeit([](AoSdataset &data, int sz) {bucket_sort_by_severity(data, sz, [&data](int i) {return data.get_severity(i); }); }, AoS, AoS.get_size(), 1);
@@ -140,14 +149,14 @@ int main()
     
 
     // MergeSort
-    merge_sort(SoA, 10000, [&](int i) { return SoA.get_temperature(i); });
-    check_sort("MergeSort", SoA, [&SoA](int i) { return SoA.get_temperature(i); });
-    
     int merge_time = timeit([](AoSdataset& data, int sz) {merge_sort(data, sz, [&data](int i) {return data.get_temperature(i); }); }, AoS, AoS.get_size(), 1);
     cout << "MergeSort took " << merge_time << "mcs.\n";
     //merge_sort(AoS, AoS.get_size(), [&AoS](int i) { return AoS.get_temperature(i); });
     check_sort("MergeSort", AoS, [&AoS](int i) { return AoS.get_temperature(i); });
     */
+    
+    
+    /*
   
     // ============================================================
     // COMPRESSION ALGORITHMS TESTING SECTION
@@ -176,6 +185,6 @@ int main()
 
     // Run compression demo for correctness verification
     DatasetCompression::runCompressionDemo();
-
+    */
     return 0;
 }
