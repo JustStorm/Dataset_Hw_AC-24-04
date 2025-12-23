@@ -130,6 +130,7 @@
     <ClCompile Include="SoAdataset.cpp" />
     <ClCompile Include="SoDdataset.cpp" />
     <ClCompile Include="SoVdataset.cpp" />
+    <ClCompile Include="substring_searcher.cpp" />
     <ClCompile Include="UMoSdataset.cpp" />
     <ClCompile Include="utils.cpp" />
     <ClCompile Include="VoSdataset.cpp" />
@@ -138,6 +139,7 @@
     <ClInclude Include="AoSdataset.h" />
     <ClInclude Include="DoSdataset.h" />
     <ClInclude Include="FilterDataset.h" />
+    <ClInclude Include="substring_searcher.h" />
     <ClInclude Include="MergeSort.h" />
     <ClInclude Include="SeverityBucketSort.h" />
     <ClInclude Include="SoAdataset.h" />

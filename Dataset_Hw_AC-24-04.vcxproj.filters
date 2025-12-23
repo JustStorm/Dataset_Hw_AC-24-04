@@ -1,82 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Исходные файлы">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Файлы заголовков">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Файлы ресурсов">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
+    <ClCompile Include="AoSdataset.cpp" />
+    <ClCompile Include="Dataset_Hw_AC-24-04.cpp" />
+    <ClCompile Include="DoSdataset.cpp" />
+    <ClCompile Include="SoAdataset.cpp" />
+    <ClCompile Include="SoDdataset.cpp" />
+    <ClCompile Include="SoVdataset.cpp" />
+    <ClCompile Include="UMoSdataset.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="VoSdataset.cpp" />
+    <ClCompile Include="substring_searcher.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Dataset_Hw_AC-24-04.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="AoSdataset.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="SoAdataset.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="utils.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="SoDdataset.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="SoVdataset.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="UMoSdataset.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="VoSdataset.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="DoSdataset.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="AoSdataset.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="SoAdataset.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="utils.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="FilterDataset.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="SeverityBucketSort.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="MergeSort.h">
-    <ClInclude Include="DoSdataset.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="SoDdataset.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="SoVdataset.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="Struct.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="UMoSdataset.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
-    <ClInclude Include="VoSdataset.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
+    <ClInclude Include="AoSdataset.h" />
+    <ClInclude Include="DoSdataset.h" />
+    <ClInclude Include="FilterDataset.h" />
+    <ClInclude Include="MergeSort.h" />
+    <ClInclude Include="SeverityBucketSort.h" />
+    <ClInclude Include="SoAdataset.h" />
+    <ClInclude Include="SoDdataset.h" />
+    <ClInclude Include="SoVdataset.h" />
+    <ClInclude Include="Struct.h" />
+    <ClInclude Include="UMoSdataset.h" />
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="VoSdataset.h" />
+    <ClInclude Include="substring_searcher.h" />
   </ItemGroup>
 </Project>
