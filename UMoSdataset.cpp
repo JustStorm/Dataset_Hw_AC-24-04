@@ -111,18 +111,17 @@ const char* UMoSdataset::get_weather_condition(int index) {
 
 
 void UMoSdataset::insert(int index) {
-    int count = size;
-
-    for (int i = 0; i < count; i++) {
-        entry.emplace(new_accident.id + i, new_accident);
-    }
-
-    size += count;
+    entry.emplace(new_accident.id + index, new_accident);
+    size++;
 }
 
 void UMoSdataset::delete_item(int index) {
     entry.erase(index);
     size--;
+}
+
+void UMoSdataset::swapitems(int ind1, int ind2) {
+    return;
 }
 
 

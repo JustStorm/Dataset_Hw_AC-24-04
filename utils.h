@@ -119,7 +119,7 @@ void OperationSpeed(dataset& DS) {
 	std::cout << "Adding size / 2 elements in the beginning" << std::endl;
 	std::cout << timeit(InsertItemsInBeginning<dataset>, DS, sz) << std::endl;
 	std::cout << "Deleting one third of the elements" << std::endl;
-	std::cout << timeit(DeleteItems<dataset>, DS, sz) << std::endl;
+	std::cout << timeit(DeleteItemInBeginning<dataset>, DS, sz) << std::endl;
 	std::cout << "Adding size / 2 elements in the middle" << std::endl;
 	std::cout << timeit(InsertItemsInMiddle<dataset>, DS, sz) << std::endl;
 }
@@ -128,7 +128,7 @@ template <typename dataset>
 void OperationSpeedMaps(dataset& DS)  {
 	int sz = DS.get_size();
 	std::cout << "Deleting one third of the elements" << std::endl;
-	std::cout << timeit(DeleteItems<dataset>, DS, sz) << std::endl;
+	std::cout << timeit(DeleteItemInBeginning<dataset>, DS, sz) << std::endl;
 	std::cout << "Counting elements passing the filter (read speed)" << std::endl;
 	std::cout << timeit(SearchForTemperature<dataset>, DS, sz) << std::endl;
 	std::cout << "Adding size / 2 elements in the beginning" << std::endl;
