@@ -2,6 +2,7 @@
 #include "utils.h"
 #include "SeverityBucketSort.h"
 #include "MergeSort.h"
+#include "substring_searcher.h"
 
 using namespace std;
 
@@ -26,6 +27,32 @@ int main()
     UMoSdataset UMoS(fname, 1000000);
     
     cout << "\n\n";
+
+    // ==================== ТЕСТ ПОИСКА ПОДСТРОКИ ====================
+    cout << "=== Testing REGISTER-SENSITIVE substring search algorithm ===" << endl;
+    cout << "\nSearching for 'rain' in weather_condition (SoA):" << endl;
+
+    auto results = countSubstringOccurrences(
+        SoA,
+        [](SoAdataset& ds, int idx) -> const char* {
+            return ds.get_weather_condition(idx);
+        },
+        "rain" 
+    );
+
+    int total_rain = 0;
+    int records_with_rain = 0;
+    for (int i = 0; i < results.size(); i++) {
+        total_rain += results[i];
+        if (results[i] > 0) {
+            records_with_rain++;
+        }
+    }
+
+    cout << "Total 'rain' occurrences: " << total_rain << endl;
+    cout << "Records containing 'rain': " << records_with_rain << endl;
+    cout << "Total records processed: " << SoA.get_size() << endl;
+
     /*
     ComparisonTime(SoA, AoS);
     
